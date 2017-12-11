@@ -9,5 +9,6 @@
 ## My Projects
 > [bit.ly/pragmatic-ml](http://bit.ly/pragmatic-ml)  
 > [bit.ly/pragmatic-ds](http://bit.ly/pragmatic-ds)  
+> [bit.ly/pragmatic-dp](http://bit.ly/pragmatic-dp)
 > [bit.ly/dont-letim](http://bit.ly/dont-letim)  
 > [bit.ly/instagram-hon](http://bit.ly/instagram-hon)
