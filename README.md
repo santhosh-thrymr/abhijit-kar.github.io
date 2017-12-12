@@ -11,5 +11,5 @@
 > [bit.ly/pragmatic-ds](http://bit.ly/pragmatic-ds)  
 > [bit.ly/pragmatic-dp](http://bit.ly/pragmatic-dp)  
 > [bit.ly/dont-letim](http://bit.ly/dont-letim)  
-> [bit.ly/instagram-hon](http://bit.ly/instagram-hon)
+> [bit.ly/instagram-hon](http://bit.ly/instagram-hon)  
 > [bit.ly/kaggle-hon](http://bit.ly/kaggle-hon)
