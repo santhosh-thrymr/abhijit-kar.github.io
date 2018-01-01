@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy-to-github-pages": "ng build --prod --aot --base-href http://www.abhijit-kar.com/ && ngh --branch=master"
+    "deploy-to-github-pages": "ng build --prod --base-href http://www.abhijit-kar.com/ && ngh --branch=master"
   },
   "private": true,
   "dependencies": {
