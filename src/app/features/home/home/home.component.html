@@ -14,7 +14,7 @@
             <mat-nav-list>
                 <mat-list-item>
                     <span matLine>
-                        <span  (click)="handleButtonClick(resume)">
+                        <span (click)="handleButtonClick(resume)">
                             <span matListIcon class="fa fa-file-text s-30 w-30"></span>
                             Résumé
                         </span>
@@ -70,11 +70,11 @@
                         <mat-divider [inset]="true"></mat-divider>
                         <mat-list-item *ngFor="let technology of project.technologies">
                             <span matLine (click)="handleButtonClick(technology)">{{technology.name}}
-                                <button mat-icon-button *ngIf="technology.git">
-                                    <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'Git')">
-                                    </span>
-                                </button>
                             </span>
+                            <button mat-icon-button *ngIf="technology.git">
+                                <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'Git')">
+                                </span>
+                            </button>
                         </mat-list-item>
                     </ng-container>
                 </mat-nav-list>
