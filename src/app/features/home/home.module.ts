@@ -4,7 +4,6 @@ import {
   MatCardModule,
   MatExpansionModule,
   MatListModule,
-  MatChipsModule,
   MatIconModule,
   MatProgressSpinnerModule,
   MatButtonModule
@@ -16,7 +15,6 @@ const MaterialModules = [
   MatCardModule,
   MatExpansionModule,
   MatListModule,
-  MatChipsModule,
   MatIconModule,
   MatProgressSpinnerModule,
   MatButtonModule
