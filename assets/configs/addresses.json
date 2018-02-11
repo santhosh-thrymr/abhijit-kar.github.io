@@ -1,0 +1,32 @@
+[
+  {
+    "class": "fa-map-marker",
+    "url": "https://www.google.com/maps/?q=17.448490,78.358443",
+    "text": "Sweet Homes Gachibowli, Hyderabad Telangana, 500032"
+  },
+  {
+    "class": "fa-home",
+    "url": "http://www.abhijit-kar.com",
+    "text": "abhijit-kar.com"
+  },
+  {
+    "class": "fa-envelope",
+    "url": "mailto:reachme@abhijit-kar.com",
+    "text": "reachme@abhijit-kar.com"
+  },
+  {
+    "class": "fa-github",
+    "url": "https://github.com/abhijit-kar",
+    "text": "github.com/abhijit-kar"
+  },
+  {
+    "class": "fa-whatsapp",
+    "url": "https://api.whatsapp.com/send?phone=918658610998",
+    "text": "+91 (865) 861-0998"
+  },
+  {
+    "class": "fa-phone",
+    "url": "tel:+918658610998",
+    "text": "+91 (865) 861-0998"
+  }
+]
