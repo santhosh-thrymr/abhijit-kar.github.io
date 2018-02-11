@@ -12,51 +12,18 @@
         <img mat-card-image src="./assets/images/adventure-time.jpg">
         <mat-card-content>
             <mat-nav-list>
-                <mat-list-item>
-                    <a matLine href="https://www.google.com/maps/?q=17.448490,78.358443" target="_blank">
-                        <span matListIcon class="fa fa-map-marker s-30 w-30"></span>
-                        Sweet Homes Gachibowli, Hyderabad Telangana, 500032
-                    </a>
-                </mat-list-item>
-                <mat-list-item>
-                    <a matLine href="http://www.abhijit-kar.com" target="_blank">
-                        <span matListIcon class="fa fa-home s-30 w-30"></span>
-                        abhijit-kar.com
-                    </a>
-                </mat-list-item>
-                <mat-list-item>
-                    <a matLine href="mailto:reachme@abhijit-kar.com">
-                        <span matListIcon class="fa fa-envelope s-30 w-30"></span>
-                        reachme@abhijit-kar.com
-                    </a>
-                </mat-list-item>
-                <mat-list-item>
-                    <a matLine href="https://github.com/abhijit-kar" target="_blank">
-                        <span matListIcon class="fa fa-github s-30 w-30"></span>
-                        github.com/abhijit-kar
-                    </a>
-                </mat-list-item>
-                <mat-list-item>
-                    <a matLine href="https://api.whatsapp.com/send?phone=918658610998" target="_blank">
-                        <span matListIcon class="fa fa-whatsapp s-30 w-30"></span>
-                        +91 (865) 861-0998
-                    </a>
-                </mat-list-item>
-                <mat-list-item>
-                    <a matLine href="tel:+918658610998" target="_blank">
-                        <span matListIcon class="fa fa-phone s-30 w-30"></span>
-                        +91 (865) 861-0998
+                <mat-list-item *ngFor="let address of addresses | async">
+                    <a matLine [href]="address.url" target="_blank">
+                        <span matListIcon class="fa s-30 w-30" [ngClass]="address.class"></span>
+                        {{address.text}}
                     </a>
                 </mat-list-item>
             </mat-nav-list>
         </mat-card-content>
         <mat-card-actions>
             <div class="col-12 social-btns">
-                <button mat-fab>
-                    <span class="fa fa-twitter s-30"></span>
-                </button>
-                <button mat-fab>
-                    <span class="fa fa-linkedin s-30"></span>
+                <button mat-fab *ngFor="let socialIcon of socialIcons">
+                    <span class="fa s-30" [ngClass]="socialIcon"></span>
                 </button>
             </div>
         </mat-card-actions>
@@ -66,23 +33,12 @@
                 <mat-expansion-panel-header>
                     Skills
                 </mat-expansion-panel-header>
-                <mat-nav-list>
-                    <h3 matSubheader>Current</h3>
-                    <mat-list-item>
-                        <mat-progress-spinner color="primary" mode="determinate" value="90" diameter="20">
+                <mat-nav-list *ngFor="let skill of skills | async">
+                    <h3 matSubheader>{{skill.header}}</h3>
+                    <mat-list-item *ngFor="let technology of skill.technologies">
+                        <mat-progress-spinner color="primary" mode="determinate" [value]="technology.percentage" diameter="20">
                         </mat-progress-spinner>
-                        <span class="px-2">90%</span> Angular
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-progress-spinner color="primary" mode="determinate" value="15" diameter="20">
-                        </mat-progress-spinner>
-                        <span class="px-2">15%</span> Google Cloud Platform
-                    </mat-list-item>
-                    <h3 matSubheader>Past Experience</h3>
-                    <mat-list-item>
-                        <mat-progress-spinner color="primary" mode="determinate" value="80" diameter="20">
-                        </mat-progress-spinner>
-                        <span class="px-2">80%</span> Unity
+                        <span class="px-2">{{technology.percentage}}%</span> {{technology.name}}
                     </mat-list-item>
                 </mat-nav-list>
             </mat-expansion-panel>

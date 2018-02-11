@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
 import {
   MatCardModule,
   MatExpansionModule,
@@ -21,7 +22,12 @@ const MaterialModules = [
 ];
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, ...MaterialModules],
+  imports: [
+    CommonModule,
+    HomeRoutingModule,
+    HttpClientModule,
+    ...MaterialModules
+  ],
   declarations: HomeComponents
 })
 export class HomeModule {}
