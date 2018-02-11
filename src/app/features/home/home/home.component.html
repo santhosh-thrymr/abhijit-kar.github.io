@@ -1,12 +1,15 @@
 <div class="flex-container">
-    <mat-card class="mx-auto my-5 col-md-5 col-11">
+    <mat-card class="mx-auto my-5 col-md-5 col-11 mat-elevation-z8">
         <mat-card-title>
             <img mat-card-avatar src="./assets/abhijit-kar.png"> Abhijit Kar
         </mat-card-title>
         <mat-card-subtitle>Aspiring Full-Stack Developer, Budding Machine Learning Expert & Extensively Experienced, with a Fresher's Flair</mat-card-subtitle>
         <img mat-card-image src="./assets/images/adventure-time.jpg">
         <mat-card-content></mat-card-content>
-        <mat-card-footer>
+        <button mat-fab color="primary" selected="true">
+            <mat-icon>launch</mat-icon>
+        </button>
+        <mat-card-footer class="mt-2">
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
                     Skills
@@ -15,13 +18,24 @@
                     Skills I have acquired through Perseverance
                 </mat-panel-description>
                 <mat-list>
-                    <mat-list-item>Angular</mat-list-item>
-                    <mat-divider [inset]="true"></mat-divider>
-                    <mat-list-item>Google Cloud Platforms</mat-list-item>
-                    <mat-divider [inset]="true"></mat-divider>
-                    <mat-list-item>Unity</mat-list-item>
+                    <mat-chip-list>
+                        <mat-chip class="clickable" color="primary" selected="true">
+                            <span class="mr-2">90%</span>
+                            Angular
+                            <mat-icon class="ml-2">launch</mat-icon>
+                        </mat-chip>
+                        <mat-chip class="clickable" color="primary" selected="true">
+                            <span class="mr-2">10%</span>
+                            Google Cloud Platform
+                            <mat-icon class="ml-2">launch</mat-icon>
+                        </mat-chip>
+                        <mat-chip class="clickable">
+                            <span class="mr-2">80%</span>
+                            Unity
+                            <mat-icon class="ml-2">launch</mat-icon>
+                        </mat-chip>
+                    </mat-chip-list>
                 </mat-list>
-
             </mat-expansion-panel>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
@@ -31,11 +45,17 @@
                     Application of my Skills
                 </mat-panel-description>
                 <mat-list>
-                    <mat-list-item>Angular Scaffolding</mat-list-item>
-                    <mat-divider [inset]="true"></mat-divider>
-                    <mat-list-item>GraphQL</mat-list-item>
-                    <mat-divider [inset]="true"></mat-divider>
-                    <mat-list-item>RESTFul API</mat-list-item>
+                    <mat-chip-list>
+                        <mat-chip color="primary" selected="true">Angular Scaffolding</mat-chip>
+                        <mat-chip color="primary" selected="true">GraphQL</mat-chip>
+                        <mat-chip color="primary" selected="true">RESTFul API</mat-chip>
+                    </mat-chip-list>
+                </mat-list>
+                <mat-list>
+                    <mat-chip-list>
+                        <mat-chip>Monster Shuffle</mat-chip>
+                        <mat-chip>WYSIWYG Editor</mat-chip>
+                    </mat-chip-list>
                 </mat-list>
             </mat-expansion-panel>
         </mat-card-footer>
