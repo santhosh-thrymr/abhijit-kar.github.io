@@ -12,8 +12,8 @@
         <img mat-card-image src="./assets/images/adventure-time.jpg">
         <mat-card-content>
             <mat-nav-list>
-                <mat-list-item *ngFor="let address of addresses | async">
-                    <a matLine [href]="address.url" target="_blank">
+                <mat-list-item *ngFor="let address of addresses | async" (click)="handleButtonClick(address)">
+                    <a matLine>
                         <span matListIcon class="fa s-30 w-30" [ngClass]="address.class"></span>
                         {{address.text}}
                     </a>
@@ -22,8 +22,8 @@
         </mat-card-content>
         <mat-card-actions>
             <div class="col-12 social-btns">
-                <button mat-fab *ngFor="let socialIcon of socialIcons">
-                    <span class="fa s-30" [ngClass]="socialIcon"></span>
+                <button mat-fab *ngFor="let socialNetwork of socialNetworks" (click)="handleButtonClick(socialNetwork)">
+                    <a class="fa s-30" [ngClass]="socialNetwork.class"></a>
                 </button>
             </div>
         </mat-card-actions>
