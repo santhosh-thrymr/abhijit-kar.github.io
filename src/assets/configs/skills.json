@@ -3,12 +3,67 @@
     "header": "Current",
     "technologies": [
       {
-        "percentage": 90,
-        "name": "Angular"
+        "name": "TypeScript",
+        "category": "Skills",
+        "percentage": 95,
+        "git": "https://github.com/abhijit-kar/dont-let-him-poo",
+        "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
       },
       {
+        "name": "Angular",
+        "category": "Skills",
+        "percentage": 89,
+        "git": "https://github.com/abhijit-kar/dont-let-him-poo",
+        "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
+      },
+      {
+        "name": "GIT",
+        "category": "Skills",
+        "percentage": 79,
+        "git": "https://github.com/abhijit-kar",
+        "url": "https://github.com/abhijit-kar?tab=repositories"
+      },
+      {
+        "name": "Python",
+        "category": "Skills",
+        "percentage": 68,
+        "git": "https://github.com/abhijit-kar/pragmatic-design-patterns",
+        "url": "http://www.abhijit-kar.com/pragmatic-design-patterns/"
+      },
+      {
+        "name": "RESTfull Service Creation",
+        "category": "Skills",
+        "percentage": 52,
+        "git": "https://github.com/abhijit-kar/restful-go",
+        "url": "http://www.abhijit-kar.com/swagger-editor/"
+      },
+      {
+        "name": "Swagger",
+        "category": "Skills",
+        "percentage": 45,
+        "git": "https://github.com/abhijit-kar/restful-go",
+        "url": "http://www.abhijit-kar.com/swagger-editor/"
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Skills",
+        "percentage": 39,
+        "git": "https://github.com/abhijit-kar/pragmatic-machine-learning",
+        "url": "http://www.abhijit-kar.com/pragmatic-machine-learning/"
+      },
+      {
+        "name": "Golang",
+        "category": "Skills",
+        "percentage": 25,
+        "git": "https://github.com/abhijit-kar/restful-go",
+        "url": "http://www.abhijit-kar.com/swagger-editor/"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "category": "Skills",
         "percentage": 15,
-        "name": "Google Cloud Platform"
+        "git": "https://github.com/abhijit-kar/dont-let-him-poo",
+        "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
       }
     ]
   },
@@ -16,8 +71,16 @@
     "header": "Past Experience",
     "technologies": [
       {
+        "name": "Unity",
+        "category": "Skills",
         "percentage": 80,
-        "name": "Unity"
+        "url": "https://www.youtube.com/watch?v=aKVkieNf4tU"
+      },
+      {
+        "name": "Flash Professional",
+        "category": "Skills",
+        "percentage": 95,
+        "url": "https://drive.google.com/open?id=0B3Cbrg4maoDvSEtZVDhtVm1ZZnc"
       }
     ]
   }

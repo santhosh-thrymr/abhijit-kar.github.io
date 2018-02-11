@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Twitter",
+      "category": "Social",
+      "class": "fa-twitter",
+      "url": "https://twitter.com/AbhijitKarDikha"
+    },
+    {
+      "name": "LinkedIn",
+      "category": "Social",
+      "class": "fa-linkedin",
+      "url": "https://www.linkedin.com/in/abhijit-kar/"
+    }
+  ]

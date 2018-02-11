@@ -1,0 +1,65 @@
+[
+  {
+    "header": "Recent",
+    "technologies": [
+      {
+        "name": "Don't Let Him Poo",
+        "category": "Projects",
+        "git": "https://github.com/abhijit-kar/dont-let-him-poo",
+        "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
+      },
+      {
+        "name": "Angular Scaffolding",
+        "category": "Projects",
+        "git": "https://github.com/abhijit-kar/angular-scaffolding",
+        "url": "http://www.abhijit-kar.com/angular-scaffolding/"
+      },
+      {
+        "name": "GraphQL",
+        "category": "Projects",
+        "git": "https://github.com/abhijit-kar/graphiql",
+        "url": "http://www.abhijit-kar.com/graphiql/"
+      },
+      {
+        "name": "RESTFul GO API",
+        "category": "Projects",
+        "git": "https://github.com/abhijit-kar/restful-go",
+        "url": "http://www.abhijit-kar.com/swagger-editor/"
+      },
+      {
+        "name": "Pragmatic Machine Learning",
+        "category": "Projects",
+        "git": "https://github.com/abhijit-kar/pragmatic-machine-learning",
+        "url": "http://www.abhijit-kar.com/pragmatic-machine-learning/"
+      },
+      {
+        "name": "Pragmatic Design Patterns",
+        "category": "Projects",
+        "git": "https://github.com/abhijit-kar/pragmatic-design-patterns",
+        "url": "http://www.abhijit-kar.com/pragmatic-design-patterns/"
+      },
+      {
+        "name": "Pragmatic Data Structures",
+        "category": "Projects",
+        "git": "https://github.com/abhijit-kar/pragmatic-data-structure",
+        "url": "http://www.abhijit-kar.com/pragmatic-data-structure/"
+      }
+    ]
+  },
+  {
+    "header": "Way Back",
+    "technologies": [
+      {
+        "name": "Monster Shuffle",
+        "category": "Projects",
+        "url": "https://abhijit-kar.itch.io/monster-shuffle"
+      },
+      {
+        "name": "Box2DFlash Editor",
+        "category": "Projects",
+        "url":
+          "https://drive.google.com/open?id=1FOY9xaz-jHoKY7Uqhd0v-HKroSy2M93n"
+      }
+    ]
+  }
+]
