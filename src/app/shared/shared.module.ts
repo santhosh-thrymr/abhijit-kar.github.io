@@ -12,7 +12,6 @@ import { GlobalErrorHandlerService, GoogleAnalyticsService } from "./";
       useClass: GlobalErrorHandlerService
     },
     GoogleAnalyticsService
-  ],
-  exports: []
+  ]
 })
 export class SharedModule {}
