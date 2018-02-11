@@ -40,23 +40,26 @@ export class HomeComponent {
       "https://docs.google.com/document/d/16jbB9ipqmReDTs5IkEcjt8wsuCRJDGXjNvg9r2l6XQo"
   };
 
-  handleButtonClick(btnData: any, type?: LINK_TYPE, fileType?: string) {
+  handleButtonClick(btnData: any, linkType?: string) {
     event.preventDefault();
 
     this.googleAnalyticsService.emitEvent(
-      `${btnData.category} ${type}`,
+      `${btnData.category} ${linkType}`,
       btnData.name,
       $ => {
-        switch (type) {
+        let url: string;
+
+        switch (linkType) {
           case LINK_TYPE.GIT:
-            window.open(btnData.git, "_blank");
+            url = btnData.git;
             break;
           case LINK_TYPE.DOWNLOAD:
-            window.open(btnData.pdf, "_blank");
+            url = btnData.pdf;
             break;
           default:
-            window.open(btnData.url, "_blank");
+            url = btnData.url;
         }
+        window.open(url, "_blank");
       }
     );
   }
