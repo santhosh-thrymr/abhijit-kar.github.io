@@ -1,17 +1,17 @@
 <div class="flex-container">
     <mat-card class="mx-auto my-5 col-md-5 col-11 mat-elevation-z8">
         <mat-card-title>
-            <img mat-card-avatar src="./assets/abhijit-kar.png"> Abhijit Kar
+            <img mat-card-avatar src="./assets/images/abhijit-kar.png"> Abhijit Kar
         </mat-card-title>
         <mat-card-subtitle>
             <span class="fa fa-quote-left"></span>
-            Aspiring Full-Stack Developer, Budding Machine Learning Expert & Extensively Experienced, with a Fresher's Flair
+            <span class="tagline">
+                Aspiring Full-Stack Developer, Budding Machine Learning Expert & Extensively Experienced, with a Fresher's Flair
+            </span>
             <span class="fa fa-quote-right"></span>
         </mat-card-subtitle>
-        <img mat-card-image src="./assets/images/adventure-time.jpg">
         <mat-card-content>
             <mat-nav-list>
-                <h3 matSubheader>Addresses</h3>
                 <mat-list-item>
                     <a matLine href="https://www.google.com/maps/?q=17.448490,78.358443" target="_blank">
                         <mat-icon matListIcon class="fa fa-map-marker s-30"></mat-icon>
@@ -72,29 +72,17 @@
                 <mat-panel-description>
                     Skills I have acquired through Perseverance
                 </mat-panel-description>
-                <mat-list>
-                    <mat-chip-list>
-                        <h3 matSubheader>Current</h3>
-                        <mat-chip class="clickable" color="primary" selected="true">
-                            <span class="mr-2">90%</span>
-                            Angular
-                            <mat-icon class="s-20 ml-2">launch</mat-icon>
-                        </mat-chip>
-                        <mat-chip class="clickable" color="primary" selected="true">
-                            <span class="mr-2">10%</span>
-                            Google Cloud Platform
-                            <mat-icon class="s-20 ml-2">launch</mat-icon>
-                        </mat-chip>
-                    </mat-chip-list>
-                    <mat-chip-list>
-                        <h3 matSubheader>Prior Experience</h3>
-                        <mat-chip class="clickable">
-                            <span class="mr-2">80%</span>
-                            Unity
-                            <mat-icon class="s-20 ml-2">launch</mat-icon>
-                        </mat-chip>
-                    </mat-chip-list>
-                </mat-list>
+                <mat-nav-list>
+                    <mat-list-item>
+                        <span class="pr-2">90%</span> Angular
+                    </mat-list-item>
+                    <mat-list-item>
+                        <span class="pr-2">15%</span> Google Cloud Platform
+                    </mat-list-item>
+                    <mat-list-item>
+                        <span class="pr-2">80%</span> Unity
+                    </mat-list-item>
+                </mat-nav-list>
             </mat-expansion-panel>
             <mat-divider></mat-divider>
             <mat-expansion-panel>
@@ -104,30 +92,40 @@
                 <mat-panel-description>
                     Application of my Skills
                 </mat-panel-description>
-                <mat-list>
+                <mat-nav-list>
                     <mat-list-item>
-                        <mat-chip-list>
-                            <mat-chip class="clickable" color="primary" selected="true">
-                                Angular Scaffolding
-                                <mat-icon class="s-20 ml-2">launch</mat-icon>
-                            </mat-chip>
-                            <mat-chip class="clickable" color="primary" selected="true">
-                                GraphQL
-                                <mat-icon class="s-20 ml-2">launch</mat-icon>
-                            </mat-chip>
-                            <mat-chip class="clickable">
-                                RESTFul API
-                                <mat-icon class="s-20 ml-2">launch</mat-icon>
-                            </mat-chip>
-                        </mat-chip-list>
+                        <a matLine href="http://www.abhijit-kar.com" target="_blank">
+                            Angular Scaffolding
+                        </a>
+                        <button mat-icon-button>
+                            <mat-icon class="fa fa-external-link s-20"></mat-icon>
+                        </button>
                     </mat-list-item>
                     <mat-list-item>
-                        <mat-chip-list>
-                            <mat-chip>Monster Shuffle</mat-chip>
-                            <mat-chip disabled="true">WYSIWYG Editor</mat-chip>
-                        </mat-chip-list>
+                        <a matLine href="http://www.abhijit-kar.com" target="_blank">
+                            GraphQL
+                        </a>
+                        <button mat-icon-button>
+                            <mat-icon class="fa fa-external-link s-20"></mat-icon>
+                        </button>
                     </mat-list-item>
-                </mat-list>
+                    <mat-list-item>
+                        <a matLine href="http://www.abhijit-kar.com" target="_blank">
+                            RESTFul API
+                        </a>
+                        <button mat-icon-button>
+                            <mat-icon class="fa fa-external-link s-20"></mat-icon>
+                        </button>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <a matLine href="http://www.abhijit-kar.com" target="_blank">
+                            Monster Shuffle
+                        </a>
+                        <button mat-icon-button>
+                            <mat-icon class="fa fa-external-link s-20"></mat-icon>
+                        </button>
+                    </mat-list-item>
+                </mat-nav-list>
             </mat-expansion-panel>
         </mat-card-footer>
     </mat-card>
