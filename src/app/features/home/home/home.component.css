@@ -2,22 +2,21 @@
   cursor: pointer !important;
 }
 
-mat-icon.s-20 {
+span.s-20 {
   font-size: 20px !important;
-  height: 20px !important;
-  width: 20px !important;
 }
 
-mat-icon.s-30 {
-  font-size: 30px !important;
-  width: 40px !important;
-
+span.s-30 {
+  font-size: 25px !important;
   text-align: center;
-  margin-right: 10px;
+}
+span.w-30 {
+  width: 30px !important;
+  vertical-align: bottom;
 }
 
 .fa.fa-envelope {
-    font-size: 25px !important;
+  font-size: 25px !important;
 }
 
 button,
@@ -31,5 +30,15 @@ button:hover {
 }
 
 .tagline {
-    color: cyan;
+  color: deeppink;
+}
+
+.social-btns {
+  text-align: center;
+}
+.social-btns button .fa {
+  color: #434142;
+}
+.social-btns button {
+  margin: 0 5px;
 }
