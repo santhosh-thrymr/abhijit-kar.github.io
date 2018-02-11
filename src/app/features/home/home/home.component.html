@@ -12,6 +12,18 @@
         <img mat-card-image src="./assets/images/adventure-time.jpg">
         <mat-card-content>
             <mat-nav-list>
+                <mat-list-item>
+                    <span matLine>
+                        <span  (click)="handleButtonClick(resume)">
+                            <span matListIcon class="fa fa-file-text s-30 w-30"></span>
+                            Resume
+                        </span>
+                    </span>
+                    <button mat-icon-button>
+                        <span matListIcon class="fa fa-cloud-download s-30" (click)="handleButtonClick(resume, 'Download')">
+                        </span>
+                    </button>
+                </mat-list-item>
                 <mat-list-item *ngFor="let address of addresses | async" (click)="handleButtonClick(address)">
                     <span matListIcon class="fa s-30 w-30" [ngClass]="address.class" matLine></span>
                     {{address.text}}
@@ -40,7 +52,7 @@
                         <span (click)="handleButtonClick(technology)">{{technology.name}}
                         </span>
                         <button mat-icon-button *ngIf="technology.git">
-                            <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'GIT')">
+                            <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'Git')">
                             </span>
                         </button>
                     </mat-list-item>
@@ -59,7 +71,7 @@
                         <mat-list-item *ngFor="let technology of project.technologies">
                             <span matLine (click)="handleButtonClick(technology)">{{technology.name}}
                                 <button mat-icon-button *ngIf="technology.git">
-                                    <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'GIT')">
+                                    <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'Git')">
                                     </span>
                                 </button>
                             </span>

@@ -1,6 +1,8 @@
 import { ErrorHandler, Injectable, Injector, NgZone } from "@angular/core";
 import { GoogleAnalyticsService } from "./google-analytics.service";
 
+import { environment } from "../../../environments/environment";
+
 @Injectable()
 export class GlobalErrorHandlerService implements ErrorHandler {
   constructor(
@@ -21,5 +23,9 @@ export class GlobalErrorHandlerService implements ErrorHandler {
     const errMsg = error.message || error.toString();
     this.googleAnalyticsService.emitEvent("Error", errMsg);
     console.log(errMsg);
+
+    if (!environment.production) {
+      throw error;
+    }
   }
 }

@@ -6,8 +6,9 @@ import * as Rx from "rxjs/Rx";
 import { GoogleAnalyticsService } from "../../../shared/";
 
 enum LINK_TYPE {
-  GIT = "GIT",
-  URL = "URL"
+  GIT = "Git",
+  URL = "Url",
+  DOWNLOAD = "Download"
 }
 
 @Component({
@@ -19,26 +20,43 @@ export class HomeComponent {
   addresses: Observable<any> = this.httpClient.get(
     "./assets/configs/addresses.json"
   );
+
   socialNetworks: Observable<any> = this.httpClient.get(
     "./assets/configs/social-networks.json"
   );
+
   skills: Observable<any> = this.httpClient.get("./assets/configs/skills.json");
+
   projects: Observable<any> = this.httpClient.get(
     "./assets/configs/projects.json"
   );
 
-  handleButtonClick(btnData: any, type?: LINK_TYPE) {
+  resume = {
+    name: "Resume",
+    category: "Addresses",
+    pdf:
+      "https://docs.google.com/document/d/16jbB9ipqmReDTs5IkEcjt8wsuCRJDGXjNvg9r2l6XQo/export?format=pdf",
+    url:
+      "https://docs.google.com/document/d/16jbB9ipqmReDTs5IkEcjt8wsuCRJDGXjNvg9r2l6XQo"
+  };
+
+  handleButtonClick(btnData: any, type?: LINK_TYPE, fileType?: string) {
     event.preventDefault();
 
     this.googleAnalyticsService.emitEvent(
-      btnData.category + type === LINK_TYPE.GIT ? " Repo" : "",
+      `${btnData.category} ${type}`,
       btnData.name,
       $ => {
-        if (type === LINK_TYPE.GIT) {
-          window.open(btnData.git, "_blank");
-          return;
+        switch (type) {
+          case LINK_TYPE.GIT:
+            window.open(btnData.git, "_blank");
+            break;
+          case LINK_TYPE.DOWNLOAD:
+            window.open(btnData.pdf, "_blank");
+            break;
+          default:
+            window.open(btnData.url, "_blank");
         }
-        window.open(btnData.url, "_blank");
       }
     );
   }
