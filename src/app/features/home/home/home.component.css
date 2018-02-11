@@ -2,12 +2,30 @@
   cursor: pointer !important;
 }
 
-mat-icon {
+mat-icon.s-20 {
   font-size: 20px !important;
   height: 20px !important;
   width: 20px !important;
 }
 
-button, button:focus, button:hover {
-    outline: none;
+mat-icon.s-30 {
+  font-size: 30px !important;
+  width: 40px !important;
+
+  text-align: center;
+  margin-right: 10px;
+}
+
+.fa.fa-envelope {
+    font-size: 25px !important;
+}
+
+button,
+button:focus,
+button:hover {
+  outline: none;
+}
+
+.fa {
+  color: lightgreen;
 }

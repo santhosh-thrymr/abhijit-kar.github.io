@@ -3,13 +3,68 @@
         <mat-card-title>
             <img mat-card-avatar src="./assets/abhijit-kar.png"> Abhijit Kar
         </mat-card-title>
-        <mat-card-subtitle>Aspiring Full-Stack Developer, Budding Machine Learning Expert & Extensively Experienced, with a Fresher's Flair</mat-card-subtitle>
+        <mat-card-subtitle>
+            <span class="fa fa-quote-left"></span>
+            Aspiring Full-Stack Developer, Budding Machine Learning Expert & Extensively Experienced, with a Fresher's Flair
+            <span class="fa fa-quote-right"></span>
+        </mat-card-subtitle>
         <img mat-card-image src="./assets/images/adventure-time.jpg">
-        <mat-card-content></mat-card-content>
-        <button mat-fab color="primary" selected="true">
-            <mat-icon>launch</mat-icon>
-        </button>
-        <mat-card-footer class="mt-2">
+        <mat-card-content>
+            <mat-nav-list>
+                <h3 matSubheader>Addresses</h3>
+                <mat-list-item>
+                    <a matLine href="https://www.google.com/maps/?q=17.448490,78.358443" target="_blank">
+                        <mat-icon matListIcon class="fa fa-map-marker s-30"></mat-icon>
+                        Sweet Homes Gachibowli, Hyderabad Telangana, 500032
+                    </a>
+                </mat-list-item>
+                <mat-list-item>
+                    <a matLine href="http://www.abhijit-kar.com" target="_blank">
+                        <mat-icon matListIcon class="fa fa-home s-30"></mat-icon>
+                        abhijit-kar.com
+                    </a>
+                </mat-list-item>
+                <mat-list-item>
+                    <a matLine href="mailto:reachme@abhijit-kar.com">
+                        <mat-icon matListIcon class="fa fa-envelope s-30"></mat-icon>
+                        reachme@abhijit-kar.com
+                    </a>
+                </mat-list-item>
+                <mat-list-item>
+                    <a matLine href="https://github.com/abhijit-kar" target="_blank">
+                        <mat-icon matListIcon class="fa fa-github s-30"></mat-icon>
+                        github.com/abhijit-kar
+                    </a>
+                </mat-list-item>
+                <mat-list-item>
+                    <a matLine href="https://api.whatsapp.com/send?phone=918658610998" target="_blank">
+                        <mat-icon matListIcon class="fa fa-whatsapp s-30"></mat-icon>
+                        +91 (865) 861-0998
+                    </a>
+                </mat-list-item>
+                <mat-list-item>
+                    <a matLine href="https://api.whatsapp.com/send?phone=918658610998" target="_blank">
+                        <mat-icon matListIcon class="fa fa-phone s-30"></mat-icon>
+                        +91 (865) 861-0998
+                    </a>
+                </mat-list-item>
+            </mat-nav-list>
+        </mat-card-content>
+        <mat-card-actions>
+            <div class="col-12 mx-auto">
+                <button mat-icon-button>
+                    <mat-icon class="fa fa-twitter s-30"></mat-icon>
+                </button>
+                <button mat-icon-button>
+                    <mat-icon class="fa fa-google-plus s-30"></mat-icon>
+                </button>
+                <button mat-icon-button>
+                    <mat-icon class="fa fa-linkedin s-30"></mat-icon>
+                </button>
+            </div>
+        </mat-card-actions>
+        <mat-card-footer>
+            <mat-divider></mat-divider>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
                     Skills
@@ -19,24 +74,29 @@
                 </mat-panel-description>
                 <mat-list>
                     <mat-chip-list>
+                        <h3 matSubheader>Current</h3>
                         <mat-chip class="clickable" color="primary" selected="true">
                             <span class="mr-2">90%</span>
                             Angular
-                            <mat-icon class="ml-2">launch</mat-icon>
+                            <mat-icon class="s-20 ml-2">launch</mat-icon>
                         </mat-chip>
                         <mat-chip class="clickable" color="primary" selected="true">
                             <span class="mr-2">10%</span>
                             Google Cloud Platform
-                            <mat-icon class="ml-2">launch</mat-icon>
+                            <mat-icon class="s-20 ml-2">launch</mat-icon>
                         </mat-chip>
+                    </mat-chip-list>
+                    <mat-chip-list>
+                        <h3 matSubheader>Prior Experience</h3>
                         <mat-chip class="clickable">
                             <span class="mr-2">80%</span>
                             Unity
-                            <mat-icon class="ml-2">launch</mat-icon>
+                            <mat-icon class="s-20 ml-2">launch</mat-icon>
                         </mat-chip>
                     </mat-chip-list>
                 </mat-list>
             </mat-expansion-panel>
+            <mat-divider></mat-divider>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
                     Projects
@@ -45,17 +105,28 @@
                     Application of my Skills
                 </mat-panel-description>
                 <mat-list>
-                    <mat-chip-list>
-                        <mat-chip color="primary" selected="true">Angular Scaffolding</mat-chip>
-                        <mat-chip color="primary" selected="true">GraphQL</mat-chip>
-                        <mat-chip color="primary" selected="true">RESTFul API</mat-chip>
-                    </mat-chip-list>
-                </mat-list>
-                <mat-list>
-                    <mat-chip-list>
-                        <mat-chip>Monster Shuffle</mat-chip>
-                        <mat-chip>WYSIWYG Editor</mat-chip>
-                    </mat-chip-list>
+                    <mat-list-item>
+                        <mat-chip-list>
+                            <mat-chip class="clickable" color="primary" selected="true">
+                                Angular Scaffolding
+                                <mat-icon class="s-20 ml-2">launch</mat-icon>
+                            </mat-chip>
+                            <mat-chip class="clickable" color="primary" selected="true">
+                                GraphQL
+                                <mat-icon class="s-20 ml-2">launch</mat-icon>
+                            </mat-chip>
+                            <mat-chip class="clickable">
+                                RESTFul API
+                                <mat-icon class="s-20 ml-2">launch</mat-icon>
+                            </mat-chip>
+                        </mat-chip-list>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <mat-chip-list>
+                            <mat-chip>Monster Shuffle</mat-chip>
+                            <mat-chip disabled="true">WYSIWYG Editor</mat-chip>
+                        </mat-chip-list>
+                    </mat-list-item>
                 </mat-list>
             </mat-expansion-panel>
         </mat-card-footer>
