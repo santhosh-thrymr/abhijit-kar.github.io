@@ -13,17 +13,15 @@
         <mat-card-content>
             <mat-nav-list>
                 <mat-list-item *ngFor="let address of addresses | async" (click)="handleButtonClick(address)">
-                    <a matLine>
-                        <span matListIcon class="fa s-30 w-30" [ngClass]="address.class"></span>
-                        {{address.text}}
-                    </a>
+                    <span matListIcon class="fa s-30 w-30" [ngClass]="address.class" matLine></span>
+                    {{address.text}}
                 </mat-list-item>
             </mat-nav-list>
         </mat-card-content>
         <mat-card-actions>
             <div class="col-12 social-btns">
-                <button mat-fab *ngFor="let socialNetwork of socialNetworks" (click)="handleButtonClick(socialNetwork)">
-                    <a class="fa s-30" [ngClass]="socialNetwork.class"></a>
+                <button mat-fab *ngFor="let socialNetwork of socialNetworks | async" (click)="handleButtonClick(socialNetwork)">
+                    <span class="fa s-30" [ngClass]="socialNetwork.class"></span>
                 </button>
             </div>
         </mat-card-actions>
@@ -38,7 +36,13 @@
                     <mat-list-item *ngFor="let technology of skill.technologies">
                         <mat-progress-spinner color="primary" mode="determinate" [value]="technology.percentage" diameter="20">
                         </mat-progress-spinner>
-                        <span class="px-2">{{technology.percentage}}%</span> {{technology.name}}
+                        <span class="px-2" style.color="{{technology.percentage | highlighter}}">{{technology.percentage}}%</span>
+                        <span (click)="handleButtonClick(technology)">{{technology.name}}
+                        </span>
+                        <button mat-icon-button *ngIf="technology.git">
+                            <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'GIT')">
+                            </span>
+                        </button>
                     </mat-list-item>
                 </mat-nav-list>
             </mat-expansion-panel>
@@ -48,48 +52,19 @@
                     Projects
                 </mat-expansion-panel-header>
                 <mat-nav-list>
-                    <mat-divider [inset]="true"></mat-divider>
-                    <h3 matSubheader>Recent</h3>
-                    <mat-divider [inset]="true"></mat-divider>
-                    <mat-list-item>
-                        <a matLine href="http://www.abhijit-kar.com" target="_blank">
-                            Angular Scaffolding
-                        </a>
-                        <button mat-icon-button>
-                            <span class="fa fa-external-link s-20"></span>
-                        </button>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <a matLine href="http://www.abhijit-kar.com" target="_blank">
-                            GraphQL
-                        </a>
-                        <button mat-icon-button>
-                            <span class="fa fa-external-link s-20"></span>
-                        </button>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <a matLine href="http://www.abhijit-kar.com" target="_blank">
-                            RESTFul API
-                        </a>
-                        <button mat-icon-button>
-                            <span class="fa fa-external-link s-20"></span>
-                        </button>
-                    </mat-list-item>
-                    <mat-divider [inset]="true"></mat-divider>
-                    <h3 matSubheader>Way Back</h3>
-                    <mat-divider [inset]="true"></mat-divider>
-                    <mat-list-item>
-                        <a matLine>
-                            Monster Shuffle
-                        </a>
-                        <button mat-icon-button>
-                            <a matListIcon class="fa fa-github s-20" href="https://github.com/abhijit-kar" target="_blank">
-                            </a>
-                        </button>
-                        <button mat-icon-button>
-                            <span class="fa fa-external-link s-20"></span>
-                        </button>
-                    </mat-list-item>
+                    <ng-container *ngFor="let project of projects | async">
+                        <mat-divider [inset]="true"></mat-divider>
+                        <h3 matSubheader>{{project.header}}</h3>
+                        <mat-divider [inset]="true"></mat-divider>
+                        <mat-list-item *ngFor="let technology of project.technologies">
+                            <span matLine (click)="handleButtonClick(technology)">{{technology.name}}
+                                <button mat-icon-button *ngIf="technology.git">
+                                    <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'GIT')">
+                                    </span>
+                                </button>
+                            </span>
+                        </mat-list-item>
+                    </ng-container>
                 </mat-nav-list>
             </mat-expansion-panel>
         </mat-card-footer>

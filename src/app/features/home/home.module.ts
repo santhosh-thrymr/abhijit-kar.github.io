@@ -11,6 +11,7 @@ import {
 } from "@angular/material";
 
 import { HomeRoutingModule, HomeComponents } from "./home-routing.module";
+import { SharedModule } from "../../shared/shared.module";
 
 const MaterialModules = [
   MatCardModule,
@@ -26,6 +27,7 @@ const MaterialModules = [
     CommonModule,
     HomeRoutingModule,
     HttpClientModule,
+    SharedModule,
     ...MaterialModules
   ],
   declarations: HomeComponents

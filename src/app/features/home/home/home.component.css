@@ -2,12 +2,11 @@
   cursor: pointer !important;
 }
 
-span.s-20, a.s-20 {
+span.s-20 {
   font-size: 20px !important;
   vertical-align: sub;
 }
-
-span.s-30, a.s-30 {
+span.s-30 {
   font-size: 25px !important;
   text-align: center;
 }
@@ -31,7 +30,7 @@ button:hover {
 }
 
 .fa-quote-left {
-    color: #FFEB3B;
+  color: #ffeb3b;
 }
 
 .tagline {

@@ -5,6 +5,11 @@ import * as Rx from "rxjs/Rx";
 
 import { GoogleAnalyticsService } from "../../../shared/";
 
+enum LINK_TYPE {
+  GIT = "GIT",
+  URL = "URL"
+}
+
 @Component({
   selector: "app-home",
   templateUrl: "home.component.html",
@@ -14,30 +19,28 @@ export class HomeComponent {
   addresses: Observable<any> = this.httpClient.get(
     "./assets/configs/addresses.json"
   );
-
-  socialNetworks: any[] = [
-    {
-      name: "Twitter",
-      category: "Social",
-      class: "fa-twitter",
-      url: "https://twitter.com/AbhijitKarDikha"
-    },
-    {
-      name: "LinkedIn",
-      category: "Social",
-      class: "fa-linkedin",
-      url: "https://www.linkedin.com/in/abhijit-kar/"
-    }
-  ];
-
+  socialNetworks: Observable<any> = this.httpClient.get(
+    "./assets/configs/social-networks.json"
+  );
   skills: Observable<any> = this.httpClient.get("./assets/configs/skills.json");
+  projects: Observable<any> = this.httpClient.get(
+    "./assets/configs/projects.json"
+  );
 
-  handleButtonClick(btnData: any) {
+  handleButtonClick(btnData: any, type?: LINK_TYPE) {
     event.preventDefault();
-    
-    this.googleAnalyticsService.emitEvent(btnData.category, btnData.name, $ => {
-      window.open(btnData.url, "_blank");
-    });
+
+    this.googleAnalyticsService.emitEvent(
+      btnData.category + type === LINK_TYPE.GIT ? " Repo" : "",
+      btnData.name,
+      $ => {
+        if (type === LINK_TYPE.GIT) {
+          window.open(btnData.git, "_blank");
+          return;
+        }
+        window.open(btnData.url, "_blank");
+      }
+    );
   }
 
   constructor(
