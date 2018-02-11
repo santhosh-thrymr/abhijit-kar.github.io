@@ -1,0 +1,45 @@
+{
+  "configVersion": 1,
+  "index": "http://www.abhijit-kar.com/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "http://www.abhijit-kar.com/favicon.ico",
+        "http://www.abhijit-kar.com/index.html",
+        "http://www.abhijit-kar.com/0.2b6be30aa0bf65a43ef8.chunk.js",
+        "http://www.abhijit-kar.com/inline.af145acaedbd5e5370ea.bundle.js",
+        "http://www.abhijit-kar.com/main.98f6ba08b89a1eae6b30.bundle.js",
+        "http://www.abhijit-kar.com/polyfills.c61940c97106e575257f.bundle.js",
+        "http://www.abhijit-kar.com/styles.e43209b0444f3e636641.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "http://www.abhijit-kar.com/assets/manifest.json"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*",
+        "https:\\/\\/maxcdn\\.bootstrapcdn\\.com\\/bootstrap\\/3\\.3\\.7\\/css\\/bootstrap\\.min\\.css",
+        "https:\\/\\/maxcdn\\.bootstrapcdn\\.com\\/font-awesome\\/4\\.7\\.0\\/css\\/font-awesome\\.min\\.css"
+      ]
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "http://www.abhijit-kar.com/0.2b6be30aa0bf65a43ef8.chunk.js": "d6fde81f61a15a4a7d5c80162a7e7c7e058ffbd6",
+    "http://www.abhijit-kar.com/assets/manifest.json": "2da7fc7a0ec5de71f99c6c12e55f72c88f8df675",
+    "http://www.abhijit-kar.com/inline.af145acaedbd5e5370ea.bundle.js": "2b907a0af0ef6eb671502f48a65b3605e7c20831",
+    "http://www.abhijit-kar.com/main.98f6ba08b89a1eae6b30.bundle.js": "4384ad48ef232c283491432ff9e35dd69d453467",
+    "http://www.abhijit-kar.com/polyfills.c61940c97106e575257f.bundle.js": "8e74c6a65b63cfe6c111b07d37f68c9cba53bc0f",
+    "http://www.abhijit-kar.com/styles.e43209b0444f3e636641.bundle.css": "64d25e0f484cb4a4ad04dbf2a457d0357da0238a",
+    "http://www.abhijit-kar.com/favicon.ico": "5168201405c98593ddf271e249b323d7515b2139",
+    "http://www.abhijit-kar.com/index.html": "9d4e47904b2007f11e5f428457a499c592b2f99b"
+  }
+}

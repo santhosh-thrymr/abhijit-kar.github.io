@@ -1,0 +1,9 @@
+{
+  "name": "Abhijit Kar",
+  "short_name": "Abhijit Kar",
+  "theme_color": "#333333",
+  "background_color": "#333333",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/"
+}
