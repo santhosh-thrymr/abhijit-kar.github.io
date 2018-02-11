@@ -2,8 +2,9 @@
   cursor: pointer !important;
 }
 
-span.s-20 {
+span.s-20, a.s-20 {
   font-size: 20px !important;
+  vertical-align: sub;
 }
 
 span.s-30 {
@@ -26,7 +27,7 @@ button:hover {
 }
 
 .fa {
-  color: lightgreen;
+  color: #76f0af;
 }
 
 .tagline {

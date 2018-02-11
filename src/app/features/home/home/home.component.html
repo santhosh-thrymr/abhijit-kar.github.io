@@ -66,6 +66,7 @@
                     Skills
                 </mat-expansion-panel-header>
                 <mat-nav-list>
+                    <h3 matSubheader>Current</h3>
                     <mat-list-item>
                         <mat-progress-spinner color="primary" mode="determinate" value="90" diameter="20">
                         </mat-progress-spinner>
@@ -76,6 +77,7 @@
                         </mat-progress-spinner>
                         <span class="px-2">15%</span> Google Cloud Platform
                     </mat-list-item>
+                    <h3 matSubheader>Past Experience</h3>
                     <mat-list-item>
                         <mat-progress-spinner color="primary" mode="determinate" value="80" diameter="20">
                         </mat-progress-spinner>
@@ -89,6 +91,9 @@
                     Projects
                 </mat-expansion-panel-header>
                 <mat-nav-list>
+                    <mat-divider [inset]="true"></mat-divider>
+                    <h3 matSubheader>Recent</h3>
+                    <mat-divider [inset]="true"></mat-divider>
                     <mat-list-item>
                         <a matLine href="http://www.abhijit-kar.com" target="_blank">
                             Angular Scaffolding
@@ -113,10 +118,17 @@
                             <span class="fa fa-external-link s-20"></span>
                         </button>
                     </mat-list-item>
+                    <mat-divider [inset]="true"></mat-divider>
+                    <h3 matSubheader>Way Back</h3>
+                    <mat-divider [inset]="true"></mat-divider>
                     <mat-list-item>
-                        <a matLine href="http://www.abhijit-kar.com" target="_blank">
+                        <a matLine>
                             Monster Shuffle
                         </a>
+                        <button mat-icon-button>
+                            <a matListIcon class="fa fa-github s-20" href="https://github.com/abhijit-kar" target="_blank">
+                            </a>
+                        </button>
                         <button mat-icon-button>
                             <span class="fa fa-external-link s-20"></span>
                         </button>
