@@ -30,8 +30,12 @@ button:hover {
   color: #76f0af;
 }
 
+.fa-quote-left {
+    color: #FFEB3B;
+}
+
 .tagline {
-  color: deeppink;
+  color: cyan;
 }
 
 .social-btns {

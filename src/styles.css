@@ -30,5 +30,5 @@ body::-webkit-scrollbar-thumb
 }
 
 .mat-progress-spinner circle {
-    stroke: deeppink !important;
+    stroke: #FFEB3B !important;
 }
