@@ -9,8 +9,8 @@
       "urls": [
         "http://www.abhijit-kar.com/favicon.ico",
         "http://www.abhijit-kar.com/index.html",
-        "http://www.abhijit-kar.com/0.12e5720510ed23804009.chunk.js",
-        "http://www.abhijit-kar.com/inline.a7a2c5a78a28e042fa98.bundle.js",
+        "http://www.abhijit-kar.com/0.2d522bca920f04a9c83d.chunk.js",
+        "http://www.abhijit-kar.com/inline.847b3920f883fc03c146.bundle.js",
         "http://www.abhijit-kar.com/main.a224fb2964eed2c05f33.bundle.js",
         "http://www.abhijit-kar.com/polyfills.c61940c97106e575257f.bundle.js",
         "http://www.abhijit-kar.com/styles.6ade5eb5d0c7fe909a7a.bundle.css"
@@ -33,13 +33,13 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "http://www.abhijit-kar.com/0.12e5720510ed23804009.chunk.js": "ad8b561704a9b18e1c3a7e4eb2593f44f351ebcd",
+    "http://www.abhijit-kar.com/0.2d522bca920f04a9c83d.chunk.js": "71f4cb819192072be2c28af711e47ac1d134cccc",
     "http://www.abhijit-kar.com/assets/manifest.json": "2da7fc7a0ec5de71f99c6c12e55f72c88f8df675",
-    "http://www.abhijit-kar.com/inline.a7a2c5a78a28e042fa98.bundle.js": "c40e20a3c53ce5722a8cc3fe30bc256b375aa8f3",
+    "http://www.abhijit-kar.com/inline.847b3920f883fc03c146.bundle.js": "7496307d82df682aae139112f7526d4b633d2188",
     "http://www.abhijit-kar.com/main.a224fb2964eed2c05f33.bundle.js": "5c8c7f97200f14d11048936564be901118fb037b",
     "http://www.abhijit-kar.com/polyfills.c61940c97106e575257f.bundle.js": "8e74c6a65b63cfe6c111b07d37f68c9cba53bc0f",
     "http://www.abhijit-kar.com/styles.6ade5eb5d0c7fe909a7a.bundle.css": "1dcba20c09de80b965144edc5c3e7f92eb26b3cd",
     "http://www.abhijit-kar.com/favicon.ico": "5168201405c98593ddf271e249b323d7515b2139",
-    "http://www.abhijit-kar.com/index.html": "96400d9d6f407504d59b41f7c449044290384aac"
+    "http://www.abhijit-kar.com/index.html": "ba318b3d9786a12a1167adc31a38b334f06ffb1e"
   }
 }
