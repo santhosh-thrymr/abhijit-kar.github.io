@@ -20,12 +20,12 @@ export class GlobalErrorHandlerService implements ErrorHandler {
   }
 
   emitPrintAndLogError(error) {
-    const errMsg = error.message || error.toString();
-    this.googleAnalyticsService.emitEvent("Error", errMsg);
-    console.log(errMsg);
-
     if (!environment.production) {
       throw error;
+    } else {
+      const errMsg = error.message || error.toString();
+      this.googleAnalyticsService.emitEvent("Error", errMsg);
+      console.log(errMsg);
     }
   }
 }
