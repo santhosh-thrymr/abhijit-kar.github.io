@@ -16,8 +16,8 @@
                 <mat-list-item>
                     <span matLine>
                         <span (click)="handleButtonClick(resume)">
-                            <span matListIcon class="fa fa-file-text s-30 w-30"></span>
-                            Résumé
+                            <span matListIcon class="fa fa-file-text s-20 w-30"></span>
+                            Resume
                         </span>
                     </span>
                     <button mat-icon-button>
@@ -79,6 +79,65 @@
                         </mat-list-item>
                     </ng-container>
                 </mat-nav-list>
+            </mat-expansion-panel>
+            <mat-divider></mat-divider>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    Awards
+                </mat-expansion-panel-header>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        Digital Super Star
+                    </mat-expansion-panel-header>
+                    Digital Super Star - Awarded by Cognizant for developing a framework, which allowed deployment to HTC Vive, Gear VR, Oculus
+                    Rift, Mobile and PC all from one Unity Project, resulting in reduction of countless development hours
+                    and retention of client projects worth half a million dollars, including Midwifery Project (bit.ly/midwifery-vr)
+                </mat-expansion-panel>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        Junior Scientist
+                    </mat-expansion-panel-header>
+                    Received it for making an intrusion detection system, that alerted user on unauthorized entry to their house via message
+                </mat-expansion-panel>
+            </mat-expansion-panel>
+            <mat-divider></mat-divider>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    Education
+                </mat-expansion-panel-header>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        B.Tech in Information Technology
+                    </mat-expansion-panel-header>
+                    Graduated from C.V. Raman College of Engineering, Bhubaneswar, Odisha
+                </mat-expansion-panel>
+            </mat-expansion-panel>
+            <mat-divider></mat-divider>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    FAQs
+                </mat-expansion-panel-header>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        Hobbies
+                    </mat-expansion-panel-header>
+                    To add new skills to my arsenal, keep the armoury stocked and from time to time, use the stockpile to create killer apps
+                </mat-expansion-panel>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        Strengths
+                    </mat-expansion-panel-header>
+                    ...
+                </mat-expansion-panel>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        Weaknesses
+                    </mat-expansion-panel-header>
+                    ...
+                </mat-expansion-panel>
             </mat-expansion-panel>
         </mat-card-footer>
     </mat-card>

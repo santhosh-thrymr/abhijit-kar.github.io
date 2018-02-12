@@ -10,6 +10,7 @@
 span.s-20 {
   font-size: 20px !important;
   vertical-align: sub;
+  text-align: center;
 }
 span.s-30 {
   font-size: 25px !important;
@@ -17,11 +18,11 @@ span.s-30 {
 }
 span.w-30 {
   width: 30px !important;
-  vertical-align: bottom;
+  vertical-align: baseline;
 }
 
 .fa.fa-envelope {
-  font-size: 25px !important;
+  font-size: 20px !important;
 }
 
 button,
