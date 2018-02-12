@@ -44,7 +44,7 @@ export class HomeComponent {
     event.preventDefault();
 
     this.googleAnalyticsService.emitEvent(
-      `${btnData.category} ${linkType}`,
+      `${btnData.category} ${linkType || ""}`,
       btnData.name,
       $ => {
         let url: string;
