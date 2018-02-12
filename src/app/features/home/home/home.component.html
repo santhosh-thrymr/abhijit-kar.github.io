@@ -49,7 +49,7 @@
                     <mat-list-item *ngFor="let technology of skill.technologies">
                         <mat-progress-spinner color="primary" mode="determinate" [value]="technology.percentage" diameter="20">
                         </mat-progress-spinner>
-                        <span class="px-2" style.color="{{technology.percentage | highlighter}}">{{technology.percentage}}%</span>
+                        <span class="px-2" style.color="{{technology.percentage | highlighter}}">{{technology.percentage | number:'2.0-0'}}%</span>
                         <span (click)="handleButtonClick(technology)">{{technology.name}}
                         </span>
                         <button mat-icon-button *ngIf="technology.git">
