@@ -57,6 +57,10 @@ export class HomeComponent {
             url = btnData.pdf;
             break;
           default:
+            if (btnData.name === "Phone" || btnData.name === "Email") {
+              window.location.href = btnData.url;
+              return;
+            }
             url = btnData.url;
         }
         window.open(url, "_blank");
