@@ -2,6 +2,10 @@
   cursor: pointer !important;
 }
 
+.author {
+  padding-left: 10px;
+}
+
 span.s-20 {
   font-size: 20px !important;
   vertical-align: sub;
