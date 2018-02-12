@@ -31,7 +31,7 @@
         "url": "http://www.abhijit-kar.com/pragmatic-design-patterns/"
       },
       {
-        "name": "RESTfull Service Creation",
+        "name": "Restful API",
         "category": "Skills",
         "percentage": 52,
         "git": "https://github.com/abhijit-kar/restful-go",
@@ -64,6 +64,13 @@
         "percentage": 15,
         "git": "https://github.com/abhijit-kar/dont-let-him-poo",
         "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
+      },
+      {
+        "name": "GraphQL",
+        "category": "Skills",
+        "percentage": 5,
+        "git": "https://github.com/abhijit-kar/graphql-go",
+        "url": "http://www.abhijit-kar.com/graphiql/"
       }
     ]
   },
