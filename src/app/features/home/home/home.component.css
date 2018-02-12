@@ -38,7 +38,17 @@ button:hover {
 }
 
 .tagline {
+  color: #f6d781;
+}
+
+.mat-nav-list .mat-list-item {
   color: cyan;
+}
+.mat-nav-list .mat-subheader {
+  color: #f6d781;
+}
+.mat-expansion-panel .mat-expansion-panel-header {
+  color: #FFEB3B;
 }
 
 .social-btns {
