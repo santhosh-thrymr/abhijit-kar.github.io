@@ -3,7 +3,7 @@
     "header": "Recent",
     "technologies": [
       {
-        "name": "Don't Let Him Poo",
+        "name": "Don't let him Poo",
         "category": "Projects",
         "git": "https://github.com/abhijit-kar/dont-let-him-poo",
         "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
@@ -15,13 +15,13 @@
         "url": "http://www.abhijit-kar.com/angular-scaffolding/"
       },
       {
-        "name": "GraphQL",
+        "name": "GraphQL Go",
         "category": "Projects",
-        "git": "https://github.com/abhijit-kar/graph-go",
+        "git": "https://github.com/abhijit-kar/graphql-go",
         "url": "http://www.abhijit-kar.com/graphiql/"
       },
       {
-        "name": "RESTFul GO API",
+        "name": "Restful Go",
         "category": "Projects",
         "git": "https://github.com/abhijit-kar/restful-go",
         "url": "http://www.abhijit-kar.com/swagger-editor/"
@@ -65,7 +65,7 @@
         "url": "https://abhijit-kar.itch.io/monster-shuffle"
       },
       {
-        "name": "Box2D Editor for Flash",
+        "name": "Box2D editor for Flash",
         "category": "Projects",
         "url":
           "https://drive.google.com/open?id=1FOY9xaz-jHoKY7Uqhd0v-HKroSy2M93n"

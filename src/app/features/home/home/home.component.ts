@@ -47,23 +47,20 @@ export class HomeComponent {
       `${btnData.category} ${linkType || ""}`,
       btnData.name,
       $ => {
-        let url: string;
-
         switch (linkType) {
           case LINK_TYPE.GIT:
-            url = btnData.git;
+            window.open(btnData.git, "_blank");
             break;
           case LINK_TYPE.DOWNLOAD:
-            url = btnData.pdf;
+            window.location.href = btnData.pdf;
             break;
           default:
             if (btnData.name === "Phone" || btnData.name === "Email") {
               window.location.href = btnData.url;
-              return;
+              break;
             }
-            url = btnData.url;
+            window.open(btnData.url, "_blank");
         }
-        window.open(url, "_blank");
       }
     );
   }
