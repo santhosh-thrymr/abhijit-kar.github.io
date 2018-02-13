@@ -25,6 +25,10 @@ span.w-30 {
   font-size: 20px !important;
 }
 
+.sub-panel {
+  color: #f6d781 !important;
+}
+
 button,
 button:focus,
 button:hover {
