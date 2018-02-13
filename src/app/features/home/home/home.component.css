@@ -25,6 +25,14 @@ span.w-30 {
   font-size: 20px !important;
 }
 
+.panel-content {
+  color: cyan !important;
+}
+
+.panel-btn {
+  color: lime !important;
+}
+
 .sub-panel {
   color: #f6d781 !important;
 }

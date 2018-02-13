@@ -91,19 +91,26 @@
                             <mat-expansion-panel-header class="sub-panel">
                                 Digital Super Star
                             </mat-expansion-panel-header>
-                            Digital Super Star - Awarded by Cognizant for developing a framework, which allowed deployment to HTC Vive, Gear VR, Oculus
-                            Rift, Mobile and PC all from one Unity Project, resulting in reduction of countless development
-                            hours and retention of client projects worth half a million dollars, including Midwifery Project
-                            (bit.ly/midwifery-vr)
+                            <span class="panel-content">Digital Super Star - Awarded by Cognizant for developing a framework, which allowed deployment
+                                to HTC Vive, Gear VR, Oculus Rift, Mobile and PC all from one Unity Project, resulting in
+                                reduction of countless development hours and retention of client projects worth half a million
+                                dollars, including Midwifery Project
+                            </span>
                             <mat-action-row>
-                                <button mat-button>Midwifery</button>
+                                <button mat-raised-button class="panel-btn" (click)="handleButtonClick({
+                                    name: 'Midwifery',
+                                    category: 'Projects',
+                                    url: 'https://www.youtube.com/watch?v=aKVkieNf4tU'
+                                  })">Midwifery</button>
                             </mat-action-row>
                         </mat-expansion-panel>
                         <mat-expansion-panel>
                             <mat-expansion-panel-header class="sub-panel">
                                 Junior Scientist
                             </mat-expansion-panel-header>
-                            Received it for making an intrusion detection system, that alerted user on unauthorized entry to their house via message
+                            <span class="panel-content">Received it for making an intrusion detection system, that alerted user on unauthorized entry
+                                to their house via message
+                            </span>
                         </mat-expansion-panel>
                     </mat-accordion>
                 </mat-expansion-panel>
@@ -117,7 +124,7 @@
                             <mat-expansion-panel-header class="sub-panel">
                                 B.Tech in Information Technology
                             </mat-expansion-panel-header>
-                            Graduated from C.V. Raman College of Engineering, Bhubaneswar, Odisha
+                            <span class="panel-content">Graduated from C.V. Raman College of Engineering, Bhubaneswar, Odisha</span>
                         </mat-expansion-panel>
                     </mat-accordion>
                 </mat-expansion-panel>
@@ -131,19 +138,20 @@
                             <mat-expansion-panel-header class="sub-panel">
                                 Hobbies
                             </mat-expansion-panel-header>
-                            To add new skills to my arsenal, keep the armoury stocked and from time to time, use the stockpile to create killer apps
+                            <span class="panel-content">To add new skills to my arsenal, keep the armoury stocked and from time to time, use the stockpile
+                                to create killer apps</span>
                         </mat-expansion-panel>
                         <mat-expansion-panel>
                             <mat-expansion-panel-header class="sub-panel">
                                 Strengths
                             </mat-expansion-panel-header>
-                            ...
+                            <span class="panel-content">...</span>
                         </mat-expansion-panel>
                         <mat-expansion-panel>
                             <mat-expansion-panel-header class="sub-panel">
                                 Weaknesses
                             </mat-expansion-panel-header>
-                            ...
+                            <span class="panel-content">...</span>
                         </mat-expansion-panel>
                     </mat-accordion>
                 </mat-expansion-panel>
