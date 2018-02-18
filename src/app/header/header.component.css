@@ -19,6 +19,9 @@ mat-card-title {
 mat-card-title h3 {
   font-weight: 300;
 }
+mat-card-actions {
+  padding: 0;
+}
 
 h3 a {
   color: var(--dark);
@@ -52,4 +55,10 @@ h3 a {
   height: 1px;
   position: absolute;
   left: 0;
+}
+
+@media screen and (max-width: 520px) {
+  mat-card {
+    width: 95%;
+  }
 }
