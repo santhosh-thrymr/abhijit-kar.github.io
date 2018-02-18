@@ -1,7 +1,9 @@
 <div class="flex-container">
     <mat-card class="mx-auto my-2 col-md-5 col-11 mat-elevation-z4">
         <mat-card-title>
-            <h3 class="center mb-1">Abhijit Kar</h3>
+            <h3 class="center mb-1">
+                <a routerLink="" routerLinkActive>Abhijit Kar</a>
+            </h3>
         </mat-card-title>
         <mat-progress-bar mode="indeterminate" *ngIf="loading; else showDivider"></mat-progress-bar>
         <ng-template #showDivider>
@@ -10,7 +12,8 @@
         <mat-card-actions class="goog-nav-bar-container">
             <nav mat-tab-nav-bar class="goog-nav-bar-container">
                 <div class="goog-nav-bar">
-                    <a mat-tab-link *ngFor="let route of routes" [routerLink]="route.url" routerLinkActive [active]="currentUrl === route.url" (click)="currentUrl = route.url">
+                    <a mat-tab-link *ngFor="let route of routes" [routerLink]="route.url" routerLinkActive [active]="currentUrl === route.url"
+                        (click)="currentUrl = route.url">
                         {{route.label | uppercase}}
                     </a>
                 </div>

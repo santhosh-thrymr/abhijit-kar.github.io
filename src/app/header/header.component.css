@@ -15,6 +15,12 @@ mat-card-title h3 {
   font-family: "Domine", Cursive;
 }
 
+h3 a {
+  color: var(--dark);
+  text-decoration: none;
+  text-decoration-color: inherit;
+}
+
 .goog-nav-bar-container {
   overflow: overlay;
   border: none !important;

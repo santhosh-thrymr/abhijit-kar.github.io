@@ -55,7 +55,7 @@ export class HeaderComponent {
     }
   ];
 
-  currentUrl = this.routes[0].url;
+  currentUrl: string;
 
   loading: boolean;
 
