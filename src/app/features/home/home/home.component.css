@@ -36,18 +36,21 @@ button:hover {
 .social-btns button {
   margin: 0 5px;
 }
-
 .goog-nav-bar-container {
   overflow: overlay;
   border: none !important;
 }
 .goog-nav-bar {
-  height: 25px;
+  height: 35px;
   width: 145%;
 }
 
+.mat-form-field-underline {
+  display: none !important;
+}
+
 .mat-tab-link {
-  height: 25px;
+  height: 35px;
   padding: 0 20px;
   min-width: 0;
   text-decoration: none !important;
@@ -60,8 +63,22 @@ button:hover {
   text-transform: uppercase !important;
 }
 
+.center {
+  text-align: center;
+}
+
 .mat-button-toggle-checked {
   color: var(--primary) !important;
   background-color: var(--light);
   border-bottom: 2px solid var(--primary) !important;
+}
+
+mat-card.header {
+  padding-top: 5px;
+  padding-bottom: 0;
+  border-radius: 10px;
+}
+
+.header h3 {
+  font-family: 'Satisfy', Cursive;
 }
