@@ -1,0 +1,9 @@
+mat-sidenav {
+  width: 25em;
+}
+
+@media screen and (max-width: 520px) {
+  mat-sidenav {
+    width: 18em;
+  }
+}
