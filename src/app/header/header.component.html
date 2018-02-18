@@ -3,7 +3,10 @@
         <mat-card-title>
             <h3 class="center mb-1">Abhijit Kar</h3>
         </mat-card-title>
-        <mat-divider></mat-divider>
+        <mat-progress-bar mode="indeterminate" *ngIf="loading; else showDivider"></mat-progress-bar>
+        <ng-template #showDivider>
+            <mat-divider></mat-divider>
+        </ng-template>
         <mat-card-actions class="goog-nav-bar-container">
             <nav mat-tab-nav-bar class="goog-nav-bar-container">
                 <div class="goog-nav-bar">

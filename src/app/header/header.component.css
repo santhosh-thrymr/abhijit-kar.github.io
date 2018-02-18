@@ -21,7 +21,7 @@ mat-card-title h3 {
 }
 .goog-nav-bar {
   height: 35px;
-  width: 113%;
+  width: 45em;
 }
 
 .mat-tab-link {
@@ -32,4 +32,10 @@ mat-card-title h3 {
 }
 .mat-tab-label-active {
   color: var(--primary) !important;
+}
+
+.mat-progress-bar {
+  height: 1px;
+  position: absolute;
+  left: 0;
 }

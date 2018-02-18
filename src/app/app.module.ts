@@ -3,7 +3,12 @@ import { NgModule } from "@angular/core";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 
-import { MatCardModule, MatTabsModule, MatListModule } from "@angular/material";
+import {
+  MatCardModule,
+  MatTabsModule,
+  MatListModule,
+  MatProgressBarModule
+} from "@angular/material";
 
 import { environment } from "../environments/environment";
 
@@ -13,7 +18,12 @@ import { SharedModule } from "./shared/shared.module";
 import { FeaturesModule } from "./features/features.module";
 import { AppComponent, HeaderComponent } from "./";
 
-const MaterialModules = [MatCardModule, MatTabsModule, MatListModule];
+const MaterialModules = [
+  MatCardModule,
+  MatTabsModule,
+  MatListModule,
+  MatProgressBarModule
+];
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
