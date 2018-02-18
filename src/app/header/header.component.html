@@ -1,9 +1,12 @@
 <div class="flex-container">
-    <div class="mx-auto my-4 col-md-5">
+    <div class="mx-auto my-4 col-md-5 hamburger-container">
         <button mat-icon-button (click)="handleHamburgerClick()">
             <i class="fa fa-bars"></i>
         </button>
         <img src="./assets/images/abhijit-kar.png" class="avatar rounded mx-auto d-block">
+        <button mat-icon-button class="float-right" (click)="handleEnvelopeClick()">
+            <i class="fa fa-envelope"></i>
+        </button>
     </div>
     <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3">
         <mat-card-title>

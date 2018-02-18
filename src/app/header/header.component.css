@@ -66,13 +66,20 @@ h3 a {
   margin: 0;
 }
 
-.fa-bars {
+.fa-bars, .fa-envelope {
   color: var(--primary);
   font-size: 1.5em;
+}
+
+.hamburger-container {
+  padding: 0;
 }
 
 @media screen and (max-width: 520px) {
   mat-card {
     width: 96%;
+  }
+  .avatar {
+    left: 41%;
   }
 }

@@ -1,9 +1,10 @@
 <mat-sidenav-container>
-    <mat-sidenav #sidenav>
+    <mat-sidenav #info>
         Test
     </mat-sidenav>
+    <mat-sidenav position="end" #social>End content</mat-sidenav>
     <mat-sidenav-content>
-        <ak-header (onHamburgerClick)="sidenav.toggle()"></ak-header>
+        <ak-header (onHamburgerClick)="info.toggle()" (onEnvelopeClick)="social.toggle()"></ak-header>
 
         <div class="flex-container my-1">
             <router-outlet></router-outlet>

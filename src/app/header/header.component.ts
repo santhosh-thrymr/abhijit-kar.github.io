@@ -18,8 +18,11 @@ import {
 export class HeaderComponent {
   @Output()
   onHamburgerClick: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output()
+  onEnvelopeClick: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   isHamburgerOpen: boolean;
+  isEnvelopeOpen: boolean;
 
   routes = [
     {
@@ -85,7 +88,11 @@ export class HeaderComponent {
 
   handleHamburgerClick() {
     this.isHamburgerOpen = !this.isHamburgerOpen;
-
     this.onHamburgerClick.emit(this.isHamburgerOpen);
+  }
+
+  handleEnvelopeClick() {
+    this.isEnvelopeOpen = !this.isEnvelopeOpen;
+    this.onEnvelopeClick.emit(this.isEnvelopeOpen);
   }
 }
