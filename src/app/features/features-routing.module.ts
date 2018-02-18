@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: "experience", loadChildren: "./experience/experience.module#ExperienceModule" },
   { path: "awards", loadChildren: "./awards/awards.module#AwardsModule" },
   { path: "education", loadChildren: "./education/education.module#EducationModule" },
+  { path: "contact", loadChildren: "./contact/contact.module#ContactModule" }
 ];
 
 @NgModule({

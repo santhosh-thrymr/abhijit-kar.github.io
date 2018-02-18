@@ -59,6 +59,10 @@ export class HeaderComponent {
     {
       url: "/education",
       label: "Education"
+    },
+    {
+      url: "/contact",
+      label: "Contact"
     }
   ];
 

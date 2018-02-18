@@ -1,18 +1,20 @@
-mat-sidenav-container {
+iframe {
+  width: 100%;
   position: absolute;
-  bottom: 0;
   top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
+  height: 100%;
 }
 
-mat-sidenav {
+mat-card {
+  height: 63em;
   overflow: hidden;
-  width: 24em;
 }
 
 @media screen and (max-width: 520px) {
-  mat-sidenav {
-    width: 16em;
+  mat-card {
+    width: 96%;
   }
 }

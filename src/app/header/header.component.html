@@ -4,7 +4,7 @@
             <i class="fa fa-bars"></i>
         </button>
         <img src="./assets/images/abhijit-kar.png" class="avatar rounded mx-auto d-block">
-        <button mat-icon-button class="float-right" (click)="handleEnvelopeClick()">
+        <button mat-icon-button class="float-right" routerLink="contact" routerLinkActive>
             <i class="fa fa-envelope"></i>
         </button>
     </div>
@@ -21,7 +21,7 @@
         <mat-card-actions class="goog-nav-bar-container">
             <nav mat-tab-nav-bar disableRipple class="goog-nav-bar-container">
                 <div class="goog-nav-bar">
-                    <a mat-tab-link *ngFor="let route of routes" [routerLink]="route.url" routerLinkActive [active]="currentUrl === route.url"
+                    <a mat-tab-link matFocus="true" *ngFor="let route of routes" [routerLink]="route.url" routerLinkActive [active]="currentUrl === route.url"
                         (click)="currentUrl = route.url">
                         {{route.label | uppercase}}
                     </a>
