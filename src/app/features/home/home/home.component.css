@@ -39,6 +39,6 @@ button:hover {
 
 @media screen and (max-width: 520px) {
   mat-card {
-    width: 95%;
+    width: 96%;
   }
 }
