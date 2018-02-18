@@ -16,3 +16,11 @@
 mat-card {
   border-radius: 5px !important;
 }
+
+.rounded {
+  border-radius: 50% !important;
+}
+
+.mat-icon-button:focus {
+  outline: none;
+}

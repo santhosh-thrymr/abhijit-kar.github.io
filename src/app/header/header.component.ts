@@ -1,5 +1,5 @@
 // Library
-import { Component } from "@angular/core";
+import { Component, Output, EventEmitter } from "@angular/core";
 
 import {
   Router,
@@ -16,6 +16,11 @@ import {
   styleUrls: ["header.component.css"]
 })
 export class HeaderComponent {
+  @Output()
+  onHamburgerClick: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  isHamburgerOpen: boolean;
+
   routes = [
     {
       url: "/",
@@ -76,5 +81,11 @@ export class HeaderComponent {
     } else if (event instanceof NavigationError) {
       this.loading = false;
     }
+  }
+
+  handleHamburgerClick() {
+    this.isHamburgerOpen = !this.isHamburgerOpen;
+
+    this.onHamburgerClick.emit(this.isHamburgerOpen);
   }
 }

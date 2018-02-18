@@ -7,7 +7,9 @@ import {
   MatCardModule,
   MatTabsModule,
   MatListModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  MatSidenavModule,
+  MatButtonModule
 } from "@angular/material";
 
 import { environment } from "../environments/environment";
@@ -22,7 +24,9 @@ const MaterialModules = [
   MatCardModule,
   MatTabsModule,
   MatListModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  MatSidenavModule,
+  MatButtonModule
 ];
 
 @NgModule({

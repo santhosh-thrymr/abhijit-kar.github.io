@@ -1,5 +1,12 @@
-<ak-header></ak-header>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        Test
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <ak-header (onHamburgerClick)="sidenav.toggle()"></ak-header>
 
-<div class="flex-container my-1">
-    <router-outlet></router-outlet>
-</div>
+        <div class="flex-container my-1">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
