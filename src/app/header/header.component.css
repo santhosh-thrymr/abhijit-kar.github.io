@@ -64,6 +64,10 @@ h3 a {
   left: 45%;
   top: -6px;
   margin: 0;
+  cursor: pointer;
+}
+.avatar:focus {
+  outline: none;
 }
 
 .fa-bars, .fa-envelope {
