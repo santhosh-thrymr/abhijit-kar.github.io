@@ -1,4 +1,29 @@
 <div class="flex-container">
+    <mat-card class="mx-auto my-2 col-md-5 col-11 mat-elevation-z8">
+
+        <mat-divider></mat-divider>
+        <mat-card-actions class="goog-nav-bar-container">
+            <!-- <mat-tab-group class="demo-tab-group">
+                <mat-tab label="Tab 1">
+                </mat-tab>
+                <mat-tab label="Tab 2">
+                </mat-tab>
+                <mat-tab label="Tab 3">
+                </mat-tab>
+                <mat-tab label="Tab 4">
+                </mat-tab>
+                <mat-tab label="Tab 5">
+                </mat-tab>
+            </mat-tab-group> -->
+            <nav mat-tab-nav-bar class="goog-nav-bar-container">
+                <div class="goog-nav-bar">
+                    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive [active]="currentLink === link" (click)="currentLink = link">
+                        {{link.label | uppercase}}
+                    </a>
+                </div>
+            </nav>
+        </mat-card-actions>
+    </mat-card>
     <mat-card class="mx-auto my-5 col-md-5 col-11 mat-elevation-z8">
         <mat-card-title>
             <img mat-card-avatar class="mat-elevation-z8" src="./assets/images/abhijit-kar.png">

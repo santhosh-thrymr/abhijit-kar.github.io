@@ -36,3 +36,32 @@ button:hover {
 .social-btns button {
   margin: 0 5px;
 }
+
+.goog-nav-bar-container {
+  overflow: overlay;
+  border: none !important;
+}
+.goog-nav-bar {
+  height: 25px;
+  width: 145%;
+}
+
+.mat-tab-link {
+  height: 25px;
+  padding: 0 20px;
+  min-width: 0;
+  text-decoration: none !important;
+}
+.mat-tab-label-active {
+  color: var(--primary) !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.mat-button-toggle-checked {
+  color: var(--primary) !important;
+  background-color: var(--light);
+  border-bottom: 2px solid var(--primary) !important;
+}
