@@ -75,12 +75,14 @@ button:hover {
     height: 10em;
   }
   .avatar {
-    top: 2.5em;
-    width: 3em;
-    height: 3em;
+    top: 2.2em;
+    width: 4em;
+    height: 4em;
   }
   .author {
-    top: 3.5em;
+    top: 6.5em;
+    font-size: 1em;
+    font-weight: initial;
   }
   .overlay {
     height: 10em;
