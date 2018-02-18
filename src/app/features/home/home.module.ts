@@ -9,10 +9,7 @@ import {
   MatIconModule,
   MatProgressSpinnerModule,
   MatButtonModule,
-  MatButtonToggleModule,
-  MatTabsModule,
-  MatFormFieldModule,
-  MatInputModule
+  MatTabsModule
 } from "@angular/material";
 
 import { HomeRoutingModule, HomeComponents } from "./home-routing.module";
@@ -25,10 +22,7 @@ const MaterialModules = [
   MatIconModule,
   MatProgressSpinnerModule,
   MatButtonModule,
-  MatButtonToggleModule,
-  MatTabsModule,
-  MatFormFieldModule,
-  MatInputModule
+  MatTabsModule
 ];
 
 @NgModule({

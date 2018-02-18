@@ -3,11 +3,18 @@
 /* @import "~@angular/material/prebuilt-themes/pink-bluegrey.css"; */
 /* @import "~@angular/material/prebuilt-themes/purple-green.css"; */
 
-::-webkit-scrollbar-track, ::-webkit-scrollbar, ::-webkit-scrollbar-thumb
-{
-	display: none;
+::-webkit-scrollbar-track,
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+  display: none;
 }
 
 .mat-progress-spinner circle {
-    stroke: #FFEB3B !important;
+  stroke: #ffeb3b !important;
+}
+
+mat-card {
+  padding-top: 5px !important;
+  padding-bottom: 0 !important;
+  border-radius: 10px !important;
 }

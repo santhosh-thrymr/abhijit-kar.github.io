@@ -1,0 +1,35 @@
+.center {
+  text-align: center;
+}
+
+.mat-button-toggle-checked {
+  color: var(--primary) !important;
+  background-color: var(--light);
+  border-bottom: 2px solid var(--primary) !important;
+}
+
+mat-card-title {
+  margin: 0;
+}
+mat-card-title h3 {
+  font-family: "Domine", Cursive;
+}
+
+.goog-nav-bar-container {
+  overflow: overlay;
+  border: none !important;
+}
+.goog-nav-bar {
+  height: 35px;
+  width: 113%;
+}
+
+.mat-tab-link {
+  height: 35px;
+  padding: 0 20px;
+  min-width: 0;
+  text-decoration: none !important;
+}
+.mat-tab-label-active {
+  color: var(--primary) !important;
+}

@@ -17,43 +17,6 @@ enum LINK_TYPE {
   styleUrls: ["home.component.css"]
 })
 export class HomeComponent {
-  navLinks = [
-    {
-      path: "/featured",
-      label: "Featured"
-    },
-    {
-      path: "/about",
-      label: "About"
-    },
-    {
-      path: "/skills",
-      label: "Skills"
-    },
-    {
-      path: "/projects",
-      label: "Projects"
-    },
-    {
-      path: "/blog",
-      label: "Blog"
-    },
-    {
-      path: "/medium",
-      label: "Medium"
-    },
-    {
-      path: "/stack-overflow",
-      label: "Stack Overflow"
-    },
-    {
-      path: "/quora",
-      label: "Quora"
-    }
-  ];
-
-  currentLink = this.navLinks[0];
-
   addresses: Observable<any> = this.httpClient.get(
     "./assets/configs/addresses.json"
   );
