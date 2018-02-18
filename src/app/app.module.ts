@@ -2,7 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
 import { ServiceWorkerModule } from "@angular/service-worker";
-import { NoopAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import {
   MatCardModule,
@@ -45,7 +45,7 @@ const MaterialModules = [
     ServiceWorkerModule.register("/ngsw-worker.js", {
       enabled: environment.production
     }),
-    NoopAnimationsModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     FeaturesModule,
     AppRoutingModule,

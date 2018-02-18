@@ -19,7 +19,7 @@
                     <span class="px-2" style.color="{{technology.percentage | highlighter}}">{{technology.percentage | number:'2.0-0'}}%</span>
                     <span (click)="handleButtonClick(technology)">{{technology.name}}
                     </span>
-                    <button mat-icon-button *ngIf="technology.git">
+                    <button mat-icon-button *ngIf="technology.git" tabindex="-1">
                         <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'Git')">
                         </span>
                     </button>
@@ -39,7 +39,7 @@
                     <mat-list-item *ngFor="let technology of project.technologies">
                         <span matLine (click)="handleButtonClick(technology)">{{technology.name}}
                         </span>
-                        <button mat-icon-button *ngIf="technology.git">
+                        <button mat-icon-button *ngIf="technology.git" tabindex="-1">
                             <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'Git')">
                             </span>
                         </button>
