@@ -19,6 +19,9 @@ export class LeftSidenavComponent {
   addresses: Observable<any> = this.httpClient.get(
     "./assets/configs/addresses.json"
   );
+  socialNetworks: Observable<any> = this.httpClient.get(
+    "./assets/configs/social-networks.json"
+  );
 
   resume = {
     name: "Resume",
