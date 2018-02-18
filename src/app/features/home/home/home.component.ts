@@ -12,7 +12,7 @@ enum LINK_TYPE {
 }
 
 @Component({
-  selector: "app-home",
+  selector: "ak-home",
   templateUrl: "home.component.html",
   styleUrls: ["home.component.css"]
 })

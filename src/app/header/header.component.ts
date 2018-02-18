@@ -11,51 +11,51 @@ import {
 } from "@angular/router";
 
 @Component({
-  selector: "app-header",
+  selector: "ak-header",
   templateUrl: "header.component.html",
   styleUrls: ["header.component.css"]
 })
 export class HeaderComponent {
-  navLinks = [
+  routes = [
     {
-      path: "/",
+      url: "/",
       label: "home"
     },
     {
-      path: "/about",
+      url: "/about",
       label: "About"
     },
     {
-      path: "/blog",
+      url: "/blog",
       label: "Blog"
     },
     {
-      path: "/faq",
+      url: "/faq",
       label: "FAQ"
     },
     {
-      path: "/skills",
+      url: "/skills",
       label: "Skills"
     },
     {
-      path: "/projects",
+      url: "/projects",
       label: "Projects"
     },
     {
-      path: "/experience",
+      url: "/experience",
       label: "Experience"
     },
     {
-      path: "/awards",
+      url: "/awards",
       label: "Awards"
     },
     {
-      path: "/education",
+      url: "/education",
       label: "Education"
     }
   ];
 
-  currentLink = this.navLinks[0];
+  currentUrl = this.routes[0].url;
 
   loading: boolean;
 
@@ -67,6 +67,7 @@ export class HeaderComponent {
 
   navigationInterceptor(event: RouterEvent): void {
     if (event instanceof NavigationStart) {
+      this.currentUrl = event.url;
       this.loading = true;
     } else if (event instanceof NavigationEnd) {
       this.loading = false;

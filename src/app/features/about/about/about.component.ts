@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "app-about",
+  selector: "ak-about",
   templateUrl: "about.component.html",
   styleUrls: ["about.component.css"]
 })

@@ -10,8 +10,8 @@
         <mat-card-actions class="goog-nav-bar-container">
             <nav mat-tab-nav-bar class="goog-nav-bar-container">
                 <div class="goog-nav-bar">
-                    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive [active]="currentLink === link" (click)="currentLink = link">
-                        {{link.label | uppercase}}
+                    <a mat-tab-link *ngFor="let route of routes" [routerLink]="route.url" routerLinkActive [active]="currentUrl === route.url" (click)="currentUrl = route.url">
+                        {{route.label | uppercase}}
                     </a>
                 </div>
             </nav>
