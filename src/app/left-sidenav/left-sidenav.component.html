@@ -1,0 +1,40 @@
+<mat-card class="col-12 mat-elevation-z3">
+    <mat-card-title>
+        <img mat-card-avatar class="mat-elevation-z8" src="./assets/images/abhijit-kar.png">
+        <span class="author">Abhijit Kar</span>
+    </mat-card-title>
+    <mat-card-subtitle>
+        <span class="fa fa-quote-left"></span>
+        <span class="tagline">
+            Aspiring Full-Stack Developer, Budding Machine Learning Expert & Extensively Experienced, with a Fresher's Flair
+        </span>
+    </mat-card-subtitle>
+    <img mat-card-image class="mat-elevation-z8" src="./assets/images/adventure-time.jpg">
+    <mat-card-content>
+        <mat-nav-list>
+            <mat-list-item>
+                <span matLine>
+                    <span (click)="handleButtonClick(resume)">
+                        <span matListIcon class="fa fa-file-text s-20 w-30"></span>
+                        Resume
+                    </span>
+                </span>
+                <button mat-icon-button>
+                    <span matListIcon class="fa fa-cloud-download s-30" (click)="handleButtonClick(resume, 'Download')">
+                    </span>
+                </button>
+            </mat-list-item>
+            <mat-list-item *ngFor="let address of addresses | async" (click)="handleButtonClick(address)">
+                <span matListIcon class="fa s-30 w-30" [ngClass]="address.class" matLine></span>
+                {{address.text}}
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-card-content>
+    <mat-card-actions>
+        <div class="col-12 social-btns">
+            <button mat-fab *ngFor="let socialNetwork of socialNetworks | async" (click)="handleButtonClick(socialNetwork)">
+                <span class="fa s-30" [ngClass]="socialNetwork.class"></span>
+            </button>
+        </div>
+    </mat-card-actions>
+</mat-card>

@@ -1,8 +1,10 @@
 <mat-sidenav-container>
     <mat-sidenav #info>
-        Test
+        <ak-left-sidenav></ak-left-sidenav>
     </mat-sidenav>
-    <mat-sidenav position="end" #social>End content</mat-sidenav>
+    <mat-sidenav position="end" #social>
+        <ak-right-sidenav></ak-right-sidenav>
+    </mat-sidenav>
     <mat-sidenav-content>
         <ak-header (onHamburgerClick)="info.toggle()" (onEnvelopeClick)="social.toggle()"></ak-header>
 
