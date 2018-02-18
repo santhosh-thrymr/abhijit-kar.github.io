@@ -41,6 +41,9 @@ h3 a {
   min-width: 0;
   text-decoration: none !important;
 }
+.mat-tab-link:focus {
+  background-color: transparent !important;
+}
 .mat-tab-label-active {
   color: var(--primary) !important;
 }

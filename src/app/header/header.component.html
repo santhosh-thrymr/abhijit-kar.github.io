@@ -10,7 +10,7 @@
             <mat-divider></mat-divider>
         </ng-template>
         <mat-card-actions class="goog-nav-bar-container">
-            <nav mat-tab-nav-bar class="goog-nav-bar-container">
+            <nav mat-tab-nav-bar disableRipple class="goog-nav-bar-container">
                 <div class="goog-nav-bar">
                     <a mat-tab-link *ngFor="let route of routes" [routerLink]="route.url" routerLinkActive [active]="currentUrl === route.url"
                         (click)="currentUrl = route.url">
