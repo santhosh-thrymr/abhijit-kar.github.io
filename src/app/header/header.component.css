@@ -17,7 +17,7 @@ mat-card-title {
   margin: 0;
 }
 mat-card-title h3 {
-  font-family: "Domine", Cursive;
+  font-weight: 300;
 }
 
 h3 a {
