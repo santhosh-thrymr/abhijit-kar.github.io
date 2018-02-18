@@ -79,6 +79,9 @@ mat-card.header {
   border-radius: 10px;
 }
 
-.header h3 {
-  font-family: 'Satisfy', Cursive;
+.header mat-card-title {
+  margin: 0;
+}
+mat-card-title h3 {
+  font-family: 'Domine', Cursive;
 }
