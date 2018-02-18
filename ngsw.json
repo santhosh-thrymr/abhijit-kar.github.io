@@ -18,10 +18,10 @@
         "http://www.abhijit-kar.com/6.c248da4da55955095078.chunk.js",
         "http://www.abhijit-kar.com/7.ef053cc7dc444d1fe64d.chunk.js",
         "http://www.abhijit-kar.com/8.9067e896bb5c9715efb8.chunk.js",
-        "http://www.abhijit-kar.com/inline.1c72e813051c98bbcff5.bundle.js",
-        "http://www.abhijit-kar.com/main.b115c398d1431fd9f928.bundle.js",
+        "http://www.abhijit-kar.com/inline.061cde80c2cbc59acbb7.bundle.js",
+        "http://www.abhijit-kar.com/main.d87c896ef48aa040634b.bundle.js",
         "http://www.abhijit-kar.com/polyfills.5b60212942a2c1047905.bundle.js",
-        "http://www.abhijit-kar.com/styles.56c88c10ee5dbb658952.bundle.css"
+        "http://www.abhijit-kar.com/styles.68a510843a9ad6663b9f.bundle.css"
       ],
       "patterns": []
     },
@@ -51,11 +51,11 @@
     "http://www.abhijit-kar.com/6.c248da4da55955095078.chunk.js": "a2dc9a2e26267bd6907c1a4afe869b15df2badbc",
     "http://www.abhijit-kar.com/7.ef053cc7dc444d1fe64d.chunk.js": "92625c24837458e1bd11a89ac11d467eb2391e4e",
     "http://www.abhijit-kar.com/8.9067e896bb5c9715efb8.chunk.js": "abbf4242eb595e25d3ac0445f012bd76e3fc0843",
-    "http://www.abhijit-kar.com/inline.1c72e813051c98bbcff5.bundle.js": "2531a64f56e0e4c61e45c5ee73987700a690dbd4",
-    "http://www.abhijit-kar.com/main.b115c398d1431fd9f928.bundle.js": "012e4b9ccb25bd0b290ec69f244045e4b1b3af5e",
+    "http://www.abhijit-kar.com/inline.061cde80c2cbc59acbb7.bundle.js": "e7e17d655079ab4293a8c460bef4fca2006ea7ea",
+    "http://www.abhijit-kar.com/main.d87c896ef48aa040634b.bundle.js": "dc6b8907412a7c36e4bf9ff21098268b20c802e0",
     "http://www.abhijit-kar.com/polyfills.5b60212942a2c1047905.bundle.js": "e7a074229ab68be4b556141d7a113f0ab8abfb29",
-    "http://www.abhijit-kar.com/styles.56c88c10ee5dbb658952.bundle.css": "40a7b13671c4278749782fdcecff40124bf79380",
+    "http://www.abhijit-kar.com/styles.68a510843a9ad6663b9f.bundle.css": "bfcf71b275ac8c3121b81563f6ec2aa5004813ed",
     "http://www.abhijit-kar.com/favicon.ico": "5168201405c98593ddf271e249b323d7515b2139",
-    "http://www.abhijit-kar.com/index.html": "09dcab4c507f413035637046b4e80880810ab5ab"
+    "http://www.abhijit-kar.com/index.html": "98401df90b2019f53e70dffa8788d6cacd259495"
   }
 }
