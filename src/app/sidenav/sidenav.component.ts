@@ -11,11 +11,11 @@ enum LINK_TYPE {
 }
 
 @Component({
-  selector: "ak-left-sidenav",
-  templateUrl: "left-sidenav.component.html",
-  styleUrls: ["left-sidenav.component.css"]
+  selector: "ak-sidenav",
+  templateUrl: "sidenav.component.html",
+  styleUrls: ["sidenav.component.css"]
 })
-export class LeftSidenavComponent {
+export class SidenavComponent {
   addresses: Observable<any> = this.httpClient.get(
     "./assets/configs/addresses.json"
   );

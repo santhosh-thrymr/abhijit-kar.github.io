@@ -22,8 +22,7 @@ import { FeaturesModule } from "./features/features.module";
 import {
   AppComponent,
   HeaderComponent,
-  LeftSidenavComponent,
-  RightSidenavComponent
+  SidenavComponent
 } from "./";
 
 const MaterialModules = [
@@ -39,8 +38,7 @@ const MaterialModules = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    LeftSidenavComponent,
-    RightSidenavComponent
+    SidenavComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "abhijit-kar" }),
