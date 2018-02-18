@@ -5,7 +5,7 @@ import { GoogleAnalyticsService } from "./shared/";
 declare var ga;
 
 @Component({
-  selector: "app-root",
+  selector: "ak-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"]
 })
