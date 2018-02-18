@@ -4,7 +4,6 @@
 
 .author {
   padding-left: 10px;
-  color: cyan;
 }
 
 span.s-20 {
@@ -25,51 +24,14 @@ span.w-30 {
   font-size: 20px !important;
 }
 
-.panel-content {
-  color: cyan !important;
-}
-
-.panel-btn {
-  color: lime !important;
-}
-
-.sub-panel {
-  color: #f6d781 !important;
-}
-
 button,
 button:focus,
 button:hover {
   outline: none;
 }
 
-.fa {
-  color: #76f0af;
-}
-
-.fa-quote-left {
-  color: #ffeb3b;
-}
-
-.tagline {
-  color: #f6d781;
-}
-
-.mat-nav-list .mat-list-item {
-  color: cyan;
-}
-.mat-nav-list .mat-subheader {
-  color: #f6d781;
-}
-.mat-expansion-panel .mat-expansion-panel-header {
-  color: #FFEB3B;
-}
-
 .social-btns {
   text-align: center;
-}
-.social-btns button .fa {
-  color: #434142;
 }
 .social-btns button {
   margin: 0 5px;
