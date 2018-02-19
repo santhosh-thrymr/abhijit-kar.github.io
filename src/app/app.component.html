@@ -1,9 +1,9 @@
-<mat-sidenav-container>
-    <mat-sidenav #info>
+<mat-sidenav-container #sideNavContainer>
+    <mat-sidenav #sideNav>
         <ak-sidenav></ak-sidenav>
     </mat-sidenav>
     <mat-sidenav-content>
-        <ak-header (onHamburgerClick)="info.toggle()"></ak-header>
+        <ak-header (onHamburgerClick)="sideNav.toggle()"></ak-header>
 
         <div class="flex-container my-1">
             <router-outlet></router-outlet>
