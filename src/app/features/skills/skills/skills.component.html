@@ -6,13 +6,11 @@
     <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3">
         <mat-nav-list>
             <mat-list-item *ngFor="let technology of skill.technologies">
-                <mat-progress-spinner color="primary" mode="determinate" [value]="technology.percentage" diameter="20">
-                </mat-progress-spinner>
-                <span class="px-2" style.color="{{technology.percentage | highlighter}}">{{technology.percentage | number:'2.0-0'}}%</span>
-                <span (click)="linkHandlerService.handleButtonClick(technology)" class="cyan">{{technology.name}}
+                <span class="px-2 green">{{technology.percentage | number:'2.0-0'}}%</span>
+                <span (click)="linkHandlerService.handleButtonClick(technology)">{{technology.name}}
                 </span>
                 <button mat-icon-button class="pull-right" *ngIf="technology.git" tabindex="-1">
-                    <span matListIcon class="fa fa-github s-20 teal" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
+                    <span matListIcon class="fa fa-github s-20 pink" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
                     </span>
                 </button>
             </mat-list-item>

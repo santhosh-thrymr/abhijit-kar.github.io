@@ -4,19 +4,13 @@ import { CommonModule } from "@angular/common";
 import {
   MatCardModule,
   MatListModule,
-  MatProgressSpinnerModule,
   MatButtonModule
 } from "@angular/material";
 
 import { SkillsRoutingModule, SkillsComponents } from "./skills-routing.module";
 import { SharedModule } from "../../shared/shared.module";
 
-const MaterialModules = [
-  MatCardModule,
-  MatListModule,
-  MatProgressSpinnerModule,
-  MatButtonModule
-];
+const MaterialModules = [MatCardModule, MatListModule, MatButtonModule];
 
 @NgModule({
   imports: [
