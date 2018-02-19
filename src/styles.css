@@ -29,6 +29,10 @@ mat-card {
   color: var(--gray);
 }
 
+.pink {
+  color: var(--pink);
+}
+
 .mat-icon-button:focus {
   outline: none;
 }
