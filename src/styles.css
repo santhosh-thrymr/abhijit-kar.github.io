@@ -21,6 +21,14 @@ mat-card {
   border-radius: 50% !important;
 }
 
+.center {
+  text-align: center;
+}
+
+.gray {
+  color: var(--gray);
+}
+
 .mat-icon-button:focus {
   outline: none;
 }

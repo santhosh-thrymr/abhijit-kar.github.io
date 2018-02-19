@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs/Observable";
 
-import { LinkHandlerService, LINK_TYPES } from "../shared/";
+import { LinkHandlerService, LINK_TYPES } from "../shared";
 
 @Component({
   selector: "ak-sidenav",

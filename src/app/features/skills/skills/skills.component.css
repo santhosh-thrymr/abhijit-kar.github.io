@@ -1,6 +1,23 @@
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+.custom-ink-bar {
+  background-color: var(--blue);
+  width: 84px;
+  height: 2px;
+}
+.pull-right {
+  right: 0;
+  position: absolute;
+}
+.cyan {
+  color: cyan;
+}
+.teal {
+  color: var(--teal);
+}
+
 @media screen and (max-width: 520px) {
-    mat-card {
-      width: 96%;
-    }
+  mat-card {
+    width: 96%;
   }
-  
+}

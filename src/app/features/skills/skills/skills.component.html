@@ -1,21 +1,21 @@
-<div *ngFor="let skill of skills | async">
-    <span>{{skill.header}}</span>
-    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3" *ngFor="let technology of skill.technologies">
-        <mat-card-title>
-            {{technology.name}}
-        </mat-card-title>
-        <mat-progress-spinner color="primary" mode="determinate" [value]="technology.percentage" diameter="20">
-        </mat-progress-spinner>
-        <span class="px-2" style.color="{{technology.percentage | highlighter}}">{{technology.percentage | number:'2.0-0'}}%</span>
-        <span (click)="handleButtonClick(technology)">
-        </span>
-        <mat-card-actions>
-            <button mat-icon-button *ngIf="technology.git" tabindex="-1">
-                <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'Git')">
+<ng-container *ngFor="let skill of skills | async">
+    <div class="mx-auto col-md-5">
+        <div class="mx-auto mt-5 mb-2 custom-ink-bar"></div>
+        <div class="center gray">{{skill.header}}</div>
+    </div>
+    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3">
+        <mat-nav-list>
+            <mat-list-item *ngFor="let technology of skill.technologies">
+                <mat-progress-spinner color="primary" mode="determinate" [value]="technology.percentage" diameter="20">
+                </mat-progress-spinner>
+                <span class="px-2" style.color="{{technology.percentage | highlighter}}">{{technology.percentage | number:'2.0-0'}}%</span>
+                <span (click)="linkHandlerService.handleButtonClick(technology)" class="cyan">{{technology.name}}
                 </span>
-            </button>
-        </mat-card-actions>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes
-        very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                <button mat-icon-button class="pull-right" *ngIf="technology.git" tabindex="-1">
+                    <span matListIcon class="fa fa-github s-20 teal" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
+                    </span>
+                </button>
+            </mat-list-item>
+        </mat-nav-list>
     </mat-card>
-</div>
+</ng-container>

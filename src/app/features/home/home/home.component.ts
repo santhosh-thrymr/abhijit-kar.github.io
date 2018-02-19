@@ -3,7 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs/Observable";
 import * as Rx from "rxjs/Rx";
 
-import { LinkHandlerService, LINK_TYPES } from "../../../shared/";
+import { LinkHandlerService, LINK_TYPES } from "../../../shared";
 
 @Component({
   selector: "ak-home",

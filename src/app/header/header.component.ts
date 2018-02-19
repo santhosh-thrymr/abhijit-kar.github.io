@@ -1,6 +1,6 @@
 import { Component, Output, EventEmitter } from "@angular/core";
 
-import { GoogleAnalyticsService } from "../shared/";
+import { GoogleAnalyticsService } from "../shared";
 
 import {
   Router,

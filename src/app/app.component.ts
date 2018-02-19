@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { Router, NavigationEnd } from "@angular/router";
-import { GoogleAnalyticsService } from "./shared/";
+import { GoogleAnalyticsService } from "./shared";
 
 declare var ga;
 
