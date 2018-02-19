@@ -2,13 +2,7 @@ import { Component } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs/Observable";
 
-import { GoogleAnalyticsService } from "../shared/";
-
-enum LINK_TYPE {
-  GIT = "Git",
-  URL = "Url",
-  DOWNLOAD = "Download"
-}
+import { LinkHandlerService, LINK_TYPES } from "../shared/";
 
 @Component({
   selector: "ak-sidenav",
@@ -16,6 +10,8 @@ enum LINK_TYPE {
   styleUrls: ["sidenav.component.css"]
 })
 export class SidenavComponent {
+  link_types = LINK_TYPES;
+
   addresses: Observable<any> = this.httpClient.get(
     "./assets/configs/addresses.json"
   );
@@ -34,31 +30,6 @@ export class SidenavComponent {
 
   constructor(
     private httpClient: HttpClient,
-    private googleAnalyticsService: GoogleAnalyticsService
+    public linkHandlerService: LinkHandlerService
   ) {}
-
-  handleButtonClick(btnData: any, linkType?: string) {
-    event.preventDefault();
-
-    this.googleAnalyticsService.emitEvent(
-      `${btnData.category} ${linkType || ""}`,
-      btnData.name,
-      $ => {
-        switch (linkType) {
-          case LINK_TYPE.GIT:
-            window.open(btnData.git, "_blank");
-            break;
-          case LINK_TYPE.DOWNLOAD:
-            window.location.href = btnData.pdf;
-            break;
-          default:
-            if (btnData.name === "Phone" || btnData.name === "Email") {
-              window.location.href = btnData.url;
-              break;
-            }
-            window.open(btnData.url, "_blank");
-        }
-      }
-    );
-  }
 }

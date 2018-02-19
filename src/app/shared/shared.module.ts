@@ -4,6 +4,7 @@ import { CommonModule } from "@angular/common";
 import {
   GlobalErrorHandlerService,
   GoogleAnalyticsService,
+  LinkHandlerService,
   HighlighterPipe
 } from "./";
 
@@ -15,7 +16,8 @@ import {
       provide: ErrorHandler,
       useClass: GlobalErrorHandlerService
     },
-    GoogleAnalyticsService
+    GoogleAnalyticsService,
+    LinkHandlerService
   ],
   exports: [HighlighterPipe]
 })

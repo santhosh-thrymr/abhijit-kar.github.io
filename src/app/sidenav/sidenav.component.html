@@ -6,25 +6,25 @@
 <mat-nav-list>
     <mat-list-item>
         <span matLine>
-            <span (click)="handleButtonClick(resume)">
+            <span (click)="linkHandlerService.handleButtonClick(resume)">
                 <span matListIcon class="gray fa fa-file-text s-20 w-30"></span>
                 Resume
             </span>
         </span>
         <button mat-icon-button tabindex="-1">
-            <span matListIcon class="gray fa fa-cloud-download s-30" (click)="handleButtonClick(resume, 'Download')">
+            <span matListIcon class="gray fa fa-cloud-download s-30" (click)="linkHandlerService.handleButtonClick(resume, link_types.DOWNLOAD)">
             </span>
         </button>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item *ngFor="let address of addresses | async" (click)="handleButtonClick(address)">
+    <mat-list-item *ngFor="let address of addresses | async" (click)="linkHandlerService.handleButtonClick(address)">
         <span matListIcon class="gray fa s-30 w-30" [ngClass]="address.class" matLine></span>
         {{address.text}}
     </mat-list-item>
 </mat-nav-list>
 <mat-divider></mat-divider>
 <div class="col-12 social-btns mt-2">
-    <button mat-fab tabindex="-1" *ngFor="let socialNetwork of socialNetworks | async" (click)="handleButtonClick(socialNetwork)">
+    <button mat-fab tabindex="-1" *ngFor="let socialNetwork of socialNetworks | async" (click)="linkHandlerService.handleButtonClick(socialNetwork)">
         <span class="fa s-30" [ngClass]="socialNetwork.class"></span>
     </button>
 </div>

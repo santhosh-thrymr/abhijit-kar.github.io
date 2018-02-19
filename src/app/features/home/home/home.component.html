@@ -17,10 +17,10 @@
                     <mat-progress-spinner color="primary" mode="determinate" [value]="technology.percentage" diameter="20">
                     </mat-progress-spinner>
                     <span class="px-2" style.color="{{technology.percentage | highlighter}}">{{technology.percentage | number:'2.0-0'}}%</span>
-                    <span (click)="handleButtonClick(technology)">{{technology.name}}
+                    <span (click)="linkHandlerService.handleButtonClick(technology)">{{technology.name}}
                     </span>
                     <button mat-icon-button *ngIf="technology.git" tabindex="-1">
-                        <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'Git')">
+                        <span matListIcon class="fa fa-github s-20" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
                         </span>
                     </button>
                 </mat-list-item>
@@ -37,10 +37,10 @@
                     <h3 matSubheader>{{project.header}}</h3>
                     <mat-divider [inset]="true"></mat-divider>
                     <mat-list-item *ngFor="let technology of project.technologies">
-                        <span matLine (click)="handleButtonClick(technology)">{{technology.name}}
+                        <span matLine (click)="linkHandlerService.handleButtonClick(technology)">{{technology.name}}
                         </span>
                         <button mat-icon-button *ngIf="technology.git" tabindex="-1">
-                            <span matListIcon class="fa fa-github s-20" (click)="handleButtonClick(technology, 'Git')">
+                            <span matListIcon class="fa fa-github s-20" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
                             </span>
                         </button>
                     </mat-list-item>
@@ -61,7 +61,7 @@
                     hours and retention of client projects worth half a million dollars, including Midwifery Project
                 </span>
                 <mat-action-row>
-                    <button mat-raised-button class="panel-btn" (click)="handleButtonClick({
+                    <button mat-raised-button class="panel-btn" (click)="linkHandlerService.handleButtonClick({
                                     name: 'Midwifery',
                                     category: 'Projects',
                                     url: 'https://www.youtube.com/watch?v=aKVkieNf4tU'
