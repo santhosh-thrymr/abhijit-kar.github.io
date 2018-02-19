@@ -6,7 +6,7 @@
         <button mat-icon-button class="avatar">
             <img src="./assets/images/abhijit-kar.png" routerLink="" routerLinkActive class="avatar-image rounded mx-auto d-block">
         </button>
-        <button mat-icon-button class="float-right" (click)="handleButtonClick(contact)">
+        <button mat-icon-button class="float-right" (click)="linkHandlerService.handleButtonClick(contact)">
             <i class="fa fa-envelope"></i>
         </button>
     </div>
@@ -20,6 +20,10 @@
         <ng-template #showDivider>
             <mat-divider></mat-divider>
         </ng-template>
+        <!-- <mat-tab-group (selectedIndexChange)="handleTabSwitch($event)" [selectedIndex]="currentIndex">
+            <mat-tab *ngFor="let route of routes; let i = index" [label]="route.label">
+            </mat-tab>
+        </mat-tab-group> -->
         <mat-card-actions class="goog-nav-bar-container">
             <nav mat-tab-nav-bar disableRipple class="goog-nav-bar-container">
                 <div class="goog-nav-bar">

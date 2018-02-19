@@ -1,6 +1,6 @@
 import { Component, Output, EventEmitter } from "@angular/core";
 
-import { GoogleAnalyticsService } from "../shared";
+import { LinkHandlerService } from "../shared";
 
 import {
   Router,
@@ -19,16 +19,17 @@ import {
 export class HeaderComponent {
   @Output()
   onHamburgerClick: EventEmitter<boolean> = new EventEmitter<boolean>();
-  @Output()
-  onEnvelopeClick: EventEmitter<boolean> = new EventEmitter<boolean>();
 
+  // currentIndex: number;
+  currentUrl: any;
   isHamburgerOpen: boolean;
-  isEnvelopeOpen: boolean;
+  loading: boolean;
+  routeMap: any = {};
 
   routes = [
     {
       url: "/",
-      label: "home"
+      label: "Home"
     },
     {
       url: "/about",
@@ -71,14 +72,14 @@ export class HeaderComponent {
       "https://docs.google.com/forms/d/e/1FAIpQLSfxFTIJXHWlBSU9xJZVL-K9OydR_ooJ69Sp4Sq571_Llp7X4g/viewform?usp=sf_link"
   };
 
-  currentUrl: string;
-
-  loading: boolean;
-
   constructor(
     private router: Router,
-    private googleAnalyticsService: GoogleAnalyticsService
+    public linkHandlerService: LinkHandlerService
   ) {
+    // for (let i = 0; i < this.routes.length; i++) {
+    //   this.routeMap[this.routes[i].url] = i;
+    // }
+
     router.events.subscribe((event: RouterEvent) => {
       this.navigationInterceptor(event);
     });
@@ -86,6 +87,7 @@ export class HeaderComponent {
 
   navigationInterceptor(event: RouterEvent): void {
     if (event instanceof NavigationStart) {
+      // this.currentIndex = this.routeMap[event.url];
       this.currentUrl = event.url;
       this.loading = true;
     } else if (event instanceof NavigationEnd) {
@@ -102,16 +104,9 @@ export class HeaderComponent {
     this.onHamburgerClick.emit(this.isHamburgerOpen);
   }
 
-  handleEnvelopeClick() {
-    this.isEnvelopeOpen = !this.isEnvelopeOpen;
-    this.onEnvelopeClick.emit(this.isEnvelopeOpen);
-  }
+  // handleTabSwitch(tab: number) {
+  //   this.currentIndex = tab;
 
-  handleButtonClick(btnData: any) {
-    event.preventDefault();
-
-    this.googleAnalyticsService.emitEvent(btnData.category, btnData.name, $ => {
-      window.open(btnData.url, "_blank");
-    });
-  }
+  //   this.router.navigate([this.routes[tab].url]);
+  // }
 }
