@@ -4,8 +4,6 @@ import { GoogleAnalyticsService } from "./shared";
 
 import { MatSidenav } from "@angular/material";
 
-// import {} from "@angular/cdk";
-
 declare var ga;
 
 @Component({
@@ -19,7 +17,6 @@ export class AppComponent {
   @HostListener("window:scroll", ["$event"])
   onWindowScroll(event: Event) {
     if (this.sideNav && this.sideNav.opened) {
-      console.log(event.target);
       this.sideNav.close();
     }
   }
