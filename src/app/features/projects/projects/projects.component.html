@@ -3,7 +3,7 @@
         <div class="mx-auto mt-5 mb-2 custom-ink-bar" style.backgroundColor="{{i | highlighter}}"></div>
         <div class="center gray">{{project.header}}</div>
     </div>
-    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3" *ngFor="let technology of project.technologies; let i = index">
+    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z1" *ngFor="let technology of project.technologies; let i = index">
         <mat-card-header>
             <div mat-card-avatar class="avatar-image"></div>
             <mat-card-title>{{technology.name}}</mat-card-title>

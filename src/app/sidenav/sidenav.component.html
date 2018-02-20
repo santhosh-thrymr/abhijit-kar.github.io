@@ -7,18 +7,18 @@
     <mat-list-item>
         <span matLine>
             <span (click)="linkHandlerService.handleButtonClick(resume)">
-                <span matListIcon class="gray fa fa-file-text s-20 w-30"></span>
+                <span matListIcon class="teal fa fa-file-text s-20 w-30"></span>
                 Resume
             </span>
         </span>
         <button mat-icon-button tabindex="-1">
-            <span matListIcon class="gray fa fa-cloud-download s-30" (click)="linkHandlerService.handleButtonClick(resume, link_types.DOWNLOAD)">
+            <span matListIcon class="teal fa fa-cloud-download s-30" (click)="linkHandlerService.handleButtonClick(resume, link_types.DOWNLOAD)">
             </span>
         </button>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item *ngFor="let address of addresses | async" (click)="linkHandlerService.handleButtonClick(address)">
-        <span matListIcon class="gray fa s-30 w-30" [ngClass]="address.class" matLine></span>
+        <span matListIcon class="teal fa s-30 w-30" [ngClass]="address.class" matLine></span>
         {{address.text}}
     </mat-list-item>
 </mat-nav-list>

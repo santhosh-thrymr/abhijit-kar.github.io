@@ -39,6 +39,10 @@ mat-card {
   color: var(--pink) !important;
 }
 
+.teal {
+  color: var(--teal) !important;
+}
+
 .custom-ink-bar {
   background-color: var(--blue);
   width: 84px;

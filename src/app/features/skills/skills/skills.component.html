@@ -1,9 +1,9 @@
-<ng-container *ngFor="let skill of skills | async">
+<ng-container *ngFor="let skill of skills | async; let i = index">
     <div class="mx-auto col-md-5">
-        <div class="mx-auto mt-5 mb-2 custom-ink-bar"></div>
+        <div class="mx-auto mt-5 mb-2 custom-ink-bar" style.backgroundColor="{{i | highlighter}}"></div>
         <div class="center gray">{{skill.header}}</div>
     </div>
-    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3">
+    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z1">
         <mat-nav-list>
             <mat-list-item *ngFor="let technology of skill.technologies; let i = index">
                 <span class="px-2 green">{{technology.percentage | number:'2.0-0'}}%</span>
