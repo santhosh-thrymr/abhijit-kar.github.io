@@ -7,10 +7,6 @@
 mat-card {
   padding-top: 5px !important;
   padding-bottom: 15px !important;
-  /* padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 0;
-  height: 5.6em; */
 }
 
 mat-card-title {
@@ -85,7 +81,7 @@ h3 a {
   padding: 0;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
   mat-card {
     width: 96%;
   }
