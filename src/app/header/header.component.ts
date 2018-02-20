@@ -81,13 +81,13 @@ export class HeaderComponent {
       url: "/experience",
       label: "Experience",
       message: "I am Extensively Experienced",
-      reply: "Seems So"
+      reply: "Excellent"
     },
     {
       url: "/awards",
       label: "Awards",
       message: "I was recognized as a Digital Superstar!",
-      reply: "Congrats"
+      reply: "Outstanding"
     },
     {
       url: "/education",

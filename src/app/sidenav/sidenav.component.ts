@@ -47,7 +47,6 @@ export class SidenavComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.sideNav.openedChange.subscribe((isOpened: boolean) => {
       if (isOpened) {
-        console.log("Yeah");
         this.sideNavHeader.nativeElement.scrollIntoView({
           behavior: "smooth",
           block: "center",
