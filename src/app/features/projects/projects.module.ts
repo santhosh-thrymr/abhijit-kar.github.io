@@ -11,11 +11,17 @@ import {
   ProjectsRoutingModule,
   ProjectsComponents
 } from "./projects-routing.module";
+import { SharedModule } from "../../shared/shared.module";
 
 const MaterialModules = [MatCardModule, MatListModule, MatButtonModule];
 
 @NgModule({
-  imports: [CommonModule, ProjectsRoutingModule, ...MaterialModules],
+  imports: [
+    CommonModule,
+    SharedModule,
+    ProjectsRoutingModule,
+    ...MaterialModules
+  ],
   declarations: ProjectsComponents
 })
 export class ProjectsModule {}

@@ -3,18 +3,13 @@ import { Pipe, PipeTransform } from "@angular/core";
 @Pipe({ name: "highlighter" })
 export class HighlighterPipe implements PipeTransform {
   colors: string[] = [
-    "#F44336", // Red
-    "#FF5722", // Deep Orange
-    "#FF9800", // Orange
-    "#FFC107", // Amber
-    "#FFEB3B", // Yellow
-    "#DCE775", // Light Lime
-    "#E6EE9C", // Lime
-    "#AED581", // Lighter Green
-    "#8BC34A", // Light Green
-    "#4CAF50"  // Green
+    "#007bff", // Blue
+    "#fd7e14", // Orange
+    "#dc3545", // Red
+    "#28a745", // Green
+    "#6f42c1" // Purple
   ];
-  transform(percentage: number): string {
-    return this.colors[Math.floor(percentage / 10)];
+  transform(index: number): string {
+    return this.colors[index % 5];
   }
 }
