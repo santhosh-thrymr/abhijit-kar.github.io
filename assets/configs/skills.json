@@ -13,7 +13,8 @@
         "name": "Touch Typing",
         "category": "Skills",
         "percentage": 95,
-        "url": "https://drive.google.com/open?id=1sU2ylRVEgEs6TuZs2mNTC9x2VRbajG9q"
+        "url":
+          "https://drive.google.com/open?id=1sU2ylRVEgEs6TuZs2mNTC9x2VRbajG9q"
       },
       {
         "name": "Angular",
@@ -70,13 +71,6 @@
         "percentage": 15,
         "git": "https://github.com/abhijit-kar/dont-let-him-poo",
         "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
-      },
-      {
-        "name": "GraphQL",
-        "category": "Skills",
-        "percentage": 5,
-        "git": "https://github.com/abhijit-kar/graphql-go",
-        "url": "http://www.abhijit-kar.com/graphiql/"
       }
     ]
   },
