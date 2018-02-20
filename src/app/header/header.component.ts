@@ -63,7 +63,7 @@ export class HeaderComponent {
       url: "/faq",
       label: "FAQ",
       message: "I help others on Stack Overflow",
-      reply: "Wonderfull"
+      reply: "Wonderful"
     },
     {
       url: "/skills",

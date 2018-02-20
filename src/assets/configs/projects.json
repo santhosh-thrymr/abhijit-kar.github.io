@@ -44,7 +44,7 @@
         "category": "Projects",
         "description": "Cheat Sheet (On Hold)",
         "content":
-          "A practical codebase for begining ML. It's written in Python, and Scikit ...",
+          "A practical codebase for beginning ML. It's written in Python, and Scikit ...",
         "git": "https://github.com/abhijit-kar/pragmatic-machine-learning",
         "url": "http://www.abhijit-kar.com/pragmatic-machine-learning/"
       },
