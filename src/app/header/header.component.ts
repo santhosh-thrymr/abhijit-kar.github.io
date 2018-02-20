@@ -50,13 +50,13 @@ export class HeaderComponent {
     {
       url: "/about",
       label: "About",
-      message: "I am a Technology Aficionado",
+      message: "I am a Tech Aficionado",
       reply: "Awesome"
     },
     {
       url: "/blog",
       label: "Blog",
-      message: "I write on Medium",
+      message: "I contribute on Medium",
       reply: "Really?"
     },
     {
@@ -80,20 +80,20 @@ export class HeaderComponent {
     {
       url: "/experience",
       label: "Experience",
-      message: "Extensively Experienced",
+      message: "I am Extensively Experienced",
       reply: "Seems So"
     },
     {
       url: "/awards",
       label: "Awards",
-      message: "Digital Superstar!",
+      message: "I was recognized as a Digital Superstar!",
       reply: "Congrats"
     },
     {
       url: "/education",
       label: "Education",
-      message: "Graduate",
-      reply: "Hmmm"
+      message: "I am a Software Engineer",
+      reply: "Marvellous"
     }
   ];
 
