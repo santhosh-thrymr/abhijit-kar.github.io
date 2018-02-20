@@ -137,11 +137,11 @@ export class HeaderComponent {
       });
 
       this.loading = true;
-    } else if (event instanceof NavigationEnd) {
-      this.loading = false;
-    } else if (event instanceof NavigationCancel) {
-      this.loading = false;
-    } else if (event instanceof NavigationError) {
+    } else if (
+      event instanceof NavigationEnd ||
+      event instanceof NavigationCancel ||
+      event instanceof NavigationError
+    ) {
       this.loading = false;
     }
   }
