@@ -3,17 +3,24 @@
         <div class="mx-auto mt-5 mb-2 custom-ink-bar"></div>
         <div class="center gray">{{project.header}}</div>
     </div>
-    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3">
-        <mat-nav-list>
-            <mat-list-item *ngFor="let technology of project.technologies; let i = index">
-                <span matLine (click)="linkHandlerService.handleButtonClick(technology)">{{technology.name}}
-                </span>
-                <button mat-icon-button class="pull-right" *ngIf="technology.git" tabindex="-1">
-                    <span matListIcon class="fa fa-github s-20 pink" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
-                    </span>
-                </button>
-                <mat-divider *ngIf="i !== project.technologies.length - 1"></mat-divider>
-            </mat-list-item>
-        </mat-nav-list>
+    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3" *ngFor="let technology of project.technologies; let i = index">
+        <mat-card-header>
+            <div mat-card-avatar class="avatar-image"></div>
+            <mat-card-title>{{technology.name}}</mat-card-title>
+            <mat-card-subtitle>{{technology.description}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{technology.content}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(technology)">
+                Preview
+            </button>
+            <button mat-button *ngIf="technology.git" tabindex="-1" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
+                GitHub
+            </button>
+        </mat-card-actions>
     </mat-card>
 </ng-container>
+
+<!-- <span matLine (click)="linkHandlerService.handleButtonClick(technology)"></span> -->

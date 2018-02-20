@@ -3,6 +3,11 @@
   position: absolute;
 }
 
+.avatar-image {
+  background-image: url(../../../../assets/images/abhijit-kar.png);
+  background-size: cover;
+}
+
 @media screen and (max-width: 768px) {
   mat-card {
     width: 96%;

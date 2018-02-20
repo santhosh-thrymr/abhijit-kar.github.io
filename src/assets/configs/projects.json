@@ -5,48 +5,64 @@
       {
         "name": "Portfolio",
         "category": "Projects",
+        "description": "The site you're seeing! (WIP)",
+        "content":
+          "This site is made using Angular, and is deployed on GitHub pages ...",
         "git": "https://github.com/abhijit-kar/abhijit-kar.github.io",
         "url": "http://www.abhijit-kar.com"
       },
       {
         "name": "Don't let him Poo",
         "category": "Projects",
+        "description": "A game made using Angular (Finished)",
+        "content":
+          "A game made using Angular, which relies on A* algorithm for gameplay! ...",
         "git": "https://github.com/abhijit-kar/dont-let-him-poo",
         "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
       },
       {
         "name": "Angular Scaffolding",
         "category": "Projects",
+        "description":
+          "Seed project for Angular Dev & Easy Deployment (Finished)",
+        "content":
+          "It eases some of the painpoints related to deployment, rather than ...",
         "git": "https://github.com/abhijit-kar/angular-scaffolding",
         "url": "http://www.abhijit-kar.com/angular-scaffolding/"
       },
       {
-        "name": "GraphQL Go",
-        "category": "Projects",
-        "git": "https://github.com/abhijit-kar/graphql-go",
-        "url": "http://www.abhijit-kar.com/graphiql/"
-      },
-      {
         "name": "Restful Go",
         "category": "Projects",
+        "description": "Restful API Backend (On Hold)",
+        "content":
+          "A backend deployed on Google Cloud Platform, and used Cloud Datastore ...",
         "git": "https://github.com/abhijit-kar/restful-go",
         "url": "http://www.abhijit-kar.com/swagger-editor/"
       },
       {
         "name": "Pragmatic Machine Learning",
         "category": "Projects",
+        "description": "Cheat Sheet (On Hold)",
+        "content":
+          "A practical codebase for begining ML. It's written in Python, and Scikit ...",
         "git": "https://github.com/abhijit-kar/pragmatic-machine-learning",
         "url": "http://www.abhijit-kar.com/pragmatic-machine-learning/"
       },
       {
         "name": "Pragmatic Design Patterns",
         "category": "Projects",
+        "description": "Cheat Sheet (On Hold)",
+        "content":
+          "A collection of Design Pattern, written in Python, comprised of Jupyter Note ....",
         "git": "https://github.com/abhijit-kar/pragmatic-design-patterns",
         "url": "http://www.abhijit-kar.com/pragmatic-design-patterns/"
       },
       {
         "name": "Pragmatic Data Structures",
         "category": "Projects",
+        "description": "A cheat sheet for Data Structures in Python",
+        "content":
+          "A collection of Data Structures, written in Python, comprised of Jupyter ...",
         "git": "https://github.com/abhijit-kar/pragmatic-data-structure",
         "url": "http://www.abhijit-kar.com/pragmatic-data-structure/"
       }
@@ -58,16 +74,24 @@
       {
         "name": "Midwifery",
         "category": "Projects",
+        "description": "Famed VR project, for University of NewCastle",
+        "content":
+          "An acclaimed VR project for teaching Midwives to take care of new borns, ...",
         "url": "https://www.youtube.com/watch?v=aKVkieNf4tU"
       },
       {
         "name": "Monster Shuffle",
         "category": "Projects",
+        "description": "Casual Puzzle",
+        "content": "A 2D puzzle game made using Unity, just for fun!",
         "url": "https://abhijit-kar.itch.io/monster-shuffle"
       },
       {
         "name": "Box2D editor for Flash",
         "category": "Projects",
+        "description": "WYSIWYG Editor",
+        "content":
+          "A drag drop editor, that helped build physics based games quicker. It was ...",
         "url":
           "https://drive.google.com/open?id=1FOY9xaz-jHoKY7Uqhd0v-HKroSy2M93n"
       }
