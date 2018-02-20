@@ -14,11 +14,17 @@
 }
 
 mat-card {
-  border-radius: 10px !important;
+  border-radius: 8px !important;
 }
 
 .rounded {
   border-radius: 50% !important;
+}
+
+.mat-ink-bar {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-color: var(--blue) !important;
 }
 
 .center {
