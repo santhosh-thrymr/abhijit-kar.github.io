@@ -1,6 +1,6 @@
 [
   {
-    "header": "Recent",
+    "header": "Recent Projects",
     "technologies": [
       {
         "name": "Don't let him Poo",
@@ -47,18 +47,13 @@
     ]
   },
   {
-    "header": "Last Year",
+    "header": "Older Projects",
     "technologies": [
       {
         "name": "Midwifery",
         "category": "Projects",
         "url": "https://www.youtube.com/watch?v=aKVkieNf4tU"
-      }
-    ]
-  },
-  {
-    "header": "Way Back",
-    "technologies": [
+      },
       {
         "name": "Monster Shuffle",
         "category": "Projects",
