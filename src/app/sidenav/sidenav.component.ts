@@ -1,5 +1,13 @@
-import { Component } from "@angular/core";
+import {
+  Component,
+  Input,
+  AfterViewInit,
+  ViewChild,
+  ElementRef
+} from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import { MatSidenav } from "@angular/material";
+
 import { Observable } from "rxjs/Observable";
 
 import { LinkHandlerService, LINK_TYPES } from "../shared";
@@ -9,7 +17,10 @@ import { LinkHandlerService, LINK_TYPES } from "../shared";
   templateUrl: "sidenav.component.html",
   styleUrls: ["sidenav.component.css"]
 })
-export class SidenavComponent {
+export class SidenavComponent implements AfterViewInit {
+  @Input() sideNav: MatSidenav;
+  @ViewChild("sideNavHeader") sideNavHeader: ElementRef;
+
   link_types = LINK_TYPES;
 
   addresses: Observable<any> = this.httpClient.get(
@@ -32,4 +43,17 @@ export class SidenavComponent {
     private httpClient: HttpClient,
     public linkHandlerService: LinkHandlerService
   ) {}
+
+  ngAfterViewInit() {
+    this.sideNav.openedChange.subscribe((isOpened: boolean) => {
+      if (isOpened) {
+        console.log("Yeah");
+        this.sideNavHeader.nativeElement.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "nearest"
+        });
+      }
+    });
+  }
 }

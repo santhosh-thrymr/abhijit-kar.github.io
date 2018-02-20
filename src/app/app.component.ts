@@ -2,8 +2,6 @@ import { Component, HostListener, ViewChild, ElementRef } from "@angular/core";
 import { Router, NavigationEnd } from "@angular/router";
 import { GoogleAnalyticsService } from "./shared";
 
-import { MatSidenav } from "@angular/material";
-
 declare var ga;
 
 @Component({
@@ -12,15 +10,6 @@ declare var ga;
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  @ViewChild("sideNav") sideNav: MatSidenav;
-
-  @HostListener("window:scroll", ["$event"])
-  onWindowScroll(event: Event) {
-    if (this.sideNav && this.sideNav.opened) {
-      this.sideNav.close();
-    }
-  }
-
   constructor(
     public router: Router,
     private googleAnalyticsService: GoogleAnalyticsService

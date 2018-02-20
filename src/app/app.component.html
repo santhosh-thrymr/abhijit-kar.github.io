@@ -1,6 +1,6 @@
-<mat-sidenav-container #sideNavContainer>
+<mat-sidenav-container>
     <mat-sidenav #sideNav>
-        <ak-sidenav></ak-sidenav>
+        <ak-sidenav [sideNav]="sideNav"></ak-sidenav>
     </mat-sidenav>
     <mat-sidenav-content>
         <ak-header (onHamburgerClick)="sideNav.toggle()"></ak-header>
