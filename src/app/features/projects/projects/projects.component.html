@@ -1,7 +1,19 @@
-<mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3">
-    <mat-card-title>
-        Projects
-    </mat-card-title>
-    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes
-    very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-</mat-card>
+<ng-container *ngFor="let project of projects | async">
+    <div class="mx-auto col-md-5">
+        <div class="mx-auto mt-5 mb-2 custom-ink-bar"></div>
+        <div class="center gray">{{project.header}}</div>
+    </div>
+    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3">
+        <mat-nav-list>
+            <mat-list-item *ngFor="let technology of project.technologies; let i = index">
+                <span matLine (click)="linkHandlerService.handleButtonClick(technology)">{{technology.name}}
+                </span>
+                <button mat-icon-button class="pull-right" *ngIf="technology.git" tabindex="-1">
+                    <span matListIcon class="fa fa-github s-20 pink" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
+                    </span>
+                </button>
+                <mat-divider *ngIf="i !== project.technologies.length - 1"></mat-divider>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-card>
+</ng-container>

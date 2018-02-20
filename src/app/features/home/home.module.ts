@@ -6,10 +6,7 @@ import {
   MatCardModule,
   MatExpansionModule,
   MatListModule,
-  MatIconModule,
-  MatProgressSpinnerModule,
-  MatButtonModule,
-  MatTabsModule
+  MatButtonModule
 } from "@angular/material";
 
 import { HomeRoutingModule, HomeComponents } from "./home-routing.module";
@@ -19,10 +16,7 @@ const MaterialModules = [
   MatCardModule,
   MatExpansionModule,
   MatListModule,
-  MatIconModule,
-  MatProgressSpinnerModule,
-  MatButtonModule,
-  MatTabsModule
+  MatButtonModule
 ];
 
 @NgModule({

@@ -1,17 +1,6 @@
-.custom-ink-bar {
-  background-color: var(--blue);
-  width: 84px;
-  height: 2px;
-}
 .pull-right {
   right: 0;
   position: absolute;
-}
-.cyan {
-  color: cyan;
-}
-.green {
-  color: var(--green);
 }
 
 @media screen and (max-width: 768px) {

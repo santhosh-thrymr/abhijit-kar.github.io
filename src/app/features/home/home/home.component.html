@@ -9,27 +9,6 @@
         <mat-divider></mat-divider>
         <mat-expansion-panel>
             <mat-expansion-panel-header>
-                Projects
-            </mat-expansion-panel-header>
-            <mat-nav-list>
-                <ng-container *ngFor="let project of projects | async">
-                    <mat-divider [inset]="true"></mat-divider>
-                    <h3 matSubheader>{{project.header}}</h3>
-                    <mat-divider [inset]="true"></mat-divider>
-                    <mat-list-item *ngFor="let technology of project.technologies">
-                        <span matLine (click)="linkHandlerService.handleButtonClick(technology)">{{technology.name}}
-                        </span>
-                        <button mat-icon-button *ngIf="technology.git" tabindex="-1">
-                            <span matListIcon class="fa fa-github s-20" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
-                            </span>
-                        </button>
-                    </mat-list-item>
-                </ng-container>
-            </mat-nav-list>
-        </mat-expansion-panel>
-        <mat-divider></mat-divider>
-        <mat-expansion-panel>
-            <mat-expansion-panel-header>
                 Awards
             </mat-expansion-panel-header>
             <mat-expansion-panel>

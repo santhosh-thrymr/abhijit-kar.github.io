@@ -5,7 +5,7 @@
     </div>
     <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z3">
         <mat-nav-list>
-            <mat-list-item *ngFor="let technology of skill.technologies">
+            <mat-list-item *ngFor="let technology of skill.technologies; let i = index">
                 <span class="px-2 green">{{technology.percentage | number:'2.0-0'}}%</span>
                 <span (click)="linkHandlerService.handleButtonClick(technology)">{{technology.name}}
                 </span>
@@ -13,6 +13,7 @@
                     <span matListIcon class="fa fa-github s-20 pink" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
                     </span>
                 </button>
+                <mat-divider *ngIf="i !== skill.technologies.length - 1"></mat-divider>
             </mat-list-item>
         </mat-nav-list>
     </mat-card>

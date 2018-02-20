@@ -33,6 +33,16 @@ mat-card {
   color: var(--pink);
 }
 
+.custom-ink-bar {
+  background-color: var(--blue);
+  width: 84px;
+  height: 2px;
+}
+
+.green {
+  color: var(--green);
+}
+
 .mat-icon-button:focus {
   outline: none;
 }
