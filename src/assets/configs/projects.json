@@ -3,6 +3,12 @@
     "header": "Recent Projects",
     "technologies": [
       {
+        "name": "Portfolio",
+        "category": "Projects",
+        "git": "https://github.com/abhijit-kar/abhijit-kar.github.io",
+        "url": "http://www.abhijit-kar.com"
+      },
+      {
         "name": "Don't let him Poo",
         "category": "Projects",
         "git": "https://github.com/abhijit-kar/dont-let-him-poo",
