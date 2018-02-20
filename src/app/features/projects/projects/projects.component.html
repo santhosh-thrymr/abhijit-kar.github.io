@@ -13,10 +13,10 @@
             <p>{{technology.content}}</p>
         </mat-card-content>
         <mat-card-actions>
-            <button mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(technology)">
+            <button class="pink" mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(technology)">
                 Preview
             </button>
-            <button mat-button *ngIf="technology.git" tabindex="-1" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
+            <button class="pink" mat-button *ngIf="technology.git" tabindex="-1" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
                 GitHub
             </button>
         </mat-card-actions>
