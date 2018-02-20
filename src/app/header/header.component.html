@@ -24,7 +24,7 @@
             <nav mat-tab-nav-bar disableRipple class="goog-nav-bar-container">
                 <div class="goog-nav-bar">
                     <a mat-tab-link matFocus="true" *ngFor="let route of routes" [routerLink]="route.url" routerLinkActive [active]="currentUrl === route.url"
-                        (click)="currentUrl = route.url">
+                        (click)="currentUrl = route.url" #tabs>
                         {{route.label | uppercase}}
                     </a>
                 </div>

@@ -1,7 +1,11 @@
-import { Component, Output, EventEmitter } from "@angular/core";
-
-import { LinkHandlerService } from "../shared";
-
+import {
+  Component,
+  Output,
+  EventEmitter,
+  ViewChildren,
+  QueryList,
+  ElementRef
+} from "@angular/core";
 import {
   Router,
   Event as RouterEvent, // import as RouterEvent to avoid confusion with the DOM Event
@@ -11,16 +15,18 @@ import {
   NavigationError
 } from "@angular/router";
 
+import { LinkHandlerService } from "../shared";
+
 @Component({
   selector: "ak-header",
   templateUrl: "header.component.html",
   styleUrls: ["header.component.css"]
 })
 export class HeaderComponent {
+  @ViewChildren("tabs") tabs: QueryList<ElementRef>;
   @Output()
   onHamburgerClick: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  // currentIndex: number;
   currentUrl: any;
   isHamburgerOpen: boolean;
   loading: boolean;
@@ -76,9 +82,9 @@ export class HeaderComponent {
     private router: Router,
     public linkHandlerService: LinkHandlerService
   ) {
-    // for (let i = 0; i < this.routes.length; i++) {
-    //   this.routeMap[this.routes[i].url] = i;
-    // }
+    for (let i = 0; i < this.routes.length; i++) {
+      this.routeMap[this.routes[i].url] = i;
+    }
 
     router.events.subscribe((event: RouterEvent) => {
       this.navigationInterceptor(event);
@@ -87,8 +93,16 @@ export class HeaderComponent {
 
   navigationInterceptor(event: RouterEvent): void {
     if (event instanceof NavigationStart) {
-      // this.currentIndex = this.routeMap[event.url];
       this.currentUrl = event.url;
+
+      this.tabs
+        .toArray()
+        [this.routeMap[this.currentUrl]].nativeElement.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "center"
+        });
+
       this.loading = true;
     } else if (event instanceof NavigationEnd) {
       this.loading = false;
@@ -103,10 +117,4 @@ export class HeaderComponent {
     this.isHamburgerOpen = !this.isHamburgerOpen;
     this.onHamburgerClick.emit(this.isHamburgerOpen);
   }
-
-  // handleTabSwitch(tab: number) {
-  //   this.currentIndex = tab;
-
-  //   this.router.navigate([this.routes[tab].url]);
-  // }
 }
