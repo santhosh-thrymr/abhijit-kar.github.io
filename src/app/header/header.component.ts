@@ -8,14 +8,22 @@ import {
 } from "@angular/core";
 import {
   Router,
-  Event as RouterEvent, // import as RouterEvent to avoid confusion with the DOM Event
+  Event as RouterEvent,
   NavigationStart,
   NavigationEnd,
   NavigationCancel,
   NavigationError
 } from "@angular/router";
+import { MatSnackBar } from "@angular/material";
 
 import { LinkHandlerService } from "../shared";
+
+interface Route {
+  url: string;
+  label: string;
+  message: string;
+  reply: string;
+}
 
 @Component({
   selector: "ak-header",
@@ -32,42 +40,60 @@ export class HeaderComponent {
   loading: boolean;
   routeMap: any = {};
 
-  routes = [
+  routes: Route[] = [
     {
       url: "/",
-      label: "Home"
+      label: "Home",
+      message: "Chat with Me",
+      reply: "Sure"
     },
     {
       url: "/about",
-      label: "About"
+      label: "About",
+      message: "I am a Technology Aficionado",
+      reply: "Awesome"
     },
     {
       url: "/blog",
-      label: "Blog"
+      label: "Blog",
+      message: "I write on Medium",
+      reply: "Really?"
     },
     {
       url: "/faq",
-      label: "FAQ"
+      label: "FAQ",
+      message: "I help others on Stack Overflow",
+      reply: "Wonderfull"
     },
     {
       url: "/skills",
-      label: "Skills"
+      label: "Skills",
+      message: "I can Touch Type",
+      reply: "Great"
     },
     {
       url: "/projects",
-      label: "Projects"
+      label: "Projects",
+      message: "Play my game: Don't Let Him Poo",
+      reply: "Hehe Poo!"
     },
     {
       url: "/experience",
-      label: "Experience"
+      label: "Experience",
+      message: "Extensively Experienced",
+      reply: "Seems So"
     },
     {
       url: "/awards",
-      label: "Awards"
+      label: "Awards",
+      message: "Digital Superstar!",
+      reply: "Congrats"
     },
     {
       url: "/education",
-      label: "Education"
+      label: "Education",
+      message: "Graduate",
+      reply: "Hmmm"
     }
   ];
 
@@ -80,7 +106,8 @@ export class HeaderComponent {
 
   constructor(
     private router: Router,
-    public linkHandlerService: LinkHandlerService
+    public linkHandlerService: LinkHandlerService,
+    private snackBar: MatSnackBar
   ) {
     for (let i = 0; i < this.routes.length; i++) {
       this.routeMap[this.routes[i].url] = i;
@@ -102,6 +129,12 @@ export class HeaderComponent {
           block: "center",
           inline: "center"
         });
+
+      const route: Route = this.routes[this.routeMap[this.currentUrl]];
+
+      const snackBarRef = this.snackBar.open(route.message, route.reply, {
+        duration: 2000
+      });
 
       this.loading = true;
     } else if (event instanceof NavigationEnd) {
