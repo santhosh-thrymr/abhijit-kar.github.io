@@ -5,7 +5,10 @@
       {
         "name": "Portfolio",
         "category": "Projects",
-        "description": "The site you're seeing! (WIP)",
+        "description": "WIP",
+        "author": "Personal",
+        "image_url": "../../../../favicon.ico",
+        "year": "February 2018",
         "content":
           "This site is made using Angular, and is deployed on GitHub pages ...",
         "git": "https://github.com/abhijit-kar/abhijit-kar.github.io",
@@ -14,7 +17,11 @@
       {
         "name": "Don't let him Poo",
         "category": "Projects",
-        "description": "A game made using Angular (Finished)",
+        "description": "Complete",
+        "author": "Personal",
+        "image_url": "../../../../favicon.ico",
+        "year": "January 2018",
+
         "content":
           "A game made using Angular, which relies on A* algorithm for gameplay! ...",
         "git": "https://github.com/abhijit-kar/dont-let-him-poo",
@@ -23,8 +30,10 @@
       {
         "name": "Angular Scaffolding",
         "category": "Projects",
-        "description":
-          "Seed project for Angular Dev & Easy Deployment (Finished)",
+        "description": "Complete",
+        "author": "Personal",
+        "image_url": "../../../../favicon.ico",
+        "year": "January 2018",
         "content":
           "It eases some of the painpoints related to deployment, rather than ...",
         "git": "https://github.com/abhijit-kar/angular-scaffolding",
@@ -33,7 +42,10 @@
       {
         "name": "Restful Go",
         "category": "Projects",
-        "description": "Restful API Backend (On Hold)",
+        "description": "On Hold",
+        "author": "Personal",
+        "image_url": "../../../../favicon.ico",
+        "year": "January 2018",
         "content":
           "A backend deployed on Google Cloud Platform, and used Cloud Datastore ...",
         "git": "https://github.com/abhijit-kar/restful-go",
@@ -42,7 +54,10 @@
       {
         "name": "Pragmatic Machine Learning",
         "category": "Projects",
-        "description": "Cheat Sheet (On Hold)",
+        "description": "On Hold",
+        "author": "Personal",
+        "image_url": "../../../../favicon.ico",
+        "year": "January 2018",
         "content":
           "A practical codebase for beginning ML. It's written in Python, and Scikit ...",
         "git": "https://github.com/abhijit-kar/pragmatic-machine-learning",
@@ -51,7 +66,10 @@
       {
         "name": "Pragmatic Design Patterns",
         "category": "Projects",
-        "description": "Cheat Sheet (On Hold)",
+        "description": "On Hold",
+        "author": "Personal",
+        "image_url": "../../../../favicon.ico",
+        "year": "January 2018",
         "content":
           "A collection of Design Pattern, written in Python, comprised of Jupyter Note ....",
         "git": "https://github.com/abhijit-kar/pragmatic-design-patterns",
@@ -60,7 +78,10 @@
       {
         "name": "Pragmatic Data Structures",
         "category": "Projects",
-        "description": "A cheat sheet for Data Structures in Python",
+        "description": "On Hold",
+        "author": "Personal",
+        "image_url": "../../../../favicon.ico",
+        "year": "January 2018",
         "content":
           "A collection of Data Structures, written in Python, comprised of Jupyter ...",
         "git": "https://github.com/abhijit-kar/pragmatic-data-structure",
@@ -74,7 +95,10 @@
       {
         "name": "Midwifery",
         "category": "Projects",
-        "description": "Famed VR project, for University of NewCastle",
+        "description": "Complete",
+        "author": "Cognizant",
+        "image_url": "../../../../assets/images/companies/cognizant.ico",
+        "year": "January 2017",
         "content":
           "An acclaimed VR project for teaching Midwives to take care of new borns, ...",
         "url": "https://www.youtube.com/watch?v=aKVkieNf4tU"
@@ -86,15 +110,21 @@
     "technologies": [
       {
         "name": "Monster Shuffle",
-        "category": "Projects",
+        "category": "Complete",
         "description": "Casual Puzzle",
+        "author": "Personal",
+        "image_url": "../../../../favicon.ico",
+        "year": "January 2016",
         "content": "A 2D puzzle game made using Unity, just for fun!",
         "url": "https://abhijit-kar.itch.io/monster-shuffle"
       },
       {
         "name": "Box2D editor for Flash",
         "category": "Projects",
-        "description": "WYSIWYG Editor",
+        "description": "Complete",
+        "author": "Personal",
+        "image_url": "../../../../favicon.ico",
+        "year": "August 2015",
         "content":
           "A drag drop editor, that helped build physics based games quicker. It was ...",
         "url":
