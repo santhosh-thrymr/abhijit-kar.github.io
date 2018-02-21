@@ -13,6 +13,12 @@
   stroke: #ffeb3b !important;
 }
 
+.avatar-image {
+  background-size: cover;
+  width: 20px !important;
+  height: 20px !important;
+}
+
 mat-card {
   border-radius: 8px !important;
 
