@@ -1,6 +1,8 @@
 .avatar-image {
-  background-image: url(../../../../assets/images/abhijit-kar.png);
+  /* background-image: url(../../../../favicon.ico); */
   background-size: cover;
+  width: 20px;
+  height: 20px;
 }
 
 @media screen and (max-width: 768px) {

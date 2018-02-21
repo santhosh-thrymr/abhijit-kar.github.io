@@ -5,11 +5,11 @@
     </div>
     <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z1" *ngFor="let technology of project.technologies; let i = index">
         <mat-card-header>
-            <div mat-card-avatar class="avatar-image"></div>
-            <mat-card-title>{{technology.name}}</mat-card-title>
-            <mat-card-subtitle>{{technology.description}}</mat-card-subtitle>
+            <div mat-card-avatar class="avatar-image mr-2" [style.backgroundImage]="'url('+ technology.image_url +')'"></div>
+            <mat-card-subtitle>{{technology.year}} · {{technology.author}} · {{technology.description}}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
+            <h5>{{technology.name}}</h5>
             <p>{{technology.content}}</p>
         </mat-card-content>
         <mat-card-actions>
@@ -22,5 +22,3 @@
         </mat-card-actions>
     </mat-card>
 </ng-container>
-
-<!-- <span matLine (click)="linkHandlerService.handleButtonClick(technology)"></span> -->
