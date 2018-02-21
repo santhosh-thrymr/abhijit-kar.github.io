@@ -21,7 +21,7 @@
         "http://www.abhijit-kar.com/inline.6224392bc442c104bc1b.bundle.js",
         "http://www.abhijit-kar.com/main.b93a20ddc626a5313cc3.bundle.js",
         "http://www.abhijit-kar.com/polyfills.5b60212942a2c1047905.bundle.js",
-        "http://www.abhijit-kar.com/styles.6e0d792bee9fd10bc146.bundle.css"
+        "http://www.abhijit-kar.com/styles.32b3efcab35aea484b6d.bundle.css"
       ],
       "patterns": []
     },
@@ -54,8 +54,8 @@
     "http://www.abhijit-kar.com/inline.6224392bc442c104bc1b.bundle.js": "4558c783f693d2e2b5f968e0874600c001ced670",
     "http://www.abhijit-kar.com/main.b93a20ddc626a5313cc3.bundle.js": "12dbddf013b13c2b0ad874a2b881403a2e040d20",
     "http://www.abhijit-kar.com/polyfills.5b60212942a2c1047905.bundle.js": "e7a074229ab68be4b556141d7a113f0ab8abfb29",
-    "http://www.abhijit-kar.com/styles.6e0d792bee9fd10bc146.bundle.css": "d58b6ec7bd8d3638542eed90a188afca86297868",
+    "http://www.abhijit-kar.com/styles.32b3efcab35aea484b6d.bundle.css": "aa789085069b22c0875708b72cee5ea953319b45",
     "http://www.abhijit-kar.com/favicon.ico": "5168201405c98593ddf271e249b323d7515b2139",
-    "http://www.abhijit-kar.com/index.html": "4ffbef835c494a3c5bd1cde3c835925d0169dd02"
+    "http://www.abhijit-kar.com/index.html": "d4f9a40cc38731a3c73c33f482ad9a326c3ef64d"
   }
 }
