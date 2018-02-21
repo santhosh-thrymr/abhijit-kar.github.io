@@ -1,6 +1,6 @@
 <ng-container *ngFor="let project of projects | async; let i = index">
     <div class="mx-auto col-md-5">
-        <div class="mx-auto mt-5 mb-2 custom-ink-bar" style.backgroundColor="{{i | highlighter}}"></div>
+        <div class="mx-auto mt-4 mb-2 custom-ink-bar" style.backgroundColor="{{i | highlighter}}"></div>
         <div class="center gray">{{project.header}}</div>
     </div>
     <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z1" *ngFor="let technology of project.technologies; let i = index">
