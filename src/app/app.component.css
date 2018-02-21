@@ -10,7 +10,7 @@ mat-sidenav {
 }
 
 .flex-container {
-  min-height: calc(100vh - 292px);
+  min-height: calc(100vh - 333px);
 }
 
 @media screen and (max-width: 768px) {
