@@ -6,7 +6,7 @@
     <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z1">
         <mat-nav-list>
             <mat-list-item *ngFor="let technology of skill.technologies; let i = index">
-                <span class="pr-2 green">{{technology.percentage | number:'2.0-0'}}%</span>
+                <span class="pr-2 green" style.color="{{technology.legacy ? 'gray' : ''}}">{{technology.percentage | number:'2.0-0'}}%</span>
                 <span (click)="linkHandlerService.handleButtonClick(technology)">{{technology.name}}
                 </span>
                 <button mat-icon-button class="pull-right" *ngIf="technology.git" tabindex="-1">

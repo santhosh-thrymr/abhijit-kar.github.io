@@ -1,42 +1,26 @@
 [
   {
-    "header": "Current Skills",
+    "header": "Front End",
     "technologies": [
-      {
-        "name": "TypeScript",
-        "category": "Skills",
-        "percentage": 95,
-        "git": "https://github.com/abhijit-kar/dont-let-him-poo",
-        "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
-      },
-      {
-        "name": "Touch Typing",
-        "category": "Skills",
-        "percentage": 95,
-        "url":
-          "https://drive.google.com/open?id=1sU2ylRVEgEs6TuZs2mNTC9x2VRbajG9q"
-      },
       {
         "name": "Angular",
         "category": "Skills",
-        "percentage": 89,
+        "percentage": 95,
         "git": "https://github.com/abhijit-kar/dont-let-him-poo",
         "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
       },
       {
-        "name": "GIT",
+        "name": "Angular Material",
         "category": "Skills",
-        "percentage": 79,
-        "git": "https://github.com/abhijit-kar",
-        "url": "https://github.com/abhijit-kar?tab=repositories"
-      },
-      {
-        "name": "Python",
-        "category": "Skills",
-        "percentage": 68,
-        "git": "https://github.com/abhijit-kar/pragmatic-design-patterns",
-        "url": "http://www.abhijit-kar.com/pragmatic-design-patterns/"
-      },
+        "percentage": 80,
+        "git": "https://github.com/abhijit-kar/abhijit-kar.github.io",
+        "url": "http://www.abhijit-kar.com"
+      }
+    ]
+  },
+  {
+    "header": "Back End",
+    "technologies": [
       {
         "name": "Restful API",
         "category": "Skills",
@@ -52,11 +36,82 @@
         "url": "http://www.abhijit-kar.com/swagger-editor/"
       },
       {
-        "name": "Machine Learning",
+        "name": "Google Cloud Platform",
         "category": "Skills",
-        "percentage": 39,
+        "percentage": 15,
+        "git": "https://github.com/abhijit-kar/dont-let-him-poo",
+        "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
+      }
+    ]
+  },
+  {
+    "header": "Machine Learning",
+    "technologies": [
+      {
+        "name": "Pandas",
+        "category": "Skills",
+        "percentage": 80,
         "git": "https://github.com/abhijit-kar/pragmatic-machine-learning",
         "url": "http://www.abhijit-kar.com/pragmatic-machine-learning/"
+      },
+      {
+        "name": "Seaborn",
+        "category": "Skills",
+        "percentage": 75,
+        "git": "https://github.com/abhijit-kar/pragmatic-machine-learning",
+        "url": "http://www.abhijit-kar.com/pragmatic-machine-learning/"
+      },
+      {
+        "name": "Scikit Learn",
+        "category": "Skills",
+        "percentage": 50,
+        "git": "https://github.com/abhijit-kar/pragmatic-machine-learning",
+        "url": "http://www.abhijit-kar.com/pragmatic-machine-learning/"
+      }
+    ]
+  },
+  {
+    "header": "Essentials",
+    "technologies": [
+      {
+        "name": "Touch Typing",
+        "category": "Skills",
+        "percentage": 95,
+        "url":
+          "https://drive.google.com/open?id=1sU2ylRVEgEs6TuZs2mNTC9x2VRbajG9q"
+      },
+      {
+        "name": "Git Source Control",
+        "category": "Skills",
+        "percentage": 89,
+        "git": "https://github.com/abhijit-kar",
+        "url": "https://github.com/abhijit-kar?tab=repositories"
+      }
+    ]
+  },
+  {
+    "header": "Languages",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "category": "Skills",
+        "percentage": 95,
+        "git": "https://github.com/abhijit-kar/dont-let-him-poo",
+        "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
+      },
+      {
+        "name": "JavaScript",
+        "category": "Skills",
+        "percentage": 80,
+        "git": "https://github.com/abhijit-kar/dont-let-him-poo",
+        "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
+      },
+      {
+        "name": "Python",
+        "category": "Skills",
+        "percentage": 75,
+        "git": "https://github.com/abhijit-kar/pragmatic-design-patterns",
+        "url": "http://www.abhijit-kar.com/pragmatic-design-patterns/"
       },
       {
         "name": "Golang",
@@ -66,11 +121,18 @@
         "url": "http://www.abhijit-kar.com/swagger-editor/"
       },
       {
-        "name": "Google Cloud Platform",
+        "name": "C# (Unity)",
         "category": "Skills",
-        "percentage": 15,
-        "git": "https://github.com/abhijit-kar/dont-let-him-poo",
-        "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
+        "percentage": 89,
+        "legacy": true,
+        "url": "https://www.youtube.com/watch?v=aKVkieNf4tU"
+      },
+      {
+        "name": "ActionScript 3 (Flash)",
+        "category": "Skills",
+        "percentage": 95,
+        "legacy": true,
+        "url": "https://drive.google.com/open?id=0B3Cbrg4maoDvSEtZVDhtVm1ZZnc"
       }
     ]
   },
@@ -81,12 +143,14 @@
         "name": "Unity",
         "category": "Skills",
         "percentage": 80,
+        "legacy": true,
         "url": "https://www.youtube.com/watch?v=aKVkieNf4tU"
       },
       {
         "name": "Flash Professional",
         "category": "Skills",
         "percentage": 95,
+        "legacy": true,
         "url": "https://drive.google.com/open?id=0B3Cbrg4maoDvSEtZVDhtVm1ZZnc"
       }
     ]
