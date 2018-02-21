@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Hobbies",
+    "category": "FAQ",
+    "author": "Interview Question",
+    "image_url": "../../../../favicon.ico",
+    "content":
+      "To add new skills to my arsenal, keep the armoury stocked and from time to time, use the stockpile to create killer apps"
+  },
+  {
+    "name": "Strengths",
+    "category": "FAQ",
+    "author": "Interview Question",
+    "image_url": "../../../../favicon.ico",
+    "content": "Calculating"
+  },
+  {
+    "name": "Weaknesses",
+    "category": "FAQ",
+    "author": "Interview Question",
+    "image_url": "../../../../favicon.ico",
+    "content": "Searching"
+  }
+]
