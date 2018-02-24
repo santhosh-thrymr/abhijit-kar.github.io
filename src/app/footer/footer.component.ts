@@ -1,8 +1,5 @@
 import { Component } from "@angular/core";
-import { MatDialog, MatDialogRef } from "@angular/material";
-import { BreakpointObserver } from "@angular/cdk/layout";
-
-import { ChatBotComponent } from "../chat-bot/chat-bot.component";
+import { LinkHandlerService } from "../shared";
 
 @Component({
   selector: "ak-footer",
@@ -10,27 +7,11 @@ import { ChatBotComponent } from "../chat-bot/chat-bot.component";
   styleUrls: ["footer.component.css"]
 })
 export class FooterComponent {
-  constructor(
-    private dialog: MatDialog,
-    private breakpointObserver: BreakpointObserver
-  ) {}
+  chatBot = {
+    name: "Chat Bot",
+    category: "Chat Bot",
+    url: "https://console.dialogflow.com/api-client/demo/embedded/abhijit-kar"
+  };
 
-  startChat() {
-    const dialogRef: MatDialogRef<ChatBotComponent> = this.dialog.open(
-      ChatBotComponent,
-      { width: this.sizeBaseOnScreenSize() }
-    );
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log("The dialog was closed");
-    });
-  }
-
-  sizeBaseOnScreenSize(): string {
-    if (this.breakpointObserver.isMatched("(max-width: 768px)")) {
-      return "100%";
-    }
-
-    return "41.8%";
-  }
+  constructor(public linkHandlerService: LinkHandlerService) {}
 }

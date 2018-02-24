@@ -29,8 +29,7 @@ import {
   AppComponent,
   HeaderComponent,
   SidenavComponent,
-  FooterComponent,
-  ChatBotComponent
+  FooterComponent
 } from "./";
 
 const MaterialModules = [
@@ -52,8 +51,7 @@ const MaterialModules = [
     AppComponent,
     HeaderComponent,
     SidenavComponent,
-    FooterComponent,
-    ChatBotComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "abhijit-kar" }),
@@ -68,7 +66,6 @@ const MaterialModules = [
     ...MaterialModules,
     SharedModule
   ],
-  entryComponents: [ChatBotComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
