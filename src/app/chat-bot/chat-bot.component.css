@@ -1,8 +1,9 @@
-.chat-window-header {
-  padding: 10px;
+.avatar-image {
+  background-image: url(../../assets/images/abhijit-kar.png);
+  background-size: cover;
+}
 
-  border-bottom-right-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-
-  cursor: pointer;
+mat-card-subtitle {
+  font-style: italic;
+  font-size: 0.8em !important;
 }
