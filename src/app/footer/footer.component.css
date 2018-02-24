@@ -1,0 +1,17 @@
+span.s-30 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.chat-button {
+  position: fixed;
+  right: 20%;
+  bottom: 10%;
+  background-color: var(--purple);
+}
+
+@media screen and (max-width: 768px) {
+  .chat-button {
+    right: 3%;
+  }
+}

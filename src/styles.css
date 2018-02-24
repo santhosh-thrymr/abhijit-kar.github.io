@@ -40,6 +40,10 @@ mat-card {
   color: var(--gray);
 }
 
+.white {
+  color: var(--white);
+}
+
 .pink {
   color: var(--pink) !important;
 }

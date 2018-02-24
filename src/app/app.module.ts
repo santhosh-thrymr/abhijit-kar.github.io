@@ -24,7 +24,8 @@ import {
   AppComponent,
   HeaderComponent,
   SidenavComponent,
-  FooterComponent
+  FooterComponent,
+  ChatBotComponent
 } from "./";
 
 const MaterialModules = [
@@ -42,7 +43,8 @@ const MaterialModules = [
     AppComponent,
     HeaderComponent,
     SidenavComponent,
-    FooterComponent
+    FooterComponent,
+    ChatBotComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "abhijit-kar" }),

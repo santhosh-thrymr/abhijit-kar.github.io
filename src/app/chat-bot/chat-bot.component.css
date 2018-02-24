@@ -1,0 +1,12 @@
+.chat-window-header {
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+
+  padding: 10px;
+
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+
+  cursor: pointer;
+}
