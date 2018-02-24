@@ -1,8 +1,4 @@
 .chat-window-header {
-  position: absolute;
-  bottom: 0;
-  right: 2%;
-
   padding: 10px;
 
   border-bottom-right-radius: 0 !important;

@@ -13,6 +13,10 @@
   stroke: #ffeb3b !important;
 }
 
+mat-dialog-container {
+  border-radius: 8px !important;
+}
+
 mat-card {
   border-radius: 8px !important;
 

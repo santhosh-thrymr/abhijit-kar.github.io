@@ -11,7 +11,8 @@ import {
   MatProgressBarModule,
   MatSidenavModule,
   MatButtonModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatDialogModule
 } from "@angular/material";
 
 import { environment } from "../environments/environment";
@@ -27,6 +28,7 @@ import {
   FooterComponent,
   ChatBotComponent
 } from "./";
+import { LayoutModule } from "@angular/cdk/layout";
 
 const MaterialModules = [
   MatCardModule,
@@ -35,7 +37,9 @@ const MaterialModules = [
   MatProgressBarModule,
   MatSidenavModule,
   MatButtonModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatDialogModule,
+  LayoutModule
 ];
 
 @NgModule({
@@ -58,6 +62,7 @@ const MaterialModules = [
     ...MaterialModules,
     SharedModule
   ],
+  entryComponents: [ChatBotComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
