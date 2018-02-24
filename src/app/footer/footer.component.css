@@ -10,6 +10,12 @@ span.s-30 {
   background-color: var(--purple);
 }
 
+.fa-comment-o {
+  position: absolute;
+  right: 26%;
+  top: 27%;
+}
+
 @media screen and (max-width: 768px) {
   .chat-button {
     right: 3%;
