@@ -6,7 +6,7 @@ span.s-30 {
 .chat-button {
   position: fixed;
   right: 20%;
-  bottom: 10%;
+  top: 80%;
   background-color: var(--purple);
 }
 
