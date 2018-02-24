@@ -50,19 +50,19 @@ export class HeaderComponent {
     {
       url: "/about",
       label: "About",
-      message: "I am a Tech Aficionado",
+      message: "Tech Aficionado",
       reply: "Awesome"
     },
     {
       url: "/blog",
       label: "Blog",
-      message: "I contribute on Medium",
+      message: "Blog on Medium",
       reply: "Really?"
     },
     {
       url: "/faq",
       label: "FAQ",
-      message: "I help others on Stack Overflow",
+      message: "Stack Overflow, Sure?",
       reply: "Wonderful"
     },
     {
@@ -74,25 +74,25 @@ export class HeaderComponent {
     {
       url: "/projects",
       label: "Projects",
-      message: "Play my game: Don't Let Him Poo",
+      message: "Don't Let Him Poo",
       reply: "Hehe Poo!"
     },
     {
       url: "/experience",
       label: "Experience",
-      message: "I am Extensively Experienced",
+      message: "Extensively Experienced",
       reply: "Excellent"
     },
     {
       url: "/awards",
       label: "Awards",
-      message: "I was recognized as a Digital Superstar!",
+      message: "Digital Superstar!",
       reply: "Outstanding"
     },
     {
       url: "/education",
       label: "Education",
-      message: "I am a Software Engineer",
+      message: "Software Engineer",
       reply: "Marvellous"
     }
   ];
