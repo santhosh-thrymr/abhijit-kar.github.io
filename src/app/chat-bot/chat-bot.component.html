@@ -4,5 +4,26 @@
         <mat-card-title class="mb-2">Abhijit</mat-card-title>
         <mat-card-subtitle>Online</mat-card-subtitle>
     </mat-card-header>
-    <mat-card-content></mat-card-content>
+    <mat-card-content>
+        Hello
+    </mat-card-content>
+    <mat-card-actions>
+        <mat-form-field [formGroup]="chatFormGroup" class="col-12 chat-controls">
+            <textarea matInput placeholder="Your Message" matTextareaAutosize matAutosizeMinRows="1" matAutosizeMaxRows="4" [maxlength]="maxLength"
+                formControlName="message"></textarea>
+            <button mat-button *ngIf="message" matSuffix mat-icon-button (click)="message=''">
+                <i class="fa fa-close pink"></i>
+            </button>
+            <mat-hint align="start">
+                <strong>No Cussing!</strong>
+            </mat-hint>
+            <mat-error *ngIf="chatFormGroup.get('message').hasError('maxlength')">
+                Cut it Short, your message is too long!
+            </mat-error>
+            <mat-hint align="end">{{message.length}} / {{maxLength}}</mat-hint>
+        </mat-form-field>
+        <button mat-mini-fab class="send-button">
+            <i class="fa fa-send"></i>
+        </button>
+    </mat-card-actions>
 </mat-card>

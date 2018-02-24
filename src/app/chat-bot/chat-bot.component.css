@@ -3,7 +3,50 @@
   background-size: cover;
 }
 
+.chat-controls {
+  width: 90%;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.send-button {
+  position: absolute;
+  right: 10px;
+  bottom: 23px;
+}
+
+mat-card {
+  border: none !important;
+  box-shadow: none !important;
+}
+
 mat-card-subtitle {
   font-style: italic;
   font-size: 0.8em !important;
+}
+
+@media screen and (max-width: 920px) {
+  .chat-controls {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chat-controls {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chat-controls {
+    padding-left: 7px;
+  }
+  .send-button {
+    right: 2px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .chat-controls {
+    width: 80%;
+  }
 }

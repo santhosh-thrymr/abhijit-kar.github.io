@@ -3,6 +3,8 @@ import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { LayoutModule } from "@angular/cdk/layout";
+import { ReactiveFormsModule } from "@angular/forms";
 
 import {
   MatCardModule,
@@ -12,7 +14,9 @@ import {
   MatSidenavModule,
   MatButtonModule,
   MatSnackBarModule,
-  MatDialogModule
+  MatDialogModule,
+  MatFormFieldModule,
+  MatInputModule
 } from "@angular/material";
 
 import { environment } from "../environments/environment";
@@ -28,7 +32,6 @@ import {
   FooterComponent,
   ChatBotComponent
 } from "./";
-import { LayoutModule } from "@angular/cdk/layout";
 
 const MaterialModules = [
   MatCardModule,
@@ -39,7 +42,9 @@ const MaterialModules = [
   MatButtonModule,
   MatSnackBarModule,
   MatDialogModule,
-  LayoutModule
+  LayoutModule,
+  MatFormFieldModule,
+  MatInputModule
 ];
 
 @NgModule({
@@ -58,6 +63,7 @@ const MaterialModules = [
     BrowserAnimationsModule,
     HttpClientModule,
     FeaturesModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     ...MaterialModules,
     SharedModule

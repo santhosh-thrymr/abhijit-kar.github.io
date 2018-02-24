@@ -30,7 +30,8 @@ mat-card {
   border-radius: 50% !important;
 }
 
-.mat-ink-bar {
+.mat-ink-bar,
+.mat-input-underline {
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   background-color: var(--blue) !important;
@@ -66,6 +67,6 @@ mat-card {
   color: var(--green);
 }
 
-.mat-icon-button:focus {
+.mat-icon-button:focus, .mat-mini-fab:focus {
   outline: none;
 }
