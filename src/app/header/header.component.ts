@@ -14,15 +14,12 @@ import {
   NavigationCancel,
   NavigationError
 } from "@angular/router";
-import { MatSnackBar } from "@angular/material";
 
 import { LinkHandlerService } from "../shared";
 
 interface Route {
   url: string;
   label: string;
-  message: string;
-  reply: string;
 }
 
 @Component({
@@ -43,57 +40,39 @@ export class HeaderComponent {
   routes: Route[] = [
     {
       url: "/",
-      label: "Home",
-      message: "Chat with Me",
-      reply: "Sure"
+      label: "Home"
     },
     {
       url: "/about",
-      label: "About",
-      message: "Tech Aficionado",
-      reply: "Awesome"
+      label: "About"
     },
     {
       url: "/blog",
-      label: "Blog",
-      message: "Blog on Medium",
-      reply: "Really?"
+      label: "Blog"
     },
     {
       url: "/faq",
-      label: "FAQ",
-      message: "Stack Overflow, Sure?",
-      reply: "Wonderful"
+      label: "FAQ"
     },
     {
       url: "/skills",
-      label: "Skills",
-      message: "I can Touch Type",
-      reply: "Great"
+      label: "Skills"
     },
     {
       url: "/projects",
-      label: "Projects",
-      message: "Don't Let Him Poo",
-      reply: "Hehe Poo!"
+      label: "Projects"
     },
     {
       url: "/experience",
-      label: "Experience",
-      message: "Extensively Experienced",
-      reply: "Excellent"
+      label: "Experience"
     },
     {
       url: "/awards",
-      label: "Awards",
-      message: "Digital Superstar!",
-      reply: "Outstanding"
+      label: "Awards"
     },
     {
       url: "/education",
-      label: "Education",
-      message: "Software Engineer",
-      reply: "Marvellous"
+      label: "Education"
     }
   ];
 
@@ -106,8 +85,7 @@ export class HeaderComponent {
 
   constructor(
     private router: Router,
-    public linkHandlerService: LinkHandlerService,
-    private snackBar: MatSnackBar
+    public linkHandlerService: LinkHandlerService
   ) {
     for (let i = 0; i < this.routes.length; i++) {
       this.routeMap[this.routes[i].url] = i;
@@ -131,10 +109,6 @@ export class HeaderComponent {
         });
 
       const route: Route = this.routes[this.routeMap[this.currentUrl]];
-
-      const snackBarRef = this.snackBar.open(route.message, route.reply, {
-        duration: 2000
-      });
 
       this.loading = true;
     } else if (

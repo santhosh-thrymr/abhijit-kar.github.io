@@ -13,7 +13,6 @@ import {
   MatProgressBarModule,
   MatSidenavModule,
   MatButtonModule,
-  MatSnackBarModule,
   MatDialogModule,
   MatFormFieldModule,
   MatInputModule
@@ -39,7 +38,6 @@ const MaterialModules = [
   MatProgressBarModule,
   MatSidenavModule,
   MatButtonModule,
-  MatSnackBarModule,
   MatDialogModule,
   LayoutModule,
   MatFormFieldModule,
