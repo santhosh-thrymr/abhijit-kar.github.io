@@ -47,10 +47,6 @@ export class HeaderComponent {
       label: "About"
     },
     {
-      url: "/blog",
-      label: "Blog"
-    },
-    {
       url: "/faq",
       label: "FAQ"
     },
