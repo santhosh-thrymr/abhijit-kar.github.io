@@ -1,12 +1,16 @@
-<mat-card class="mx-auto my-1 col-md-5 mat-elevation-z1">
-    <mat-card-subtitle class="center">
-        <span class="fa fa-quote-left"></span>
-        <span class="tagline px-2">
-            Technology aficionado, trying to help others achieve their potential!
-        </span>
-        <span class="fa fa-quote-right"></span>
-    </mat-card-subtitle>
-    <mat-card-content class="center">
-        I'm about to upload a part of my conscience to this site, you'll soon be meeting it!
-    </mat-card-content>
-</mat-card>
+<ng-container *ngFor="let highlight of highlights | async; let i = index">
+    <div class="mx-auto col-md-5">
+        <div class="mx-auto mt-4 mb-2 custom-ink-bar" style.backgroundColor="{{i | highlighter}}"></div>
+        <div class="center gray">{{highlight.header}}</div>
+    </div>
+    <mat-card class="mx-auto my-2 col-md-5 mat-elevation-z1" *ngFor="let featured of highlight.features; let i = index">
+        <mat-card-header>
+            <div mat-card-avatar class="avatar-image mr-2" [style.backgroundImage]="'url('+ featured.avatar_url +')'"></div>
+            <mat-card-subtitle>{{featured.year}} · {{featured.author}} · {{featured.description}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="clickable" matRipple [src]="featured.image_url" mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(featured)">
+        <mat-card-content>
+            {{featured.content}}
+        </mat-card-content>
+    </mat-card>
+</ng-container>

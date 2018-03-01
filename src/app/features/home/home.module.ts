@@ -4,8 +4,6 @@ import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import {
   MatCardModule,
-  MatExpansionModule,
-  MatListModule,
   MatButtonModule
 } from "@angular/material";
 
@@ -14,8 +12,6 @@ import { SharedModule } from "../../shared/shared.module";
 
 const MaterialModules = [
   MatCardModule,
-  MatExpansionModule,
-  MatListModule,
   MatButtonModule
 ];
 

@@ -63,10 +63,15 @@ mat-card {
   height: 2px;
 }
 
+.clickable {
+  cursor: pointer !important;
+}
+
 .green {
   color: var(--green);
 }
 
-.mat-icon-button:focus, .mat-mini-fab:focus {
+.mat-icon-button:focus,
+.mat-mini-fab:focus {
   outline: none;
 }
