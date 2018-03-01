@@ -10,5 +10,11 @@
       "category": "Social",
       "class": "fa-linkedin",
       "url": "https://www.linkedin.com/in/abhijit-kar/"
+    },
+    {
+      "name": "Stack Overflow",
+      "category": "Social",
+      "class": "fa-stack-overflow",
+      "url": "https://stackoverflow.com/story/abhijit-kar"
     }
   ]
