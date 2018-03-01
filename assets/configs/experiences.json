@@ -1,0 +1,18 @@
+[
+  {
+    "header": "Present",
+    "technologies": [
+      {
+        "name": "Cognizant",
+        "category": "Experience",
+        "description": "Programmer Analyst",
+        "author": "Cognizant",
+        "image_url": "../../../../assets/images/companies/cognizant.ico",
+        "year": "February 2016",
+        "content":
+          "Worked in two varied departments, 1st Year AR, VR using Unity, and then ...",
+        "url": "https://www.cognizant.com/"
+      }
+    ]
+  }
+]
