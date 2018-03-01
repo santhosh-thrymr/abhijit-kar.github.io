@@ -16,5 +16,11 @@
       "category": "Social",
       "class": "fa-stack-overflow",
       "url": "https://stackoverflow.com/story/abhijit-kar"
+    },
+    {
+      "name": "Medium",
+      "category": "Social",
+      "class": "fa-medium",
+      "url": "https://medium.com/@abhijit_kar"
     }
   ]
