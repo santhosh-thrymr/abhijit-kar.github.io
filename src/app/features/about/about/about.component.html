@@ -1,11 +1,16 @@
 <mat-card class="mx-auto my-1 col-md-5 mat-elevation-z1">
     <mat-card-subtitle class="center">
         <span class="fa fa-quote-left"></span>
-        <span class="tagline px-2">
+        <span class="tagline px-2 green">
             Technology aficionado, trying to help others achieve their potential!
         </span>
         <span class="fa fa-quote-right"></span>
     </mat-card-subtitle>
+    <mat-card-footer class="center">
+        <button class="pink" mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(contribution)" *ngFor="let contribution of contributions | async">
+            {{contribution.name}}
+        </button>
+    </mat-card-footer>
 </mat-card>
 <mat-card class="mx-auto my-1 col-md-5 mat-elevation-z1">
     <mat-card-title class="center">
