@@ -3,6 +3,17 @@
     "header": "Highlights",
     "features": [
       {
+        "name": "Medium",
+        "category": "Highlights",
+        "description": "Blog",
+        "author": "Personal",
+        "avatar_url": "../../../../favicon.ico",
+        "year": "March 2018",
+        "image_url": "../../../../assets/images/highlights/medium-blog.png",
+        "content": "Recently started blogging on Medium!",
+        "url": "https://medium.com/@abhijit_kar"
+      },
+      {
         "name": "Don't Let Him Poo",
         "category": "Highlights",
         "description": "Casual Game",
@@ -12,7 +23,7 @@
         "image_url":
           "../../../../assets/images/highlights/dont-let-him-poo.webp",
         "content":
-          "A game made using Angular, which relies on A* algorithm for GamePlay!",
+          "Made a game using Angular, which relies on A* algorithm for GamePlay!",
         "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
       },
       {
@@ -22,10 +33,8 @@
         "author": "Personal",
         "avatar_url": "../../../../favicon.ico",
         "year": "January 2018",
-        "image_url":
-          "../../../../assets/images/highlights/typing-speed.png",
-        "content":
-          "I can google anything faster than 70 WPM!",
+        "image_url": "../../../../assets/images/highlights/typing-speed.png",
+        "content": "I can google anything faster than 70 WPM!",
         "url":
           "https://drive.google.com/file/d/1sU2ylRVEgEs6TuZs2mNTC9x2VRbajG9q/view"
       },
@@ -38,23 +47,9 @@
         "year": "February 2018",
         "image_url":
           "../../../../assets/images/highlights/angular-pluralsight-iq.webp",
-        "content": "Expert Angular Programmer!",
+        "content": "I have extensive experience in building production worthy sites using Angular!",
         "url":
           "https://app.pluralsight.com/score/redir/9b194e92-a29c-445b-a975-9eb4e6dfdea9?a564a0de05"
-      },
-      {
-        "name": "JavaScript Pluralsight IQ",
-        "category": "Highlights",
-        "description": "IQ Test",
-        "author": "Pluralsight",
-        "avatar_url": "../../../../favicon.ico",
-        "year": "February 2018",
-        "image_url":
-          "../../../../assets/images/highlights/javascript-pluralsight-iq.webp",
-        "content":
-          "Good Hands On Experience with JavaScript, but I prefer TypeScript.",
-        "url":
-          "https://app.pluralsight.com/score/redir/617bc3c9-9e39-4535-b1bd-972f164ec70d?c11780800b"
       }
     ]
   }
