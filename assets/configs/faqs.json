@@ -12,13 +12,15 @@
     "category": "FAQ",
     "author": "Interview Question",
     "image_url": "../../../../favicon.ico",
-    "content": "..."
+    "content":
+      "Passion for technology drives my day to day functions. And ability to see the big picture, while making apps, helps me in architecting scalable approaches to problems"
   },
   {
     "name": "Weaknesses",
     "category": "FAQ",
     "author": "Interview Question",
     "image_url": "../../../../favicon.ico",
-    "content": "..."
+    "content":
+      "Owing to a weak memory, I'm forgetful. Along with some of the useful information, my weakness makes me forget useless information and helps me focus on stuffs that matter"
   }
 ]
