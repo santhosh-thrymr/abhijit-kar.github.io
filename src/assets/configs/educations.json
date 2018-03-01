@@ -3,9 +3,11 @@
     "name": "B.Tech in Information Technology",
     "category": "Education",
     "author": "C.V.R.C.E",
+    "description": "Information Technology",
     "image_url": "../../../../assets/images/colleges/cvrce.png",
     "year": "June 2015",
     "content":
-      "Graduated from C.V. Raman College of Engineering, Bhubaneswar, Odisha"
+      "Graduated from C.V. Raman College of Engineering, Bhubaneswar, Odisha",
+    "url": "http://cvrce.edu.in/"
   }
 ]

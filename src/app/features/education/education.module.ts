@@ -1,14 +1,14 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
-import { MatCardModule, MatListModule } from "@angular/material";
+import { MatCardModule, MatButtonModule } from "@angular/material";
 
 import {
   EducationRoutingModule,
   EducationComponents
 } from "./education-routing.module";
 
-const MaterialModules = [MatCardModule, MatListModule];
+const MaterialModules = [MatCardModule, MatButtonModule];
 
 @NgModule({
   imports: [CommonModule, EducationRoutingModule, ...MaterialModules],

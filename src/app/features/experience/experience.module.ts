@@ -1,17 +1,28 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
-import { MatCardModule, MatListModule } from "@angular/material";
+import {
+  MatCardModule,
+  MatListModule,
+  MatButtonModule
+} from "@angular/material";
 
 import {
   ExperienceRoutingModule,
   ExperienceComponents
 } from "./experience-routing.module";
 
-const MaterialModules = [MatCardModule, MatListModule];
+import { SharedModule } from "../../shared/shared.module";
+
+const MaterialModules = [MatCardModule, MatListModule, MatButtonModule];
 
 @NgModule({
-  imports: [CommonModule, ExperienceRoutingModule, ...MaterialModules],
+  imports: [
+    CommonModule,
+    ExperienceRoutingModule,
+    SharedModule,
+    ...MaterialModules
+  ],
   declarations: ExperienceComponents
 })
 export class ExperienceModule {}

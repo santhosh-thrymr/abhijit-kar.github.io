@@ -2,13 +2,20 @@ import { Component } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs/Observable";
 
+import { LinkHandlerService } from "../../../shared";
+
 @Component({
   selector: "ak-education",
   templateUrl: "education.component.html",
   styleUrls: ["education.component.css"]
 })
 export class EducationComponent {
-  educations: Observable<any> = this.httpClient.get("./assets/configs/educations.json");
+  educations: Observable<any> = this.httpClient.get(
+    "./assets/configs/educations.json"
+  );
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(
+    private httpClient: HttpClient,
+    public linkHandlerService: LinkHandlerService
+  ) {}
 }

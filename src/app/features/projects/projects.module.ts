@@ -3,7 +3,6 @@ import { CommonModule } from "@angular/common";
 
 import {
   MatCardModule,
-  MatListModule,
   MatButtonModule
 } from "@angular/material";
 
@@ -11,9 +10,10 @@ import {
   ProjectsRoutingModule,
   ProjectsComponents
 } from "./projects-routing.module";
+
 import { SharedModule } from "../../shared/shared.module";
 
-const MaterialModules = [MatCardModule, MatListModule, MatButtonModule];
+const MaterialModules = [MatCardModule, MatButtonModule];
 
 @NgModule({
   imports: [

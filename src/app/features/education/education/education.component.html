@@ -1,10 +1,15 @@
 <mat-card *ngFor="let education of educations | async" class="mx-auto my-2 col-md-5 mat-elevation-z1">
     <mat-card-header>
         <div mat-card-avatar class="avatar-image mr-2" [style.backgroundImage]="'url('+ education.image_url +')'"></div>
-        <mat-card-subtitle>{{education.year}} · {{education.author}}</mat-card-subtitle>
+        <mat-card-subtitle>{{education.year}} · {{education.author}} · {{education.description}}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
         <h5>{{education.name}}</h5>
         <p>{{education.content}}</p>
     </mat-card-content>
+    <mat-card-actions>
+        <button class="pink" mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(education)">
+            Website
+        </button>
+    </mat-card-actions>
 </mat-card>
