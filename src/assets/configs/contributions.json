@@ -1,8 +1,8 @@
 [
   {
-    "name": "Stack Blitz",
+    "name": "GitHub",
     "category": "Contributions",
-    "url": "https://stackblitz.com/@abhijit-kar"
+    "url": "https://github.com/abhijit-kar"
   },
   {
     "name": "Quora",
@@ -13,6 +13,11 @@
     "name": "Medium",
     "category": "Contributions",
     "url": "https://medium.com/@abhijit_kar"
+  },
+  {
+    "name": "Stack Blitz",
+    "category": "Contributions",
+    "url": "https://stackblitz.com/@abhijit-kar"
   },
   {
     "name": "Stack Overflow",
