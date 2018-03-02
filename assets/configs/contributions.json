@@ -1,13 +1,13 @@
 [
   {
-    "name": "GitHub",
-    "category": "Contributions",
-    "url": "https://github.com/abhijit-kar"
-  },
-  {
     "name": "Quora",
     "category": "Contributions",
     "url": "https://www.quora.com/profile/Abhijit-Kar-52"
+  },
+  {
+    "name": "Stack Overflow",
+    "category": "Contributions",
+    "url": "https://stackoverflow.com/users/9368649/abhijit-kar"
   },
   {
     "name": "Medium",
@@ -15,13 +15,13 @@
     "url": "https://medium.com/@abhijit_kar"
   },
   {
-    "name": "Stack Blitz",
+    "name": "StackBlitz",
     "category": "Contributions",
     "url": "https://stackblitz.com/@abhijit-kar"
   },
   {
-    "name": "Stack Overflow",
+    "name": "GitHub",
     "category": "Contributions",
-    "url": "https://stackoverflow.com/users/9368649/abhijit-kar"
+    "url": "https://github.com/abhijit-kar"
   }
 ]
