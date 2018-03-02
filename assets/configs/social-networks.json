@@ -1,26 +1,26 @@
 [
-    {
-      "name": "Twitter",
-      "category": "Social",
-      "class": "fa-twitter",
-      "url": "https://twitter.com/AbhijitKarDikha"
-    },
-    {
-      "name": "LinkedIn",
-      "category": "Social",
-      "class": "fa-linkedin",
-      "url": "https://www.linkedin.com/in/abhijit-kar/"
-    },
-    {
-      "name": "Stack Overflow",
-      "category": "Social",
-      "class": "fa-stack-overflow",
-      "url": "https://stackoverflow.com/story/abhijit-kar"
-    },
-    {
-      "name": "Medium",
-      "category": "Social",
-      "class": "fa-medium",
-      "url": "https://medium.com/@abhijit_kar"
-    }
-  ]
+  {
+    "name": "Twitter",
+    "category": "Social",
+    "class": "fa-twitter",
+    "url": "https://twitter.com/AbhijitKarDikha"
+  },
+  {
+    "name": "LinkedIn",
+    "category": "Social",
+    "class": "fa-linkedin",
+    "url": "https://www.linkedin.com/in/abhijit-kar/"
+  },
+  {
+    "name": "Stack Overflow",
+    "category": "Social",
+    "class": "fa-stack-overflow",
+    "url": "https://stackoverflow.com/users/9368649/abhijit-kar"
+  },
+  {
+    "name": "Medium",
+    "category": "Social",
+    "class": "fa-medium",
+    "url": "https://medium.com/@abhijit_kar"
+  }
+]
