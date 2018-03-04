@@ -1,5 +1,13 @@
 {{para}}
 
-<button class="btn btn-link pink" (click)="toggleSummary()" *ngIf="paragraph.length > summaryLength">
+<ul *ngIf="bullets && !showSummary" class="pt-3">
+    <li *ngFor="let bullet of bullets">
+        <p>{{bullet}}</p>
+    </li>
+</ul>
+
+<ng-container *ngIf="showSummary && (paragraph.length > summaryLength || bullets)">...</ng-container>
+
+<button class="btn btn-link pink" (click)="toggleSummary()" *ngIf="paragraph.length > summaryLength || bullets">
     Read {{btnText}}
 </button>

@@ -11,13 +11,8 @@
         <mat-card-content>
             <h5>{{company.name}}</h5>
             <p>
-                <ak-summarizer [paragraph]="company.content"></ak-summarizer>
+                <ak-summarizer [paragraph]="company.content" [bullets]="company.bullets"></ak-summarizer>
             </p>
-            <ul>
-                <li *ngFor="let bullet of company.bullets">
-                    <ak-summarizer [paragraph]="bullet"></ak-summarizer>
-                </li>
-            </ul>
         </mat-card-content>
         <mat-card-actions>
             <button class="pink" mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(company)">

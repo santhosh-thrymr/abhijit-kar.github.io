@@ -12,6 +12,7 @@ enum BtnTexts {
 })
 export class SummarizerComponent {
   @Input() paragraph: string;
+  @Input() bullets: string[];
 
   summaryLength = 140;
   showSummary = true;
@@ -21,7 +22,7 @@ export class SummarizerComponent {
     let summary = this.paragraph;
 
     if (this.showSummary && this.paragraph.length > this.summaryLength) {
-      summary = `${this.paragraph.substr(0, 140)}...`;
+      summary = this.paragraph.substr(0, 140);
     }
 
     return summary;

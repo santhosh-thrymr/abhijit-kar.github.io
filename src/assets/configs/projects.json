@@ -10,7 +10,22 @@
         "image_url": "../../../../favicon.ico",
         "year": "February 2018",
         "content":
-          "This site is made using Angular, and is deployed on GitHub pages ...",
+          "This site is going to be hub for all I have done and all I am about to do. I intended for this site to look like google's page on mobile devices. These are all you need to make something like this (N.B. I hate reinventing the cycle):",
+        "bullets": [
+          "Typescript: Awesome superset of JavaScript",
+          "Angular CLI: Boon for Angular developer, takes care of build, serve, lint etc.",
+          "Visual Studio Code: Best in class Code Editor",
+          "Angular: For creating sophisticated Single Page Application out of components",
+          "Angular Material: To make the site look like Google's mobile site & Android news feed.",
+          "GitHub: Source Control",
+          "Angular CLI GH Pages: To easily deploy the build to GitHub Pages or even Google Cloud Platform",
+          "Google Forms: To collect your message and email.",
+          "Google Docs: For Resume, All I have to do is update my resume at one place.",
+          "Google Maps: To point out my address.",
+          "Google Domains: I purchased this domain from Google Domains, got free domain security.",
+          "Google G Suite: For customized professional email.",
+          "Dialog Flow: Made the chatbot using Google's Dialog Flow."
+        ],
         "git": "https://github.com/abhijit-kar/abhijit-kar.github.io",
         "url": "http://www.abhijit-kar.com"
       },
@@ -21,9 +36,8 @@
         "author": "Personal",
         "image_url": "../../../../favicon.ico",
         "year": "January 2018",
-
         "content":
-          "A game made using Angular, which relies on A* algorithm for gameplay! ...",
+          "A game made using Angular, which relies on A* algorithm for gameplay!",
         "git": "https://github.com/abhijit-kar/dont-let-him-poo",
         "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
       },
@@ -34,8 +48,7 @@
         "author": "Personal",
         "image_url": "../../../../favicon.ico",
         "year": "January 2018",
-        "content":
-          "It eases some of the painpoints related to deployment, rather than ...",
+        "content": "It eases some of the painpoints related to deployment.",
         "git": "https://github.com/abhijit-kar/angular-scaffolding",
         "url": "http://www.abhijit-kar.com/angular-scaffolding/"
       },
@@ -47,7 +60,7 @@
         "image_url": "../../../../favicon.ico",
         "year": "January 2018",
         "content":
-          "A backend deployed on Google Cloud Platform, and used Cloud Datastore ...",
+          "A backend deployed on Google Cloud Platform, and which uses Cloud Datastore.",
         "git": "https://github.com/abhijit-kar/restful-go",
         "url": "http://www.abhijit-kar.com/swagger-editor/"
       },
@@ -59,7 +72,15 @@
         "image_url": "../../../../favicon.ico",
         "year": "January 2018",
         "content":
-          "A practical codebase for beginning ML. It's written in Python, and Scikit ...",
+          "A practical cheat sheet for beginning ML. It houses Jupyter Notebooks written using:",
+        "bullets": [
+          "Python",
+          "Pandas",
+          "Numpy",
+          "Matplotlib",
+          "Seaborn",
+          "Scikit Learn"
+        ],
         "git": "https://github.com/abhijit-kar/pragmatic-machine-learning",
         "url": "http://www.abhijit-kar.com/pragmatic-machine-learning/"
       },
@@ -71,7 +92,7 @@
         "image_url": "../../../../favicon.ico",
         "year": "January 2018",
         "content":
-          "A collection of Design Pattern, written in Python, comprised of Jupyter Note ....",
+          "A collection of Design Pattern, written in Python, comprised of Jupyter Notebooks.",
         "git": "https://github.com/abhijit-kar/pragmatic-design-patterns",
         "url": "http://www.abhijit-kar.com/pragmatic-design-patterns/"
       },
@@ -83,7 +104,7 @@
         "image_url": "../../../../favicon.ico",
         "year": "January 2018",
         "content":
-          "A collection of Data Structures, written in Python, comprised of Jupyter ...",
+          "A collection of Data Structures, written in Python, comprised of Jupyter Notebooks.",
         "git": "https://github.com/abhijit-kar/pragmatic-data-structure",
         "url": "http://www.abhijit-kar.com/pragmatic-data-structure/"
       }
@@ -100,7 +121,7 @@
         "image_url": "../../../../assets/images/companies/cognizant.ico",
         "year": "January 2017",
         "content":
-          "An acclaimed VR project for teaching Midwives to take care of new borns, ...",
+          "An acclaimed VR project for teaching Midwives to take care of new borns.",
         "url": "https://www.youtube.com/watch?v=aKVkieNf4tU"
       }
     ]
@@ -126,7 +147,7 @@
         "image_url": "../../../../favicon.ico",
         "year": "August 2015",
         "content":
-          "A drag drop editor, that helped build physics based games quicker. It was ...",
+          "A drag drop editor, that helped build physics based games quicker.",
         "url":
           "https://drive.google.com/open?id=1FOY9xaz-jHoKY7Uqhd0v-HKroSy2M93n"
       }
