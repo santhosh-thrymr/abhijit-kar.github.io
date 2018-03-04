@@ -9,8 +9,10 @@
             <mat-card-subtitle>{{featured.year}} · {{featured.author}} · {{featured.description}}</mat-card-subtitle>
         </mat-card-header>
         <img mat-card-image class="clickable" matRipple [src]="featured.image_url" mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(featured)">
-        <mat-card-content>
-            {{featured.content}}
+        <mat-card-content class="center">
+            <p>
+                <ak-summarizer [paragraph]="featured.content"></ak-summarizer>
+            </p>
         </mat-card-content>
     </mat-card>
 </ng-container>
