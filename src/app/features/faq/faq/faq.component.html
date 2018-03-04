@@ -5,6 +5,8 @@
     </mat-card-header>
     <mat-card-content>
         <h5>{{faq.name}}</h5>
-        <p>{{faq.content}}</p>
+        <p>
+            <ak-summarizer [paragraph]="faq.content"></ak-summarizer>
+        </p>
     </mat-card-content>
 </mat-card>
