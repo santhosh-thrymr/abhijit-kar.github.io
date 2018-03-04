@@ -5,12 +5,13 @@ import {
   GlobalErrorHandlerService,
   GoogleAnalyticsService,
   LinkHandlerService,
-  HighlighterPipe
+  HighlighterPipe,
+  SummarizerComponent
 } from "./";
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [HighlighterPipe],
+  declarations: [HighlighterPipe, SummarizerComponent],
   providers: [
     {
       provide: ErrorHandler,
@@ -19,6 +20,6 @@ import {
     GoogleAnalyticsService,
     LinkHandlerService
   ],
-  exports: [HighlighterPipe]
+  exports: [HighlighterPipe, SummarizerComponent]
 })
 export class SharedModule {}
