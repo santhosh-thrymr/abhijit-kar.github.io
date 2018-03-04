@@ -3,17 +3,6 @@
     "header": "Highlights",
     "features": [
       {
-        "name": "Medium",
-        "category": "Highlights",
-        "description": "Blog",
-        "author": "Personal",
-        "avatar_url": "../../../../favicon.ico",
-        "year": "March 2018",
-        "image_url": "../../../../assets/images/highlights/medium-blog.png",
-        "content": "Recently started blogging on Medium!",
-        "url": "https://medium.com/@abhijit_kar"
-      },
-      {
         "name": "Don't Let Him Poo",
         "category": "Highlights",
         "description": "Casual Game",
@@ -25,6 +14,30 @@
         "content":
           "Made a game using Angular, which relies on A* algorithm for GamePlay!",
         "url": "http://www.abhijit-kar.com/dont-let-him-poo/"
+      },
+      {
+        "name": "Google Analytics",
+        "category": "Highlights",
+        "description": "Google Analytics Report",
+        "author": "Personal",
+        "avatar_url": "../../../../favicon.ico",
+        "year": "March 2018",
+        "image_url": "../../../../assets/images/highlights/analytics.png",
+        "content":
+          "Analytics Report of My Portfolio and Don't Let Him Poo site combined!",
+        "url":
+          "https://www.linkedin.com/feed/update/urn:li:activity:6375435625096712192"
+      },
+      {
+        "name": "Medium",
+        "category": "Highlights",
+        "description": "Blog",
+        "author": "Personal",
+        "avatar_url": "../../../../favicon.ico",
+        "year": "March 2018",
+        "image_url": "../../../../assets/images/highlights/medium-blog.png",
+        "content": "Recently started blogging on Medium!",
+        "url": "https://medium.com/@abhijit_kar"
       },
       {
         "name": "Touch Typing",
@@ -47,7 +60,8 @@
         "year": "February 2018",
         "image_url":
           "../../../../assets/images/highlights/angular-pluralsight-iq.webp",
-        "content": "I have extensive experience in building production worthy sites using Angular!",
+        "content":
+          "I have extensive experience in building production worthy sites using Angular!",
         "url":
           "https://app.pluralsight.com/score/redir/9b194e92-a29c-445b-a975-9eb4e6dfdea9?a564a0de05"
       }
