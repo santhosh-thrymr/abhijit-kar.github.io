@@ -7,12 +7,18 @@ import {
   MatButtonModule
 } from "@angular/material";
 
+import { SharedModule } from "../../shared/shared.module";
 import { AwardsRoutingModule, AwardsComponents } from "./awards-routing.module";
 
 const MaterialModules = [MatCardModule, MatListModule, MatButtonModule];
 
 @NgModule({
-  imports: [CommonModule, AwardsRoutingModule, ...MaterialModules],
+  imports: [
+    CommonModule,
+    AwardsRoutingModule,
+    SharedModule,
+    ...MaterialModules
+  ],
   declarations: AwardsComponents
 })
 export class AwardsModule {}
