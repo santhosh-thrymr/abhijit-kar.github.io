@@ -10,7 +10,13 @@
         "image_url": "../../../../assets/images/companies/cognizant.ico",
         "year": "February 2016",
         "content":
-          "Worked in two varied departments, 1st Year AR, VR using Unity, and then ...",
+          "I have extensive experience in several technologies and have been working on deliverables since I was in training. Have a look:",
+        "bullets": [
+          "Designed and developed a component generator using Angular, while pair programming, which allowed creation of components dynamically, from configuration files, ensuring delivery of user stories in 2 months rather than 5+ months.",
+          "Lead a team of 4 members, for integration of recurly payment gateway in an Angular project.",
+          "Created an efficient reorderable hierarchy viewer component in Angular that replaced a clunky UI involving several clicks spread across several tabs.",
+          "Was a vital part of VR & AR founders team and got awarded for my contributions which spanned across several projects including the famed Midwifery Project for The University of Newcastle, Australia."
+        ],
         "url": "https://www.cognizant.com/"
       }
     ]
