@@ -7,7 +7,11 @@
     "image_url": "../../../../assets/images/colleges/cvrce.png",
     "year": "June 2015",
     "content":
-      "Graduated from C.V. Raman College of Engineering, Bhubaneswar, Odisha",
+      "Apart from the study plan laid out by the College, I was immensely driven to make games. Have a look:",
+    "bullets": [
+      "Ventured into Unity realm and created a casual puzzle game called Monster Shuffle (bit.ly/monster-shuffle), and posted it to itch.io",
+      "Created a WYSIWYG Editor (bit.ly/box2d-flash) in Flash Professional for Box2D physics engine that allowed creation of physics-based games, like Angry Birds"
+    ],
     "url": "http://cvrce.edu.in/"
   }
 ]
