@@ -5,7 +5,14 @@
     </mat-card-header>
     <mat-card-content>
         <h5>{{education.name}}</h5>
-        <p>{{education.content}}</p>
+        <p>
+            <ak-summarizer [paragraph]="education.content"></ak-summarizer>
+        </p>
+        <ul>
+            <li *ngFor="let bullet of education.bullets">
+                <ak-summarizer [paragraph]="bullet"></ak-summarizer>
+            </li>
+        </ul>
     </mat-card-content>
     <mat-card-actions>
         <button class="pink" mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(education)">
