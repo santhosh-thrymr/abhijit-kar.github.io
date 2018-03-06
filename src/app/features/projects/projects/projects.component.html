@@ -15,7 +15,7 @@
             </p>
         </mat-card-content>
         <mat-card-actions>
-            <button class="pink" mat-button tabindex="-1" (click)="linkHandlerService.handleButtonClick(technology)">
+            <button class="pink" mat-button *ngIf="technology.url" tabindex="-1" (click)="linkHandlerService.handleButtonClick(technology)">
                 Preview
             </button>
             <button class="pink" mat-button *ngIf="technology.git" tabindex="-1" (click)="linkHandlerService.handleButtonClick(technology, link_types.GIT)">
