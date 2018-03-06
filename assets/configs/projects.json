@@ -24,8 +24,7 @@
           "Google Maps: To point out my address.",
           "Google Domains: I purchased this domain from Google Domains, got free domain security.",
           "Google G Suite: For customized professional email.",
-          "Google Analytics: To analyze each route change, and each button click.",
-          "Dialog Flow: Made the chatbot using Google's Dialog Flow."
+          "Google Analytics: To analyze each route change, and each button click."
         ],
         "git": "https://github.com/abhijit-kar/abhijit-kar.github.io",
         "url": "http://www.abhijit-kar.com"
@@ -52,6 +51,22 @@
         "content": "It eases some of the painpoints related to deployment.",
         "git": "https://github.com/abhijit-kar/angular-scaffolding",
         "url": "http://www.abhijit-kar.com/angular-scaffolding/"
+      },
+      {
+        "name": "FNOL",
+        "category": "Projects",
+        "description": "WIP",
+        "author": "Cognizant",
+        "image_url": "../../../../assets/images/companies/cognizant.ico",
+        "year": "Dec 2017 - Present",
+        "content":
+          "First Notice of Loss, is like FIR for insured users. They can reach AIG through several ways, which are all tracked through FNOL site. My Contributions:",
+        "bullets": [
+          "Designed and developed a component generator using Angular, while pair programming.",
+          "It allowed creation of components dynamically, from configuration files, ensuring delivery of user stories in 2 months rather than 5+ months.",
+          "I am involved in story creation.",
+          "Plus scalable components generation."
+        ]
       },
       {
         "name": "Restful Go",
@@ -108,6 +123,22 @@
           "A collection of Data Structures, written in Python, comprised of Jupyter Notebooks.",
         "git": "https://github.com/abhijit-kar/pragmatic-data-structure",
         "url": "http://www.abhijit-kar.com/pragmatic-data-structure/"
+      },
+      {
+        "name": "Navistar Marketplace",
+        "category": "Projects",
+        "description": "Complete",
+        "author": "Cognizant",
+        "image_url": "../../../../assets/images/companies/cognizant.ico",
+        "year": "Feb 2017 - Nov 2017",
+        "content":
+          "A website that is going to function as a hub for drivers of Navistar. They can purchase apps, even check their truck's data, or even compete with other truck drivers. My Contributions:",
+        "bullets": [
+          "I was involved from beginning of the project, and laid the foundation for future work",
+          "I was tasked with creating complex drag drop hierarchy viewer",
+          "Integrated Recurly payment gateway into the site",
+          "Created countless components for several user stories"
+        ]
       }
     ]
   },
@@ -122,7 +153,7 @@
         "image_url": "../../../../assets/images/companies/cognizant.ico",
         "year": "January 2017",
         "content":
-          "An acclaimed VR project for teaching Midwives to take care of new borns.",
+          "An acclaimed VR project for teaching Midwives to take care of new borns. I Developed a framework, which allowed deployment to HTC Vive, Gear VR, Oculus Rift, Mobile and PC all from one Unity Project, resulting in reduction of countless development hours and completion of the project",
         "url": "https://www.youtube.com/watch?v=aKVkieNf4tU"
       }
     ]
