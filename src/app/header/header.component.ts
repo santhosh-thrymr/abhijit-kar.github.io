@@ -98,13 +98,13 @@ export class HeaderComponent {
 
       this.tabs
         .toArray()
-        [this.routeMap[this.currentUrl]].nativeElement.scrollIntoView({
+        [this.routeMap[this.currentUrl] || 0].nativeElement.scrollIntoView({
           behavior: "smooth",
           block: "center",
           inline: "center"
         });
 
-      const route: Route = this.routes[this.routeMap[this.currentUrl]];
+      const route: Route = this.currentUrl;
 
       this.loading = true;
     } else if (
