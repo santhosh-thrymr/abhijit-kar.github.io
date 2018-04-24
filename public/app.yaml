@@ -2,6 +2,21 @@
 runtime: nodejs
 env: flex
 
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
+- ^(.*/)?.*\.bak$
+- specs
+- gen
+- LICENSE
+- README.md
+- .gitignore
+- node_modules
+- yarn.lock
+
 # This sample incurs costs to run on the App Engine flexible environment. 
 # The settings below are to reduce costs during testing and are not appropriate
 # for production use

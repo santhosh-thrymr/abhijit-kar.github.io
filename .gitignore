@@ -1,6 +1,7 @@
 # compiled output
 /public/dist
 /public/etc
+/public/node_modules
 /tmp
 /out-tsc
 
